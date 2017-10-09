@@ -32,8 +32,7 @@
             <div class="col-md-6">
                 <p>A tastefully finished spacious 3 bedroom apartment, all ensuite. Located along Hatheru Road,
                     with a semi-detached DSQ. Amenities include Gym, swimming pool, 2 parking spot/unit, secure area,
-                    wifi connectivity. All this in a quiet environment in capital underground and overhead water tanks
-                    for each unit.
+                    wifi connectivity. All this in a quiet environment in the capital
                 </p>
                 <p><strong>Letting Price  Ksh. 9000 + S.C. Ksh. 6,000</strong></p>
             </div>

@@ -8356,7 +8356,7 @@ button.close {
 }
 
 .navbar-brand h4 {
-  color: #ffffff;
+  color: #ffff;
 }
 
 .nav {
@@ -8367,11 +8367,11 @@ button.close {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+  color: #ffff;
 }
 
 .navbar-default .navbar-brand {
-  color: #ffffff;
+  color: #ffff;
 }
 
 .navbar-nav a:hover {
@@ -8383,11 +8383,11 @@ button.close {
 }
 
 .container h4 {
-  color: #ffffff;
+  color: #ffff;
 }
 
 ul {
-  color: #ffffff;
+  color: #ffff;
 }
 
 .picture {
@@ -8398,7 +8398,7 @@ ul {
 .centered {
   text-transform: uppercase;
   font-size: 50px;
-  color: #ffffff;
+  color: #ffff;
   position: absolute;
   top: 29%;
   left: 9%;
@@ -8440,5 +8440,35 @@ ul {
 a:focus {
   outline: none;
   text-decoration: none;
+}
+
+@media screen and (min-width: 320px) {
+  .contact {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .contact {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    margin: auto;
+  }
+
+  .centered {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #ffff;
+    position: absolute;
+    top: 65%;
+    left: 9%;
+    font-weight: 400;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
 }
 

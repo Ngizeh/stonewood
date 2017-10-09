@@ -10,7 +10,7 @@
 
 
 $blue:#0D2338;
-$white:#ffffff;
+$white: #ffff;
 .navbar{
   background-color: $blue;
   margin-bottom: 0px;
@@ -82,4 +82,31 @@ ul{
 .property a:hover, a:focus {
   outline: none;
   text-decoration: none;
+}
+@media screen and (min-width: 320px) {
+.contact{
+  margin: auto;
+}
+}
+@media screen and (min-width: 320px) {
+  .contact {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    margin: auto;
+  }
+  .centered {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: $white;
+    position: absolute;
+    top: 65%;
+    left: 9%;
+    font-weight: 400;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
 }
