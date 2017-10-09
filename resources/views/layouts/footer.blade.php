@@ -4,13 +4,17 @@
     </h2>
     <div class="row contact">
         <p class="col-md-4">
-            <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+            {{--<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>--}}
             Email Us on: <a href="#">rnjau@homeassured.property</a>
+            <br>
+            <br>
+            {{--<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>--}}
+            Email Us on: <a href="#">allan@homeassured.property</a>
         </p>
         <p class="col-md-4">
-            <i class="fa fa-mobile fa-lg" aria-hidden="true"></i>
-            Call on +254 724 773 555 &nbsp; or &nbsp;
-            +254 020 207 7030
+            Call on  &nbsp; +254 724 773 555 &nbsp; or  &nbsp; +254 020 207 7030 &nbsp;
+            <br>
+           or  &nbsp;  &nbsp; +254 720 529 222
 
         </p>
     </div>
