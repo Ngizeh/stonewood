@@ -1,88 +1,87 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.master')
 
-        <title> Homeassured </title>
+@section('content')
+    <div class="picture">
+        <img src="{{asset('images/slide3.jpg')}}" alt="homepage" width="100%" height="480px">
+        <div class="centered">
+            Excellent Agents, Outstanding Results.
+        </div>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 50px;
-                color: white;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        {{--<div class="flex-center position-ref full-height">--}}
-            {{--@if (Route::has('login'))--}}
-                {{--<div class="top-right links">--}}
-                    {{--@if (Auth::check())--}}
-                        {{--<a href="{{ url('/home') }}">Home</a>--}}
-                    {{--@else--}}
-                        {{--<a href="{{ url('/login') }}">Login</a>--}}
-                        {{--<a href="{{ url('/register') }}">Register</a>--}}
-                    {{--@endif--}}
-                {{--</div>--}}
-            {{--@endif--}}
-
-            <div class="content">
-                <div class="title m-b-md">
-                    <strong> Working on Updates,We will be right back !</strong>
+    </div>
+    <div class="container about" id="about">
+        <h2>Home Assured</h2>
+        <p>Home assured takes the pride in offering quality Real estate services throughout the country, We have
+            been in this business for 8 years in the sector and with a combined experience of the 20 years in real
+            estate practice
+        </p>
+        <p> Home Assured has created a strong clientele by treating both buyers and sellers as investors
+        Home Assured will and can deliver an effective and efficient real estate services through our diverse
+        and we well experienced team.
+        </p> 
+    </div>
+    <hr>
+    <div class="container project" id="property">
+        <h1>Projects </h1>
+        <div class="row">
+            <hr>
+                <div class="col-md-6 ">
+                    <a href="{{ url('/property') }}">
+                    <div class="thumbnail">
+                        <img src="{{asset('images/image1.jpeg')}}" alt="Apartment">
+                        <div class="caption">
+                            <h3>Katheru Road Apartment</h3>
+                            <p>Fully finished Spacious 3 Bedroom Apartment</p>
+                            <p>Letting Price: Ksh. 90,000</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                        <div class="thumbnail godown">
+                        <img src="{{asset('images/lift.jpeg')}}" alt="Go Down" width="450" height="240">
+                        <div class="caption">
+                            <h3>Lift Apartment</h3>
+                            <p>Fully Funished apartment with a lift</p>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-sm-6 col-md-4">--}}
+                    {{--<div class="thumbnail">--}}
+                        {{--<img src="{{asset('images/image1.jpeg')}}" alt="...">--}}
+                        {{--<div class="caption">--}}
+                            {{--<h3>Thumbnail label</h3>--}}
+                            {{--<p>...</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="col-sm-6 col-md-4">--}}
+                    {{--<div class="thumbnail">--}}
+                        {{--<img src="{{asset('images/image2.jpeg')}}" alt="...">--}}
+                        {{--<div class="caption">--}}
+                            {{--<h3>Thumbnail label</h3>--}}
+                            {{--<p>...</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="col-sm-6 col-md-4">--}}
+                    {{--<div class="thumbnail">--}}
+                        {{--<img src="{{asset('images/image3.jpeg')}}" alt="...">--}}
+                        {{--<div class="caption">--}}
+                            {{--<h3>Thumbnail label</h3>--}}
+                            {{--<p>...</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<p>See More</p>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
+@stop
