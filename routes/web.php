@@ -15,4 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('property', 'PhotoController@index');
+
+//Route::resource('property', 'PropertyController');
+Route::get('property', 'PropertyController@index');
+Route::get('property/create', 'PropertyController@create');
+Route::post('property', 'PropertyController@store');
+Route::get('{location}/{title}', 'PropertyController@show');
+Route::post('{location}/{title}/photos', 'PropertyController@addPhoto');
+Route::get('all-properties', 'AllPropertyController@show');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

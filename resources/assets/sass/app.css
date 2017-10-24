@@ -9,10 +9,10 @@ Error: File to import not found or unreadable: node_modules/bootstrap-sass/asset
 8: // Bootstrap
 9: @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 10: 
-11: 
-12: $blue:#0D2338;
-13: $white: #ffff;
-14: .navbar{
+11: .navbar{
+12:   background-color: $blue;
+13:   margin-bottom: 0px;
+14: }
 
 Backtrace:
 app.scss:9
@@ -58,4 +58,4 @@ C:/Ruby24-x64/bin/scss:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: node_modules/bootstrap-sass/assets/stylesheets/bootstrap.\A         on line 9 of app.scss\A \A 4: \A 5: // Variables\A 6: @import \"variables\";\A 7: \A 8: // Bootstrap\A 9: @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\A 10: \A 11: \A 12: $blue:#0D2338;\A 13: $white: #ffff;\A 14: .navbar{"; }
+  content: "Error: File to import not found or unreadable: node_modules/bootstrap-sass/assets/stylesheets/bootstrap.\A         on line 9 of app.scss\A \A 4: \A 5: // Variables\A 6: @import \"variables\";\A 7: \A 8: // Bootstrap\A 9: @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\A 10: \A 11: .navbar{\A 12:   background-color: $blue;\A 13:   margin-bottom: 0px;\A 14: }"; }
