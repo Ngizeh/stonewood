@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="col-md-9 col-lg-offset-1">
                         <p>
-                            {!! nl2br($value->description)!!}}
+                            {!! nl2br($value->description)!!} 
                         </p>
                         <p>
                             <strong>Contact Allan on +{{$value->phone_number}}</strong>
