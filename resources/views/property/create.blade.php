@@ -19,7 +19,7 @@
                     </div>
                     <div class="form-group">
                         <label for="price">Price of the Property:</label>
-                        <input type="number" class="form-control" name="price" id="price" value="{{ old('price') }}"
+                        <input type="text" class="form-control" name="price" id="price" value="{{ old('price') }}"
                                required>
                     </div>
                     <div class="form-group">
