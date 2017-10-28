@@ -22,11 +22,11 @@
         </div>
     </div>
     <hr>
-    <div class="container project" id="property">
+    <div class="container-fluid project" id="property">
         <h1 class="">Properties </h1>
         <div class="row">
             <hr>
-            <div class="col-md-6 ">
+            <div class="col-md-4 ">
                 <div class="thumbnail">
                     <a href="{{ url('property') }}">
                         <img src="{{asset('images/image1.jpeg')}}" alt="Apartment">
@@ -36,21 +36,36 @@
                         <h5><strong>Letting Price: Ksh. 90,000</strong></h5>
                         <p>A tastefully finished spacious 3 bedroom apartment, all ensuite.
                             Located along Hatheru Road, with a semi-detached DSQ.Amenities include Gym, swimming pool,
-                            2 parking...<a href='{{url('property')}}'>[See More]</a>
+                            2 parking spot/unit, secure area, wifi connectivity. All this in a quiet environment in the capital..
+                            <a href='{{url('property')}}'>[See More]</a>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="thumbnail godown">
                     <img src="{{asset('images/1508140758-IMG_20171016_100848.jpg')}}" alt="Go Down">
                     <div class="caption">
                         <h3>Peponi Property</h3>
                         <h5><strong>Letting Price: Ksh. 400,000</strong></h5>
+                        <br>
                         <p>6 bed all ensuite house, guest washroom, separate dining area,
                             family room, spacious kitchen, wooden floor,
                             stairs and rail finish, DSQ garage, with a matures lush green
-                            trees....<a href='{{url('property')}}'>[Read More]</a>
+                            trees sitting on half an acre located along Peponi road
+                            ..<a href='{{url('property')}}'>[See More]</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail godown">
+                    <img src="{{asset('images/springs.jpg')}}" alt="Rosslyn" height="" >
+                    <div class="caption">
+                        <h3> Rosslyn Springs</h3>
+                        <h5><strong>Letting Price: $ 3,800</strong></h5>
+                        <p>The bedrooms are all en suite,each unit boasts a fully
+                            fitted Italian ...<a href='{{url('property')}}'>[See More]</a>
                         </p>
                     </div>
                 </div>

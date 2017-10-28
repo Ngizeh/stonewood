@@ -19,17 +19,25 @@
                     </div>
                     <div class="form-group">
                         <label for="price">Price of the Property:</label>
-                        <input type="number" class="form-control" name="price" id="price" value="{{ old('title') }}"
+                        <input type="number" class="form-control" name="price" id="price" value="{{ old('price') }}"
                                required>
                     </div>
                     <div class="form-group">
                         <label for="phone_number">Agent Contacts:</label>
-                        <input type="number" class="form-control" name="phone_number" id="phone_number" value="{{ old('phone_number') }}"
+                        <input type="number" class="form-control" name="phone_number" id="phone_number"
+                               value="{{ old('phone_number') }}"
                                required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="description">Describe the Property:</label>
+                        <textarea type="text" class="form-control" name="description" id="description" rows="4" required></textarea>
                     </div>
                     <div class="form-group">
                         <label for="categories">Select Categories</label>
                         <select name="category" class="form-control" id="select" required value="{{ old('category')}}">
+                            <option selected disabled>Choose a Category</option>
                             <option>Apartments</option>
                             <option>Condos</option>
                             <option>Duplexes</option>
@@ -41,8 +49,9 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="categories">Listed In</label>
+                        <label for="listing">Listed In</label>
                         <select name="listing" class="form-control" id="select" required value="{{ old('listing')}}">
+                            <option selected disabled>Choose a Listing</option>
                             <option>Foreclosure</option>
                             <option>Developments</option>
                             <option>Rentals</option>
@@ -51,17 +60,14 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-md-6">
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
                     <div class="form-group">
-                        <label for="description">Describe the Property:</label>
-                        <textarea type="text" class="form-control" name="description" id="description" rows="5"
-                                  required>
-                        </textarea>
+                        <button type="submit" class="btn btn-primary">Create Property</button>
                     </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Create Property</button>
             </div>
             @if(count($errors) > 0 )
                 <div class="alert alert-danger">
