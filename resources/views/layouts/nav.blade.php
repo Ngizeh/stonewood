@@ -17,7 +17,7 @@
                 {{--<li><a href="{{url('/')}}">About</a></li>--}}
                 <li><a href="{{url('property')}}">Property</a></li>
                 {{--<li><a href="#management">Management</a></li>--}}
-                <li><a href="{{url('/')}}">Contact Us</a></li>
+                {{--<li><a href="{{url('/')}}">Contact Us</a></li>--}}
                 @if (Auth::guest())
                 <li><a href="{{ route('login') }}">Login</a></li>
                     @else
