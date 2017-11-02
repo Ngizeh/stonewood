@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-3">
                 <h1>{{$property->title}}</h1>
-                <h2><strong>Ksh. {{number_format($property->price)}}</strong></h2>
+                <h2><strong> {{$property->price}}</strong></h2>
                 <hr>
                 <p> {{$property->description}}</p>
                 <hr>

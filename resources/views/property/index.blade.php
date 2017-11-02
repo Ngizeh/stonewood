@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-8">
                     <h2>{{$value->title}}</h2>
-                    <p class="big"><strong> Ksh. {{number_format($value->price)}}</strong></p>
+                    <p class="big"><strong> {{$value->price}}</strong></p>
                     <p>{{str_limit($value->description, 300, ' ...')}} <a href="{{url('property/'.$value->id)}}"> &lsqb; Read More &rsqb;</a></p>
                 </div>
             </div>
