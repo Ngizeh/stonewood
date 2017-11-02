@@ -45,6 +45,6 @@ class PropertyPhoto extends Model
 
     protected function makeThumbnail()
     {
-        Image::make($this->path)->fit(250)->save($this->thumbnail_path);
+        Image::make($this->path)->fit(374, 250)->save($this->thumbnail_path);
     }
 }

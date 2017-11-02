@@ -15,18 +15,18 @@ class PropertyController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('index');
+        $this->middleware('auth')->except(['index', 'show']);
     }
 
     public function index(Property $property)
     {
-        $property = $property->with('propertyPhotos')->get();
+        $property = $property->with('propertyPhotos')->paginate(15);
         return view('property.index', compact('property'));
     }
 
-    public function create()
+    public function create(Property $property)
     {
-        return view('property.create');
+        return view('property.create', compact('property'));
     }
 
     public function store(PropertyRequest $request, Property $property)
@@ -36,9 +36,9 @@ class PropertyController extends Controller
         return redirect($property->path());
     }
 
-    public function show($location, $title)
+    public function show(Property $property, $location, $title)
     {
-        $property = Property::locatedAt($location, $title);
+       $property = (Property::locatedAt($location, $title))->load('propertyPhotos');
 
         return view('property.show', compact('property'));
     }

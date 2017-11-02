@@ -1,5 +1,4 @@
 @extends('layouts.master')
-
 @section('content')
     <div class="container login" xmlns="http://www.w3.org/1999/html">
         <h2>Upload A Property</h2>
@@ -20,11 +19,13 @@
                     <div class="form-group">
                         <label for="price">Price of the Property:</label>
                         <input type="text" class="form-control" name="price" id="price" value="{{ old('price') }}"
+                               placeholder="Ksh. 400,000 or $ 5,600"
                                required>
                     </div>
                     <div class="form-group">
                         <label for="phone_number">Agent Contacts:</label>
                         <input type="number" class="form-control" name="phone_number" id="phone_number"
+                               placeholder="254712456789"
                                value="{{ old('phone_number') }}"
                                required>
                     </div>
@@ -32,7 +33,8 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="description">Describe the Property:</label>
-                        <textarea type="text" class="form-control" name="description" id="description" rows="4" required></textarea>
+                        <textarea type="text" class="form-control" name="description" id="description" rows="4"
+                                  required></textarea>
                     </div>
                     <div class="form-group">
                         <label for="categories">Select Categories</label>
@@ -62,10 +64,13 @@
                 </div>
             </div>
             <hr>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Create Property</button>
+            <div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <a href="{{'/property'}}" class="btn btn-success">Back</a>
+                    </div>
+                    <div class="col-md-6 offset-2 form-group">
+                        <button type="submit" class="btn btn-primary ">Create Property</button>
                     </div>
                 </div>
             </div>
@@ -82,5 +87,4 @@
             @endif
         </form>
     </div>
-    <p></p>
 @endsection

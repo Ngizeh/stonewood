@@ -1,21 +1,51 @@
-<div class="footer container-fluid">
-    <h2 class="lead">
-        To Let Contact
-    </h2>
-    <div class="row contact">
-        <p class="col-md-4">
+<footer class="footer-distributed">
 
-            Email Us on: <a href="#">rnjau@homeassured.property</a>
-            <br>
-            <br>
-            Email Us on: <a href="#">allan@homeassured.property</a>
-        </p>
-        <p class="col-md-4">
-            Call on &nbsp; +254 724 773 555 &nbsp; or &nbsp; +254 020 207 7030 &nbsp;
-            <br>
-            or &nbsp; &nbsp; +254 720 529 222
+    <div class="footer-left">
 
+        <h3>HomeAssured</h3>
+
+        <p class="footer-links">
+            <a href="{{url('/')}}">Home</a>
+            ·
+            <a href="#about">About</a>
+            ·
+            <a href="{{url('/property')}}">Property</a>
+            ·
+            <a href="#">Contacts Us</a>
+            .
         </p>
+
+        <p class="footer-company-name">HomeAssured &copy; {{ date('Y') }}</p>
     </div>
 
-</div>
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p>Jalaram Rd, Westlands</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+254 733 46 46 46</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sales@homeassured.property">sales@homeassured.property</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+        <div class="footer-icons">
+
+            <a href="https://www.facebook.com/HALKNOWSPROPERTY/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>

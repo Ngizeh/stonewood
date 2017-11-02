@@ -12,8 +12,6 @@ class AllPropertyController extends Controller
     {
         $property = $property->with('propertyPhotos')->get();
 
-        //dd($property->toArray());
-
-        return view('all.show', compact('property'));
+        return view('details.show', compact('property'));
     }
 }
