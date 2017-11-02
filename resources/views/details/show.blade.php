@@ -2,7 +2,7 @@
 
 @section('content')
 
-    @foreach($property as $value)
+       @foreach($property as $value)
         <div class="container-fluid login">
             <h1 style="color:  #ff770e">{{$value->title}}  at {{$value->location}}</h1>
             <hr>
@@ -13,7 +13,7 @@
                         <div class="swiper-wrapper">
                             @foreach($value->propertyPhotos as $set)
                                 <div class="swiper-slide"
-                                     style="background-image:url('{{$set->path}}')"></div>
+                                     style="background-image:url('/{{$set->path}}')"></div>
                             @endforeach
                         </div>
                         <!-- Add Arrows -->
@@ -24,7 +24,7 @@
                         <div class="swiper-wrapper">
                             @foreach($value->propertyPhotos as $set)
                                 <div class="swiper-slide"
-                                     style="background-image:url('{{$set->path}}')"></div>
+                                     style="background-image:url('/{{$set->path}}')"></div>
                             @endforeach
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                             {!! nl2br($value->description)!!}
                         </p>
                         <p>
-                            <strong>Contact {{Auth::user()->name}} on +{{$value->phone_number}}</strong>
+                            <strong>Contact {{$value->user->name }} on +{{$value->phone_number}}</strong>
                         </p>
                         <p>
                             <strong>Letting Price {{$value->price}} </strong>
