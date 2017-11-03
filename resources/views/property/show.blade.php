@@ -42,7 +42,7 @@
     <script>
         Dropzone.options.addphoto = {
             paramName: 'photo',
-            maxFilesize: 4,
+            maxFilesize: 10,
             acceptedFiles: '.jpg,.jpeg,.png, .bmp'
         };
     </script>
