@@ -34,7 +34,7 @@ class Property extends Model
 
     public function path()
     {
-        return str_replace('-', ' ', $this->location).'/'.str_replace('-',' ', $this->title);
+        return str_replace('-', '', $this->location).'/'.str_replace('-','', $this->title);
     }
 
 

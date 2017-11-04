@@ -40,10 +40,11 @@
                             <strong>Contact {{$value->user->name }} on +{{$value->phone_number}}</strong>
                         </p>
                         <p>
-                            <strong>Letting Price {{$value->price}} </strong>
+                            <strong>Letting Price Ksh. {{number_format($value->price)}} / $ {{number_format(($value->price)/100)}} </strong>
                         </p>
                     </div>
                 </div>
+              <a href="{{url('property')}}"><strong style="text-transform: uppercase">  <span class="arrow" style="font-size: 2em; padding-left: 1em;">←</span>Back To All </strong></a>
             </div>
         </div>
     @endforeach

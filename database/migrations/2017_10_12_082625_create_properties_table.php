@@ -21,7 +21,7 @@ class CreatePropertiesTable extends Migration
             $table->string('title');
             $table->string('location');
             $table->double('phone_number');
-            $table->string('price');
+            $table->integer('price');
             $table->string('category');
             $table->string('listing');
             $table->text('description');

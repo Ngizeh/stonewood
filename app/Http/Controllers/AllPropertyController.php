@@ -10,9 +10,9 @@ use Illuminate\Http\Request;
 class AllPropertyController extends Controller
 {
 
-    public function show($id)
+    public function show($title)
     {
-        $property = Property::where('id', '=', $id)->with('propertyPhotos')->get();
+        $property = Property::where('title', '=', $title)->with('propertyPhotos')->get();
 
         return view('details.show', compact('property'));
     }

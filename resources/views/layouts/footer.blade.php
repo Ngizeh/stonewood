@@ -1,4 +1,4 @@
-<footer class="footer-distributed">
+<footer class="footer-distributed" id="contact">
 
     <div class="footer-left">
 
@@ -7,15 +7,15 @@
         <p class="footer-links">
             <a href="{{url('/')}}">Home</a>
             ·
-            <a href="#about">About</a>
+            <a href="{{url('about')}}">About</a>
             ·
             <a href="{{url('/property')}}">Property</a>
             ·
-            <a href="#">Contacts Us</a>
+            <a href="#contact">Contacts Us</a>
             .
         </p>
 
-        <p class="footer-company-name">HomeAssured &copy; {{ date('Y') }}</p>
+        <p class="footer-company-name">HomeAssured &copy; 2008</p>
     </div>
 
     <div class="footer-center">

@@ -13,14 +13,14 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 class PropertyController extends Controller
 
 {
-//    public function __construct()
-//    {
-//        $this->middleware('auth')->except(['index', 'show']);
-//    }
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
 
     public function index(Property $property)
     {
-        $property = $property->with('propertyPhotos')->paginate(15);
+        $property = $property->with('propertyPhotos')->latest()->paginate(15);
         return view('property.index', compact('property'));
     }
 

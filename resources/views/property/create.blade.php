@@ -18,8 +18,8 @@
                     </div>
                     <div class="form-group">
                         <label for="price">Price of the Property:</label>
-                        <input type="text" class="form-control" name="price" id="price" value="{{ old('price') }}"
-                               placeholder="Ksh. 400,000 or $ 5,600"
+                        <input type="number" class="form-control" name="price" id="price" value="{{ old('price') }}"
+                               placeholder="400,000"
                                required>
                     </div>
                     <div class="form-group">
