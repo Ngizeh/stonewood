@@ -15,7 +15,7 @@
             .
         </p>
 
-        <p class="footer-company-name">HomeAssured &copy; 2008 - {{date('Y')}}</p>
+        <p class="footer-company-name">HomeAssured &copy; 2008 </p>
     </div>
 
     <div class="footer-center">
