@@ -27,7 +27,7 @@
                 <hr>
 
                 <form id="addphoto" action="/{{ $property->location}}/{{$property->title}}/photos"
-                      class="dropzone" method="post">
+                      class="dropzone" method="post" enctype="multipart/form-data">
                     {{csrf_field()}}
 
                 </form>
