@@ -57,4 +57,17 @@ class PropertyController extends Controller
     {
         return PropertyPhoto::named($file->getClientOriginalName())->move($file);
     }
+
+    public function edit(Property $property, Request $request)
+    {
+
+        return view('property.edit', compact('property'));
+    }
+
+    public function update(Request $request, Property $property)
+    {
+        $property->update($request->all());
+
+        return redirect('property');
+    }
 }

@@ -44,7 +44,12 @@
                         </p>
                     </div>
                 </div>
+                <div class="row">
               <a href="{{url('property')}}"><strong style="text-transform: uppercase">  <span class="arrow" style="font-size: 2em; padding-left: 1em;">←</span>Back To All </strong></a>
+
+                        <a href="/property/{{$value->id}}/edit" class="btn btn-success pull-right">Edit Property</a>
+                </div>
+
             </div>
         </div>
     @endforeach

@@ -13,6 +13,8 @@ Route::get('/team', function () {
 });
 Route::get('property', 'PropertyController@index');
 Route::get('property/create', 'PropertyController@create');
+Route::get('property/{property}/edit', 'PropertyController@edit');
+Route::patch('property/{property}', 'PropertyController@update');
 Route::get('property/{title}', 'AllPropertyController@show');
 Route::post('property', 'PropertyController@store');
 Route::get('/{location}/{title}', 'PropertyController@show');
