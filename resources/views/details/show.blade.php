@@ -45,9 +45,16 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-md-6">
               <a href="{{url('property')}}"><strong style="text-transform: uppercase">  <span class="arrow" style="font-size: 2em; padding-left: 1em;">←</span>Back To All </strong></a>
+                    </div>
+                    <div class="col-md-6">
 
-                        <a href="/property/{{$value->id}}/edit" class="btn btn-success pull-right">Edit Property</a>
+                @if(Auth::check())
+
+                        <a href="/property/{{$value->id}}/edit" class="btn btn-success" style="margin-top: 8px">Edit Property</a>
+                        @endif
+                    </div>
                 </div>
 
             </div>

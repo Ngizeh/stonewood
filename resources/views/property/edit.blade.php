@@ -15,7 +15,7 @@
                 <a href="{{'/property'}}" class="btn btn-success">Back</a>
             </div>
             <div class="col-md-6 offset-2 form-group">
-                <button type="submit" class="btn btn-primary ">Edit Property</button>
+                <button type="submit" class="btn btn-primary ">Update Property</button>
             </div>
         </div>
         </form>

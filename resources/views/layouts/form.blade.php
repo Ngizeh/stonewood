@@ -28,7 +28,7 @@
         <div class="form-group">
             <label for="description">Describe the Property:</label>
             <textarea type="text" class="form-control" name="description" id="description" rows="4"
-                      required >{{old('description', $property->description)}}"</textarea>
+                      required >{{old('description', $property->description)}}</textarea>
         </div>
         <div class="form-group">
             <label for="categories">Select Categories</label>
