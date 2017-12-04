@@ -16,7 +16,8 @@ class CreatePropertyPhotosTable extends Migration
         Schema::create('property_photos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('property_id')->unsigned()->index();
-            $table->foreign('property_id')->references('id')->on('properties')->onDelete('cascade');
+            $table->foreign('property_id')->references('id')
+                ->on('properties')->onDelete('cascade');
             $table->string('name');
             $table->string('path');
             $table->string('thumbnail_path');
@@ -31,6 +32,6 @@ class CreatePropertyPhotosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('property_photos');
+        Schema::dropIfExists('property_photos_table');
     }
 }

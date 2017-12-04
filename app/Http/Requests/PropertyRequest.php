@@ -27,9 +27,12 @@ class PropertyRequest extends FormRequest
             'title' => 'required',
             'location' => 'required',
             'price' => 'required',
-            'category' => 'required',
-            'listing' => 'required',
+            'service_charge' => 'integer|nullable',
             'description' => 'required',
+            'listed' => 'required',
+            'commercial' => 'string|nullable',
+            'land' => 'string|nullable',
+            'residential' => 'string|nullable',
         ];
     }
 }

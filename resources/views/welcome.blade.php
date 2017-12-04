@@ -1,5 +1,4 @@
 @extends('layouts.master')
-
 @section('content')
     <div class="welcome">
         <img src="{{asset('images/slide3.jpg')}}" alt="homepage" width="100%" height="480px">
@@ -104,6 +103,8 @@
             </div>
         </div>
     </div>
-
-
 @stop
+
+
+
+

@@ -3,7 +3,8 @@
     <div class="form col-md-6">
         <div class="form-group">
             <label for="title">Title of the Property</label>
-            <input type="text" class="form-control" name="title" id="title" value="{{ old('title', $property->title) }}">
+            <input type="text" class="form-control" name="title" id="title"
+                   value="{{ old('title', $property->title) }}">
         </div>
         <div class="form-group">
             <label for="location">Location of the property:</label>
@@ -12,62 +13,67 @@
         </div>
         <div class="form-group">
             <label for="price">Price of the Property:</label>
-            <input type="number" class="form-control" name="price" id="price" value="{{ old('price', $property->price) }}"
+            <input type="text" class="form-control" name="price" id="price" value="{{ old('price', $property->price) }}"
                    placeholder="400,000"
                    required>
         </div>
         <div class="form-group">
-            <label for="phone_number">Agent Contacts:</label>
-            <input type="number" class="form-control" name="phone_number" id="phone_number"
-                   placeholder="254712456789"
-                   value="{{ old('phone_number', $property->phone_number) }}"
-                   required>
+            <label for="service_charge">Service Charge Property:</label>
+            <input type="text" class="form-control" name="service_charge" id="service_charge"
+                   placeholder="400,000">
+        </div>
+        <div class="form-group">
+            <label for="listed">Property Listed For:</label>
+            <select name="listed" class="form-control" id="select"
+                    value="{{ old('listed', $property->listed)}}">
+                <option selected disabled>Choose a Listing</option>
+                @foreach(App\Http\Utilities\Listed::all() as $key => $listed)
+                    <option>{{$listed}}</option>
+                @endforeach
+            </select>
         </div>
     </div>
     <div class="col-md-6">
         <div class="form-group">
             <label for="description">Describe the Property:</label>
             <textarea type="text" class="form-control" name="description" id="description" rows="4"
-                      required >{{old('description', $property->description)}}</textarea>
+                      required placeholder="Number of bedrooms, Number of bedrooms, Number of Garages,Floor size etc...">{{old('description', $property->description)}}</textarea>
         </div>
         <div class="form-group">
-            <label for="categories">Select Categories</label>
-            <select name="category" class="form-control" id="select" required value="{{ old('category', $property->category)}}">
+            <label for="commercial">If it's Commercial Category:</label>
+            <select name="commercial" class="form-control" id="select"
+                    value="">
+                <option selected disabled>Choose a Commercial Category</option>
+                @foreach(App\Http\Utilities\Commercial::all() as $key => $commercial)
+                    <option>{{$commercial}}</option>
+                @endforeach
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="land">If it's Land Listed </label>
+            <select name="land" class="form-control" id="select"
+                    value="{{ old('land', $property->land)}}">
                 <option selected disabled>Choose a Category</option>
-                <option>Apartments</option>
-                <option>Condos</option>
-                <option>Duplexes</option>
-                <option>Houses</option>
-                <option>Land</option>
-                <option>Offices</option>
-                <option>Rentals</option>
-                <option>Villas</option>
+                @foreach(App\Http\Utilities\Land::all() as $key => $land)
+                    <option>{{$land}}</option>
+                @endforeach
             </select>
         </div>
         <div class="form-group">
-            <label for="listing">Listed In</label>
-            <select name="listing" class="form-control" id="select" required value="{{ old('listing', $property->listing)}}">
-                <option selected disabled>Choose a Listing</option>
-                <option>Foreclosure</option>
-                <option>Developments</option>
-                <option>Rentals</option>
-                <option>Repossessed</option>
-                <option>Sales</option>
+            <label for="land">If it's Residential Listed </label>
+            <select name="land" class="form-control" id="select"
+                    value="{{ old('land', $property->land)}}">
+                <option selected disabled>Choose a Category</option>
+                @foreach(App\Http\Utilities\Residential::all() as $key => $land)
+                    <option>{{$land}}</option>
+                @endforeach
             </select>
         </div>
+
     </div>
 </div>
 <hr>
 <div>
 </div>
-@if(count($errors) > 0 )
-    <div class="alert alert-danger">
-        <ul>
-            @foreach($errors as $error)
-                <li>
-                    {{$error}}
-                </li>
-            @endforeach
-        </ul>
-    </div>
-@endif
+@include('layouts.errors')
+

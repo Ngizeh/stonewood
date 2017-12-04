@@ -17,6 +17,12 @@
                     <div class="row">
                         @foreach($set as $photo)
                             <div class="col-md-6 gallary__image">
+                                <form method="post" action="/property_photo/{{$photo->id}}">
+                                    {{csrf_field()}}
+                                    <input type="hidden" name="_method" value="delete">
+
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
                                 <img src="/{{$photo->thumbnail_path}}" alt="">
                             </div>
                         @endforeach
@@ -42,7 +48,7 @@
     <script>
         Dropzone.options.addphoto = {
             paramName: 'photo',
-            maxFilesize: 10,
+            maxFilesize: 10.0,
             acceptedFiles: '.jpg,.jpeg,.png, .bmp'
         };
     </script>

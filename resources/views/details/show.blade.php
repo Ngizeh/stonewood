@@ -2,16 +2,16 @@
 
 @section('content')
 
-       @foreach($property as $value)
+       @foreach($property as $property)
         <div class="container-fluid login">
-            <h1 style="color:  #ff770e">{{$value->title}}  at {{$value->location}}</h1>
+            <h1 style="color:  #ff770e">{{$property->title}}  at {{$property->location}}</h1>
             <hr>
             <!-- Swiper -->
             <div class="main">
                 <div class="picture">
                     <div class="swiper-container gallery-top">
                         <div class="swiper-wrapper">
-                            @foreach($value->propertyPhotos as $set)
+                            @foreach($property->propertyPhotos as $set)
                                 <div class="swiper-slide"
                                      style="background-image:url('/{{$set->path}}')"></div>
                             @endforeach
@@ -22,7 +22,7 @@
                     </div>
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
-                            @foreach($value->propertyPhotos as $set)
+                            @foreach($property->propertyPhotos as $set)
                                 <div class="swiper-slide"
                                      style="background-image:url('/{{$set->path}}')"></div>
                             @endforeach
@@ -34,25 +34,30 @@
                 <div class="row">
                     <div class="col-md-9 col-lg-offset-1">
                         <p>
-                            {!! nl2br($value->description)!!}
+                            {!! nl2br($property->description)!!}
                         </p>
                         <p>
-                            <strong>Contact {{$value->user->name }} on +{{$value->phone_number}}</strong>
+                            <strong>Contact {{$property->user->name }} on +{{$property->user->phone_number}}</strong>
                         </p>
                         <p>
-                            <strong>Letting Price Ksh. {{number_format($value->price)}} / $ {{number_format(($value->price)/100)}} </strong>
+                            <strong>Letting Price Ksh. {{number_format($property->price)}} / $ {{number_format(($property->price)/100)}} </strong>
+                        </p>
+                        <p>
+                            @if($property->service_charge == true)
+                               <strong> The Service Charge is Ksh. {{$property->service_charge}}</strong>
+                                @endif
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-              <a href="{{url('property')}}"><strong style="text-transform: uppercase">  <span class="arrow" style="font-size: 2em; padding-left: 1em;">←</span>Back To All </strong></a>
+              <a href="{{url('property')}}"><strong style="text-transform: uppercase">  <span class="arrow" style="font-size: 2em; padding-left: 1em;">←&nbsp;</span>Back To All </strong></a>
                     </div>
                     <div class="col-md-6">
 
                 @if(Auth::check())
 
-                        <a href="/property/{{$value->id}}/edit" class="btn btn-success" style="margin-top: 8px">Edit Property</a>
+                        <a href="/property/{{$property->id}}/edit" class="btn btn-success" style="margin-top: 8px">Edit Property</a>
                         @endif
                     </div>
                 </div>

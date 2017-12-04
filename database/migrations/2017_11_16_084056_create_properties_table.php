@@ -20,11 +20,13 @@ class CreatePropertiesTable extends Migration
                 ->on('users')->onDelete('cascade');
             $table->string('title');
             $table->string('location');
-            $table->double('phone_number');
-            $table->integer('price');
-            $table->string('category');
-            $table->string('listing');
+            $table->integer('service_charge')->unsigned()->nullable();
+            $table->integer('price')->unsigned();
             $table->text('description');
+            $table->string('listed');
+            $table->string('land')->nullable();
+            $table->string('residential')->nullable();
+            $table->string('commercial')->nullable();
             $table->timestamps();
         });
     }
@@ -36,6 +38,6 @@ class CreatePropertiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('properties');
+        Schema::dropIfExists('properties_table');
     }
 }

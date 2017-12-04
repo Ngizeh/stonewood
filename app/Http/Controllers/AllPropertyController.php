@@ -16,4 +16,13 @@ class AllPropertyController extends Controller
 
         return view('details.show', compact('property'));
     }
+
+    public function destroy($id)
+    {
+        PropertyPhoto::findOrFail($id)->delete();
+
+        return back();
+
+    }
+
 }

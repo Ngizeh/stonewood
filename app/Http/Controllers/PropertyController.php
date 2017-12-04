@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Http\Requests\PropertyRequest;
+use App\Land;
 use App\Property;
+use App\Residential;
 use App\User;
 use App\PropertyPhoto;
 use Illuminate\Http\Request;
@@ -31,7 +34,8 @@ class PropertyController extends Controller
 
     public function store(PropertyRequest $request, Property $property)
     {
-        $property = Auth::user()->properties()->create($request->all());
+       $property =  Auth::user()->properties()->create($request->all());
+
 
         return redirect($property->path());
     }
@@ -70,4 +74,5 @@ class PropertyController extends Controller
 
         return redirect('property');
     }
+
 }

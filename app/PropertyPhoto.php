@@ -47,4 +47,14 @@ class PropertyPhoto extends Model
     {
         Image::make($this->path)->fit(374, 250)->save($this->thumbnail_path);
     }
+
+    public function delete()
+    {
+      \File::delete([
+         $this->path,
+         $this->thumbnail_path
+      ]);
+
+      parent::delete();
+    }
 }
