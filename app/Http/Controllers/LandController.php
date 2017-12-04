@@ -12,7 +12,7 @@ class LandController extends Controller
 
     public function index()
     {
-        $property = Property::whereNotNull('land')->get();
+        $property = Property::whereNotNull('land')->latest()->paginate(15);
 
         return view('land.lands', compact('property'));
     }
@@ -20,7 +20,7 @@ class LandController extends Controller
     public function sales()
     {
         $property = Property::where('listed', '=', 'Sales')
-            ->whereNotNull('land')->get();
+            ->whereNotNull('land')->latest()->paginate(15);
 
         return view('land.sales', compact('property'));
     }
@@ -28,7 +28,7 @@ class LandController extends Controller
     public function rentals()
     {
         $property = Property::where('listed', '=', 'Rentals')
-            ->whereNotNull('land')->get();
+            ->whereNotNull('land')->latest()->paginate(15);
 
         return view('land.rentals', compact('property'));
     }

@@ -13,7 +13,7 @@ class CommercialController extends Controller
 {
   public function index()
   {
-      $property = Property::whereNotNull('commercial')->get();
+      $property = Property::whereNotNull('commercial')->latest()->paginate(15);
       
       return view('.commercial.commercials', compact('property'));
   }
@@ -21,7 +21,7 @@ class CommercialController extends Controller
   public function sales()
   {
     $property = Property::where('listed', '=', 'Sales')
-                ->whereNotNull('commercial')->get();
+                ->whereNotNull('commercial')->latest()->paginate(15);
 
     return view('commercial.sales', compact('property'));
   }
@@ -29,7 +29,7 @@ class CommercialController extends Controller
   public function rentals()
   {
       $property = Property::where('listed', '=', 'Rentals')
-                  ->whereNotNull('commercial')->get();
+                  ->whereNotNull('commercial')->latest()->paginate(15);
 
       return view('commercial.rentals', compact('property'));
   }

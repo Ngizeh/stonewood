@@ -16,4 +16,4 @@
     </div>
     <hr>
 @endforeach
-{{--{{$property->links()}}--}}
+{{$property->links()}}
