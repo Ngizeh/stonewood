@@ -11,14 +11,14 @@ class ResidentialController extends Controller
 {
     public function index()
     {
-        $property = Property::whereNotNull('residential')->get();
+        $property = Property::whereNotNull('residential')->latest()->paginate(15);
 
       return view('residential.residentials', compact('property')) ;
     }
     public function sales()
     {
         $property = Property::where('listed', '=', 'Sales')
-            ->whereNotNull('residential')->get();
+            ->whereNotNull('residential')->latest()->paginate(15);
 
         return view('residential.sales', compact('property'));
     }
@@ -26,7 +26,7 @@ class ResidentialController extends Controller
     public function rentals()
     {
         $property = Property::where('listed', '=', 'Rentals')
-            ->whereNotNull('residential')->get();
+            ->whereNotNull('residential')->latest()->paginate(15);
 
         return view('residential.rentals', compact('property'));
     }
