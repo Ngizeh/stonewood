@@ -27,7 +27,7 @@
 
         <div>
             <i class="fa fa-phone"></i>
-            <p>+254 733 46 46 46</p>
+            <p>+254 2077 030</p>
         </div>
 
         <div>
