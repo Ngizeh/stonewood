@@ -24,6 +24,7 @@ class PropertyController extends Controller
     public function index(Property $property)
     {
         $property = $property->with('propertyPhotos')->latest()->paginate(15);
+
         return view('property.index', compact('property'));
     }
 
