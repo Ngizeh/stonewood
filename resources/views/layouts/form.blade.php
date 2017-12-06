@@ -52,7 +52,7 @@
             <select name="land" class="form-control" id="select">
                 <option selected disabled>Choose a Category</option>
                 @foreach(App\Http\Utilities\Land::all() as $key => $land)
-                    <option value="{{old('land', $property->$land)}}">{{$land}}</option>
+                    <option value="{{old('land', $property->land)}}">{{$land}}</option>
                 @endforeach
             </select>
         </div>
@@ -61,7 +61,7 @@
             <select name="residential" class="form-control" id="select">
                 <option selected disabled>Choose a Category</option>
                 @foreach(App\Http\Utilities\Residential::all() as $key => $residential)
-                    <option value="{{old('$residential', $property->$residential)}}">{{$residential}}</option>
+                    <option value="{{old('residential', $property->residential)}}">{{$residential}}</option>
                 @endforeach
             </select>
         </div>
