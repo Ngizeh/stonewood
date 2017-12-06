@@ -18,16 +18,16 @@
                    required>
         </div>
         <div class="form-group">
-            <label for="service_charge">Service Charge Property:</label>
+            <label for="service_charge">Service Charge Property (Optional):</label>
             <input type="text" class="form-control" name="service_charge" id="service_charge"
                    placeholder="400,000">
         </div>
         <div class="form-group">
             <label for="listed">Property Listed For:</label>
-            <select name="listed" class="form-control" id="select">
+            <select name="listed" class="form-control" id="listed">
                 <option selected disabled>Choose a Listing</option>
                 @foreach(App\Http\Utilities\Listed::all() as $key => $listed)
-                    <option value="{{old('listed', $property->listed)}}">{{$listed}}</option>
+                    <option>{{$listed}}</option>
                 @endforeach
             </select>
         </div>
@@ -40,28 +40,28 @@
         </div>
         <div class="form-group">
             <label for="commercial">If it's Commercial Category:</label>
-            <select name="commercial" class="form-control" id="select">
+            <select name="commercial" class="form-control" id="commercial">
                 <option selected disabled>Choose a Commercial Category</option>
                 @foreach(App\Http\Utilities\Commercial::all() as $key => $commercial)
-                    <option value="{{old('commercial', $property->commercial)}}">{{$commercial}}</option>
+                    <option>{{$commercial}}</option>
                 @endforeach
             </select>
         </div>
         <div class="form-group">
             <label for="land">If it's Land Listed </label>
-            <select name="land" class="form-control" id="select">
+            <select name="land" class="form-control" id="commercial">
                 <option selected disabled>Choose a Category</option>
                 @foreach(App\Http\Utilities\Land::all() as $key => $land)
-                    <option value="{{old('land', $property->land)}}">{{$land}}</option>
+                    <option >{{$land}}</option>
                 @endforeach
             </select>
         </div>
         <div class="form-group">
             <label for="residential">If it's Residential Listed </label>
-            <select name="residential" class="form-control" id="select">
+            <select name="residential" class="form-control" id="residential">
                 <option selected disabled>Choose a Category</option>
                 @foreach(App\Http\Utilities\Residential::all() as $key => $residential)
-                    <option value="{{old('residential', $property->residential)}}">{{$residential}}</option>
+                    <option>{{$residential}}</option>
                 @endforeach
             </select>
         </div>

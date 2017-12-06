@@ -5,8 +5,8 @@ namespace App\Http\Utilities;
 class Listed
 {
     protected static $listed = array(
-        'Rentals',
-        'Sales',
+        'Rental',
+        'Sale',
     );
 
     public static function all()

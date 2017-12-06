@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Property extends Model
 {
-    protected $fillable = ['title', 'location', 'price','service_charge',
-        'description', 'listed','commercial', 'residential', 'land'];
+    protected $fillable = ['title', 'location', 'price','service_charge','listed',
+        'description', 'commercial', 'residential', 'land'];
 
     public static function locatedAt($location, $title)
     {
