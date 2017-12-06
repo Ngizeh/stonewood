@@ -52,7 +52,7 @@
             <select name="land" class="form-control" id="commercial">
                 <option selected disabled>Choose a Category</option>
                 @foreach(App\Http\Utilities\Land::all() as $key => $land)
-                    <option >{{$land}}</option>
+                    <option ">{{$land}}</option>
                 @endforeach
             </select>
         </div>
