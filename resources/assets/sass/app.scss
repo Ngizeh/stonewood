@@ -66,7 +66,7 @@ navbar ul{
   font: 16px sans-serif;
   padding: 55px 50px;
   margin-top: 80px;
-  height: 240px
+  height: 100%;
 }
 
 .footer-distributed .footer-left,
@@ -257,6 +257,7 @@ and (min-width: 320px) and (max-width: 568px)
 {
   .contact {
     margin: auto;
+    height: 100%;
   }
   .centered {
     text-align: center;

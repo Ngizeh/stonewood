@@ -1,4 +1,5 @@
-<footer class="footer-distributed" id="contact">
+
+<div class="footer-distributed" id="contact">
 
     <div class="footer-left">
 
@@ -48,4 +49,4 @@
 
     </div>
 
-</footer>
+</div>
