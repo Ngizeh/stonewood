@@ -10,7 +10,7 @@ class RentalsController extends Controller
 {
     public function index(Property $property)
     {
-        $property = Property::where('listed', '=', 'Rentals')
+        $property = Property::where('listed', '=', 'Rental')
             ->with('propertyPhotos')->latest()->paginate(15);
 
          return view('rental', compact('property'));
