@@ -8848,6 +8848,7 @@ h3 {
   text-align: center;
 }
 
+.index a,
 h1 > a {
   text-decoration: none !important;
 }
