@@ -41,8 +41,8 @@
     <div class="footer-right">
         <div class="footer-icons">
 
-            <a href="https://www.facebook.com/HALKNOWSPROPERTY/" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="https://web.facebook.com/homeassuredkenya" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/homeassured_ltd" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-github"></i></a>
 
         </div>
