@@ -9,7 +9,8 @@
             </div>
             <div class="col-md-6">
                 @if(Auth::check())
-                <a href="{{'/property/create'}}" style="margin-top: 2em" class="btn btn-primary pull-right">Create A Property</a>
+                <a href="{{'/property/create'}}"
+                   style="margin-top: 2em" class="btn btn-primary pull-right">Create A Property</a>
                     @endif
             </div>
         </div>

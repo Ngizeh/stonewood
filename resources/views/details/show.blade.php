@@ -2,6 +2,7 @@
 
 @section('content')
 
+
        @foreach($property as $property)
         <div class="container-fluid login">
             <h1 style="color:  #ff770e">{{$property->title}}  at {{$property->location}}</h1>
@@ -25,6 +26,12 @@
                             @foreach($property->propertyPhotos as $set)
                                 <div class="swiper-slide"
                                      style="background-image:url('/{{$set->path}}')"></div>
+                                @section('facebook_meta')
+                                    <meta property="og:image" content="{{url('/'.$set->path)}}">
+                                    <meta name="twitter:image" content="{{url('/'.$set->path)}}">
+                                    <meta name="twitter:image:width" content="600">
+                                    <meta name="twitter:image:height" content="600">
+                                @endsection
                             @endforeach
                         </div>
                     </div>
