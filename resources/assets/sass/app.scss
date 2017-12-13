@@ -15,8 +15,10 @@
 .nav-justified >li {
   color:$blue;
 }
-.navbar-brand h4{
+.navbar-brand h1{
   color: $white;
+  padding: 0;
+  font-size: 50px;
 }
 .nav{
   padding-top: 1.6em;
@@ -453,4 +455,3 @@ h3{
   text-decoration: none !important;
 
 }
-

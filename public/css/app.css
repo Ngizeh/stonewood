@@ -8360,8 +8360,10 @@ button.close {
   color: #0D2338;
 }
 
-.navbar-brand h4 {
+.navbar-brand h1 {
   color: #fff;
+  padding: 0;
+  font-size: 50px;
 }
 
 .nav {

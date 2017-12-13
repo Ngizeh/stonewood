@@ -7,9 +7,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h4 class="navbar-brand" href="{{url('/')}}">
-                <img src="{{asset('images/HOME-ASSURED-LOGO.jpg')}}" alt="logo" height="100" width="100">
-            Home Assured </h4>
+            <h1 class="navbar-brand" href="{{url('/')}}">
+                 <img src="{{asset('images/HOME-ASSURED-LOGO.jpg')}}" alt="logo" height="100" width="100">
+            Home Assured </h1>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
