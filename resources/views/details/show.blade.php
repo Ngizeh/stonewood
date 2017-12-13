@@ -33,10 +33,12 @@
                                     <meta property="og:title" content="{{ $property->title }}">
 
                                     <meta name="twitter:image" content="{{url('/'.$set->path)}}">
-                                    <meta name="twitter:title" content="{{url($property->title)}}">
+                                    <meta name="twitter:title" content="{{$property->title}}">
+                                    <meta name="twitter:site" content="@homeassured_ltd">
+                                    <meta name="twitter:card" content="summary_large_image">
                                     <meta name="twitter:url" content="twitter-cards">
-                                    <meta name="twitter:image:width" content="600">
-                                    <meta name="twitter:image:height" content="600">
+                                    {{--<meta name="twitter:image:width" content="600">--}}
+                                    {{--<meta name="twitter:image:height" content="600">--}}
                                 @endsection
                             @endforeach
                         </div>
