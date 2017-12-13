@@ -28,6 +28,10 @@
                                      style="background-image:url('/{{$set->path}}')"></div>
                                 @section('facebook_meta')
                                     <meta property="og:image" content="{{url('/'.$set->path)}}">
+                                    <meta property="og:image:width" content="300" />
+                                    <meta property="og:image:height" content="300" />
+                                    <meta property="og:description" content="{{ $property->title }}">
+                                
                                     <meta name="twitter:image" content="{{url('/'.$set->path)}}">
                                     <meta name="twitter:image:width" content="600">
                                     <meta name="twitter:image:height" content="600">
