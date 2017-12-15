@@ -37,10 +37,6 @@ Route::get('/{location}/{title}', 'PropertyController@show');
 Route::post('{location}/{title}/photos', 'PropertyController@addPhoto');
 Route::delete('property_photo/{id}', 'AllPropertyController@destroy');
 
-//Route::get('lands', 'LandController@create');
-//Route::post('lands', 'LandController@store');
-//Route::get('residentials', 'ResidentialController@create');
-//Route::post('residentials', 'ResidentialController@store');
 
 
 

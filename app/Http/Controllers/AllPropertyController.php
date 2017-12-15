@@ -10,8 +10,7 @@ class AllPropertyController extends Controller
 
     public function show($title)
     {
-        $property = Property::where('title', '=', $title)->with('propertyPhotos')->get();
-        
+        $property = Property::title($title)->get();
 
         return view('details.show', compact('property'));
     }
