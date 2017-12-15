@@ -18,6 +18,13 @@ class Property extends Model
         return static::where(compact('location', 'title'))->firstOrFail();
     }
 
+    public static function title($title)
+    {
+       $title = str_replace('-', ' ', $title);
+
+       return static::where(compact('title'))->firstOrFail();
+    }
+
     public function user()
     {
         return $this->belongsTo(User::class);
@@ -35,7 +42,8 @@ class Property extends Model
 
     public function path()
     {
-        return str_replace('-', '', $this->location).'/'.str_replace('-','', $this->title);
+        return str_replace(' ', '-', $this->location).
+            '/'.str_replace(' ','-', $this->title);
     }
 
     public function commercials()

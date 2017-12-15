@@ -2,14 +2,10 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Http\Requests\PropertyRequest;
-use App\Land;
 use App\Property;
-use App\Residential;
-use App\User;
 use App\PropertyPhoto;
 use Illuminate\Http\Request;
+use App\Http\Requests\PropertyRequest;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

@@ -5,7 +5,7 @@
 
        @foreach($property as $property)
         <div class="container-fluid login">
-            <h1 style="color:  #ff770e">{{$property->title}}  at {{$property->location}}</h1>
+            <h1 style="color:  #ff770e">{{strtoupper($property->title)}}  at {{$property->location}}</h1>
             <hr>
             <!-- Swiper -->
             <div class="main">
@@ -32,13 +32,13 @@
                                     <meta property="og:image:height" content="300" />
                                     <meta property="og:title" content="{{ $property->title }}">
 
-                                    <meta name="twitter:image" content="{{url('/'.$set->path)}}">
-                                    <meta name="twitter:title" content="{{$property->title}}">
-                                    <meta name="twitter:site" content="@homeassured_ltd">
                                     <meta name="twitter:card" content="summary_large_image">
-                                    <meta name="twitter:url" content="twitter-cards">
-                                    {{--<meta name="twitter:image:width" content="600">--}}
-                                    {{--<meta name="twitter:image:height" content="600">--}}
+                                    <meta name="twitter:site" content="@homeassured_ltd">
+                                    <meta name="twitter:title" content="{{$property->title}}">
+                                    <meta name="twitter:description" content="{{$property->description}}">
+                                    <meta name="twitter:image" content="{{url('/'.$set->path)}}">
+                                    <meta name="twitter:image:width" content="600">
+                                    <meta name="twitter:image:height" content="600">
                                 @endsection
                             @endforeach
                         </div>
