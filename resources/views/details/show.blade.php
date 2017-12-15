@@ -5,7 +5,7 @@
 
        @foreach($property as $property)
         <div class="container-fluid login">
-            <h1 style="color:  #ff770e">{{strtoupper($property->title)}}  at {{$property->location}}</h1>
+            <h1 style="color:  #ff770e">{{$property->title}}  at {{$property->location}}</h1>
             <hr>
             <!-- Swiper -->
             <div class="main">
