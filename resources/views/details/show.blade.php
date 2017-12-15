@@ -37,8 +37,8 @@
                                     <meta name="twitter:title" content="{{$property->title}}">
                                     <meta name="twitter:description" content="{{$property->description}}">
                                     <meta name="twitter:image" content="{{url('/'.$set->path)}}">
-                                    <meta name="twitter:image:width" content="600">
-                                    <meta name="twitter:image:height" content="600">
+                                    {{--<meta name="twitter:image:width" content="600">--}}
+                                    {{--<meta name="twitter:image:height" content="600">--}}
                                 @endsection
                             @endforeach
                         </div>
