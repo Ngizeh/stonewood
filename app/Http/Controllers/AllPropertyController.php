@@ -7,12 +7,13 @@ use App\PropertyPhoto;
 
 class AllPropertyController extends Controller
 {
+    
 
-    public function show($title)
+    public function show(Property $property, $title)
     {
-        $property = Property::title($title)->get();
+       $property = Property::heading($title)->get();
 
-        return view('details.show', compact('property'));
+      return view('details.show', compact('property'));
     }
 
     public function destroy($id)

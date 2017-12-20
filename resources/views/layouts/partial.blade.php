@@ -1,6 +1,6 @@
-@foreach($property->all() as $value)
+@foreach($property as $value)
     <div class="row index">
-        <a href="{{'property/'. $value->title}}">
+        <a href="{{'property/'.str_replace(' ','-',$value->title)}}">
             <div class="col-md-4">
                 @foreach($value->propertyPhotos as $set)
                     @if($loop->first)

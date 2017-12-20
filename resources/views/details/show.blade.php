@@ -2,8 +2,7 @@
 
 @section('content')
 
-
-       @foreach($property as $property)
+       @foreach($property->all() as $property)
         <div class="container-fluid login">
             <h1 style="color:  #ff770e">{{$property->title}}  at {{$property->location}}</h1>
             <hr>

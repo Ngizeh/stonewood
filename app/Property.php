@@ -17,16 +17,14 @@ class Property extends Model
 
         return static::where(compact('location', 'title'))->firstOrFail();
     }
-    public static function title($title)
-    {
-      $title = str_replace('-', ' ', $title);
 
-      return static::where(compact('title'));
-    }
-    public function titlePath()
+    public static function heading($title)
     {
-      return 'property/'.str_replace('-', ' ', $this->title);
+        $title = str_replace('-', ' ', $title);
+
+        return static::where(compact('title'));
     }
+
 
     public function user()
     {
