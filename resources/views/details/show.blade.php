@@ -23,12 +23,13 @@
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
                             @foreach($property->propertyPhotos as $set)
-                                <div class="swiper-slide"
-                                     style="background-image:url('/{{$set->path}}')"></div>
+                                <div class="swiper-slide">
+                                     style="background-image:url('/{{$set->path}}')">
+                                </div>
                                 @section('facebook_meta')
                                     <meta property="og:image" content="{{url('/'.$set->path)}}">
-                                    <meta property="og:image:width" content="300" />
-                                    <meta property="og:image:height" content="300" />
+                                    <meta property="og:image:width" content="400" />
+                                    <meta property="og:image:height" content="600" />
                                     <meta property="og:title" content="{{ $property->title }}">
 
                                     <meta name="twitter:card" content="summary_large_image">
