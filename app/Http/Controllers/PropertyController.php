@@ -72,4 +72,6 @@ class PropertyController extends Controller
         return redirect('property');
     }
 
+    
+
 }
