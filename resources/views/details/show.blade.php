@@ -31,6 +31,7 @@
                                     <meta property="og:image:width" content="600" />
                                     <meta property="og:image:height" content="400" />
                                     <meta property="og:title" content="{{ $property->title }}">
+                                    <meta property="og:url" content="https://homeassured.property">
 
                                     <meta name="twitter:card" content="summary_large_image">
                                     <meta name="twitter:site" content="@homeassured_ltd">

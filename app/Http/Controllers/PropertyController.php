@@ -33,7 +33,6 @@ class PropertyController extends Controller
     {
        $property =  Auth::user()->properties()->create($request->all());
 
-
         return redirect($property->path());
     }
 
