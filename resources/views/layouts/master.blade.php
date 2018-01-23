@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.2.0/dropzone.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    {{--<link rel="stylesheet" href="{{asset('Front/bootstrap/css/bootstrap.css')}}"/>--}}
     <link rel="stylesheet" href="{{asset('Front/style.css')}}"/>
 
     <!-- Owl stylesheet -->
