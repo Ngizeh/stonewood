@@ -6,7 +6,7 @@
         <h1><a href="{{url('lands')}}">Land Properties</a></h1>
         <h3>Land Properties For Sale</h3>
         <hr>
-        @include('layouts.partial')
+        @include('partials.details')
     </div>
 
 

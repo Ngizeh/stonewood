@@ -1,8 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-
-       @foreach($property->all() as $property)
+       @foreach($properties->all() as $property)
         <div class="container-fluid login">
             <h1 style="color:  #ff770e">{{$property->title}}  at {{$property->location}}</h1>
             <hr>
@@ -23,7 +22,7 @@
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
                             @foreach($property->propertyPhotos as $set)
-                                <div class="swiper-slide">
+                                <div class="swiper-slide"
                                      style="background-image:url('/{{$set->path}}')">
                                 </div>
                                 @section('facebook_meta')
@@ -56,11 +55,22 @@
                             <strong>Contact {{$property->user->name }} on +{{$property->user->phone_number}}</strong>
                         </p>
                         <p>
-                            <strong>Letting Price Ksh. {{number_format($property->price)}} / $ {{number_format(($property->price)/100)}} </strong>
+                            <strong>@if($property->listed = 'Sale')
+                                         Selling
+                                        @else
+                                         Letting
+                                        @endif
+                                    Price is
+                                @include('partials.currency')
+                                {{$property->price}}
+                            </strong>
                         </p>
                         <p>
                             @if($property->service_charge == true)
-                               <strong> The Service Charge is Ksh. {{$property->service_charge}}</strong>
+                               <strong> The Service Charge
+                                   @include('partials.currency')
+                                   {{$property->service_charge}}
+                               </strong>
                                 @endif
                         </p>
                     </div>
@@ -89,12 +99,12 @@
             spaceBetween: 10,
             navigation: {
                 nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                prevEl: '.swiper-button-prev'
             },
             autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+                delay: 3500,
+                disableOnInteraction: false
+            }
         });
         var galleryThumbs = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,

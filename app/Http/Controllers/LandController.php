@@ -12,25 +12,25 @@ class LandController extends Controller
 
     public function index()
     {
-        $property = Property::whereNotNull('land')->latest()->paginate(15);
+        $properties = Property::whereNotNull('land')->latest()->paginate(15);
 
-        return view('land.lands', compact('property'));
+        return view('land.lands', compact('properties'));
     }
 
     public function sales()
     {
-        $property = Property::where('listed', '=', 'Sale')
+        $properties = Property::where('listed', '=', 'Sale')
             ->whereNotNull('land')->latest()->paginate(15);
 
-        return view('land.sales', compact('property'));
+        return view('land.sales', compact('properties'));
     }
 
     public function rentals()
     {
-        $property = Property::where('listed', '=', 'Rental')
+        $properties = Property::where('listed', '=', 'Rental')
             ->whereNotNull('land')->latest()->paginate(15);
 
-        return view('land.rentals', compact('property'));
+        return view('land.rentals', compact('properties'));
     }
 
 }

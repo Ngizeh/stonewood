@@ -13,25 +13,26 @@ class CommercialController extends Controller
 {
   public function index()
   {
-      $property = Property::whereNotNull('commercial')->latest()->paginate(15);
+      $properties = Property::whereNotNull('commercial')->latest()->paginate(15);
       
-      return view('.commercial.commercials', compact('property'));
+      return view('.commercial.commercials', compact('properties'));
   }
 
   public function sales()
   {
-    $property = Property::where('listed', '=', 'Sale')
+    $properties = Property::where('listed', '=', 'Sale')
                 ->whereNotNull('commercial')->latest()->paginate(15);
 
-    return view('commercial.sales', compact('property'));
+    return view('commercial.sales', compact('properties'));
   }
 
   public function rentals()
   {
-      $property = Property::where('listed', '=', 'Rental')
+      $properties = Property::where('listed', '=', 'Rental')
                   ->whereNotNull('commercial')->latest()->paginate(15);
 
-      return view('commercial.rentals', compact('property'));
+      return view('commercial.rentals', compact('properties'));
   }
+
 
 }

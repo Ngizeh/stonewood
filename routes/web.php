@@ -14,16 +14,20 @@ Route::get('/team', function () {
 Route::get('commercials','CommercialController@index');
 Route::get('commercials/sales','CommercialController@sales');
 Route::get('commercials/rentals','CommercialController@rentals');
+Route::get('commercials/property/{title}', 'AllPropertyController@show');
 
 Route::get('lands','LandController@index');
 Route::get('lands/sales','LandController@sales');
 Route::get('lands/rentals','LandController@rentals');
+Route::get('lands/property/{title}', 'AllPropertyController@show');
+
 
 
 
 Route::get('residentials','ResidentialController@index');
 Route::get('residentials/sales','ResidentialController@sales');
 Route::get('residentials/rentals','ResidentialController@rentals');
+Route::get('residentials/property/{title}', 'AllPropertyController@show');
 
 
 

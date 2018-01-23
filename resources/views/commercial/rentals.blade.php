@@ -6,7 +6,7 @@
         <h1><a href="{{url('commercials')}}">Commercial Properties</a></h1>
         <h3>Commercial Properties For Rentals</h3>
         <hr>
-        @include('layouts.partial')
+        @include('partials.details')
     </div>
 
 @stop

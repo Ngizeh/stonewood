@@ -9,11 +9,11 @@ class AllPropertyController extends Controller
 {
     
 
-    public function show(Property $property, $title)
+    public function show($title)
     {
-       $property = Property::heading($title)->get();
+       $properties = Property::heading($title)->get();
 
-      return view('details.show', compact('property'));
+      return view('details.show', compact('properties'));
     }
 
     public function destroy($id)

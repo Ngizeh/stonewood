@@ -14,7 +14,7 @@
                     @endif
             </div>
         </div>
-         @include('layouts.partial')
+         @include('partials.details')
     </div>
 @stop
 

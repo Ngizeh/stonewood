@@ -6,7 +6,7 @@
       <h1>Commercial Properties</h1>
      @include('commercial.pills')
       <hr>
-      @include('layouts.partial')
+      @include('partials.details')
   </div>
 
 @stop

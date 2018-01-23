@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\CommercialCategory;
+use App\Currency;
+use App\LandCategory;
+use App\Listed;
 use App\Property;
 use App\PropertyPhoto;
+use App\ResidentialCategory;
 use Illuminate\Http\Request;
 use App\Http\Requests\PropertyRequest;
 use Illuminate\Support\Facades\Auth;
@@ -19,14 +24,20 @@ class PropertyController extends Controller
 
     public function index(Property $property)
     {
-        $property = $property->with('propertyPhotos')->latest()->paginate(15);
+        $properties = $property->with('propertyPhotos')->latest()->paginate(15);
 
-        return view('property.index', compact('property'));
+        return view('property.index', compact('properties'));
     }
 
     public function create(Property $property)
     {
-        return view('property.create', compact('property'));
+        $commercialCategory = CommercialCategory::all();
+        $landCategory = LandCategory::all();
+        $residentialCategory = ResidentialCategory::all();
+        $listed = Listed::all();
+        $currency =Currency::all();
+        return view('property.create', compact('property', 'commercialCategory',
+            'landCategory', 'residentialCategory', 'listed', 'currency'));
     }
 
     public function store(PropertyRequest $request, Property $property)
@@ -60,8 +71,14 @@ class PropertyController extends Controller
 
     public function edit(Property $property, Request $request)
     {
+        $commercialCategory = CommercialCategory::all();
+        $landCategory = LandCategory::all();
+        $residentialCategory = ResidentialCategory::all();
+        $listed = Listed::all();
+        $currency =Currency::all();
 
-        return view('property.edit', compact('property'));
+        return view('property.edit', compact('property', 'commercialCategory',
+            'landCategory', 'residentialCategory', 'listed', 'currency'));
     }
 
     public function update(Request $request, Property $property)

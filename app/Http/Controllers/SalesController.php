@@ -10,9 +10,9 @@ class SalesController extends Controller
 {
     public function index(Property $property)
     {
-        $property = Property::where('listed', '=', 'Sale')
+        $properties = Property::where('listed', '=', 'Sale')
             ->with('propertyPhotos')->latest()->paginate(15);
 
-        return view('sale', compact('property'));
+        return view('sale', compact('properties'));
     }
 }

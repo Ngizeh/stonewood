@@ -6,7 +6,7 @@
       <h1>Land Properties</h1>
       @include('land.pills')
       <hr>
-      @include('layouts.partial')
+      @include('partials.details')
 
   </div>
 

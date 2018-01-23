@@ -4,11 +4,14 @@
         <div class="row">
             <div class="col-md-3">
                 <h1>{{$property->title}}</h1>
-                <h2><strong> Ksh. {{number_format($property->price)}}</strong></h2>
+                <h2><strong>
+                        @include('partials.currency')
+                        {{number_format($property->price)}}
+                    </strong></h2>
                 <hr>
                 <p> {{$property->description}}</p>
                 <hr>
-                <h5><strong>Call {{$property->user->name}} on {{$property->phone_number}}</strong></h5>
+                <h5><strong>Call {{$property->user->name}} on {{$property->user->phone_number}}</strong></h5>
                 <hr>
                 <a href="{{url('/property')}}" class="btn btn-primary">Publish Property</a>
             </div>

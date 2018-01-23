@@ -6,8 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Property extends Model
 {
-    protected $fillable = ['title', 'location', 'price','service_charge','listed',
-        'description', 'commercial', 'residential', 'land'];
+    protected $fillable = [
+        'title',
+        'location',
+        'price',
+        'price_currency',
+        'service_charge',
+        'service_currency',
+        'listed',
+        'description',
+        'commercial',
+        'residential',
+        'land',
+        ];
 
     public static function locatedAt($location, $title)
     {
@@ -51,29 +62,24 @@ class Property extends Model
     {
       return $this->hasMany(Commercial::class, 'property_id');
     }
-
-    public function addCom(Commercial $commercial)
-    {
-        return $this->commercials()->save($commercial);
-    }
-
     public function lands()
     {
       return $this->hasMany(Land::class);
     }
 
-    public function addLand(Land $land)
+    public function setPriceAttribute($price)
     {
-        return $this->lands()->save($land);
-    }
-    public function residentials()
-    {
-      return $this->hasMany(Residential::class);
+      $this->attributes['price'] = str_replace(',', '', $price);
     }
 
-    public function addResi(Residential $residential)
+    public function setServiceChargeAttribute($service_charge)
     {
-        return $this->residentials()->save($residential);
-    }
+        if ($service_charge == true)
+        {
+            $this->attributes['service_charge'] = str_replace(',', '', $service_charge);
+        }
+        else  return null;
 
+
+    }
 }
