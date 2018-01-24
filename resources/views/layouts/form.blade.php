@@ -81,7 +81,8 @@
                             <select name="commercial" class="form-control" id="commercial">
                                 <option selected disabled>Choose a Commercial Category</option>
                                 @foreach($commercialCategory as $commercial)
-                                    <option value="{{$commercial->category}}" {{old('commercial', $property->commercial) == $commercial->category ? 'selected' : ''}}>
+                                    <option value="{{$commercial->category}}"
+                                            {{old('commercial', $property->commercial) == $commercial->category ? 'selected' : ''}}>
                                         {{$commercial->category}}
                                     </option>
                                 @endforeach
@@ -92,7 +93,8 @@
                             <select name="land" class="form-control" id="commercial">
                                 <option selected disabled>Choose a Category</option>
                                 @foreach($landCategory as $land)
-                                    <option value="{{$land->category}}" {{old('land', $property->land) == $land->category ? 'selected' : ''}}>
+                                    <option value="{{$land->category}}"
+                                            {{old('land', $property->land) == $land->category ? 'selected' : ''}}>
                                         {{$land->category}}
                                     </option>
                                 @endforeach
@@ -103,7 +105,8 @@
                             <select name="residential" class="form-control" id="residential">
                                 <option selected disabled>Choose a Category</option>
                                 @foreach($residentialCategory as $residential)
-                                    <option value="{{$residential->category}}" {{old('residential', $property->residential) == $residential->category ? 'selected' : ''}}>
+                                    <option value="{{$residential->category}}"
+                                            {{old('residential', $property->residential) == $residential->category ? 'selected' : ''}}>
                                         {{$residential->category}}
                                     </option>
                                 @endforeach

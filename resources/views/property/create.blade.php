@@ -6,7 +6,7 @@
         <form method="post" action="/property" class="form-horizontal">
           @include('layouts.form')
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 form-group" >
                 <a href="{{'/property'}}" class="btn btn-success">Back</a>
             </div>
             <div class="col-md-6 offset-2 form-group">
