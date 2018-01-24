@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.2.0/dropzone.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    {{--<link rel="stylesheet" href="{{asset('Front/bootstrap/css/bootstrap.css')}}"/>--}}
-    <link rel="stylesheet" href="{{asset('Front/style.css')}}"/>
-
     <!-- Owl stylesheet -->
     <link rel="stylesheet" href="{{asset('Front/owl-carousel/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('Front/owl-carousel/owl.theme.css')}}">
@@ -33,13 +30,12 @@
 @yield('content')
 
 @include('layouts.footer')
+@yield('scripts.footer')
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
-<script src="{{asset('Front/script.js')}}"></script>
 <script src="{{asset('Front/owl-carousel/owl.carousel.js')}}"></script>
 <script type="text/javascript" src="{{asset('Front/slitslider/js/modernizr.custom.79639.js')}}"></script>
 <script type="text/javascript" src="{{asset('Front/slitslider/js/jquery.ba-cond.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('Front/slitslider/js/jquery.slitslider.js')}}"></script>
-@yield('scripts.footer')
 </body>
 </html>
