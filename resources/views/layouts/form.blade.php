@@ -69,7 +69,8 @@
             <label for="description">Describe the Property:</label>
             <textarea type="text" class="form-control" name="description" id="description" rows="4"
                       required
-                      placeholder="Number of bedrooms, Number of bedrooms, Number of Garages,Floor size etc...">{{old('description', $property->description)}}</textarea>
+                      placeholder="Number of bedrooms, Number of bedrooms, Number of Garages,Floor size etc...">
+                {{old('description', $property->description)}}</textarea>
         </div>
         <div class="row">
             <div class="panel panel-default">

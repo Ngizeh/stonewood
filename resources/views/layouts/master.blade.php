@@ -30,8 +30,8 @@
 @yield('content')
 
 @include('layouts.footer')
-@yield('scripts.footer')
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+@yield('scripts.footer')
 <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('Front/owl-carousel/owl.carousel.js')}}"></script>
 <script type="text/javascript" src="{{asset('Front/slitslider/js/modernizr.custom.79639.js')}}"></script>
