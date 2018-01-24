@@ -23,10 +23,10 @@
 
             <div class="col-lg-3 col-sm-3">
                 <h4>Follow us</h4>
-                <a href="https://www.facebook.com/homeassuredkenya" target="_blank"><img src="image/facebook.png" alt="facebook"></a>
-                <a href="https://twitter.com/homeassured_ltd" target="_blank"><img src="image/twitter.png" alt="twitter"></a>
-                <a href="#"><img src="image/linkedin.png" alt="linkedin"></a>
-                <a href="#"><img src="image/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/homeassuredkenya" target="_blank"><img src="/image/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com/homeassured_ltd" target="_blank"><img src="/image/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="/image/linkedin.png" alt="linkedin"></a>
+                <a href="#"><img src="/image/instagram.png" alt="instagram"></a>
             </div>
 
             <div class="col-lg-3 col-sm-3">
