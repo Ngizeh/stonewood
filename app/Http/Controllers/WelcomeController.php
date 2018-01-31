@@ -11,8 +11,8 @@ class WelcomeController extends Controller
 {
     public function index(Property $property)
     {
-        $property = $property->with('propertyPhotos')->get();
+        $properties = $property->with('propertyPhotos')->get();
 
-        return view('welcome', compact('property'));
+        return view('welcome', compact('properties'));
     }
 }

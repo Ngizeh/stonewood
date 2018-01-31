@@ -2,8 +2,15 @@
 
 @section('content')
 
+    @include('layouts.banner')
+
+    <div class="inside-banner">
+        <div class="container">
+            <span class="pull-right"><a href="/">Home</a> /Commercial</span>
+            <h2>Commercial Properties</h2>
+        </div>
+    </div>
   <div class="container login">
-      <h1>Commercial Properties</h1>
      @include('commercial.pills')
       <hr>
       @include('partials.details')

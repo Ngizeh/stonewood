@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Property;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -21,9 +22,11 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('welcome');
-    }
+      public function index(Property $property)
+      {
+          $properties = $property->with('propertyPhotos')->get();
+
+          return view('welcome', compact('properties'));
+      }
 
 }

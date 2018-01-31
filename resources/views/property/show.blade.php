@@ -1,13 +1,21 @@
 @extends('layouts.master')
 @section('content')
+    <br><br>
+    <div class="spacer">
+        <div class="inside-banner">
+            <div class="container">
+                <h2>Upload A Property Photos</h2>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid login">
         <div class="row">
             <div class="col-md-3">
-                <h1>{{$property->title}}</h1>
-                <h2><strong>
+                <h2><strong>{{$property->title}}</strong></h2>
+                <h5><strong>
                         @include('partials.currency')
                         {{number_format($property->price)}}
-                    </strong></h2>
+                    </strong></h5>
                 <hr>
                 <p> {{$property->description}}</p>
                 <hr>
@@ -24,7 +32,8 @@
                                     {{csrf_field()}}
                                     <input type="hidden" name="_method" value="delete">
 
-                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                    <a type="submit" class="btn btn-danger">Delete</a>
+                                    <br>
                                 </form>
                                 <img src="/{{$photo->thumbnail_path}}" alt="">
                             </div>

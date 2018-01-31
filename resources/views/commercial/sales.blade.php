@@ -2,10 +2,16 @@
 
 @section('content')
 
+    @include('layouts.banner')
+
+    <div class="inside-banner">
+        <div class="container">
+            <span class="pull-right">
+                <a href="/">Home</a> / <a href="{{url('commercials')}}">Commercial</a> / Sales</span>
+            <h2>Commercial Properties For Sales</h2>
+        </div>
+    </div>
     <div class="container login">
-        <h1><a href="{{url('commercials')}}">Commercial Property</a></h1>
-        <h3>Commercial Properties For Sale</h3>
-        <hr>
         @include('partials.details')
     </div>
 

@@ -1,9 +1,15 @@
 @extends('layouts.master')
 
 @section('content')
+
+    @include('layouts.banner')
+
        @foreach($properties->all() as $property)
         <div class="container-fluid login">
             <h2>{{$property->title}}  located at {{$property->location}}</h2>
+            <p>
+                <strong> <u>RefNo. 123456 </u></strong>
+            </p>
             <hr>
             <!-- Swiper -->
             <div class="main">
@@ -48,7 +54,10 @@
             <div class="container details">
                 <div class="row">
                     <div class="col-md-9 col-lg-offset-1">
-                        <p>
+                        <div class="spacer">
+                            <h4 style="color: #ff770e"><span class="glyphicon glyphicon-th-list"></span><strong> Properties Detail</strong></h4>
+                            <hr>
+                            <p>
                             {!! nl2br($property->description)!!}
                         </p>
                         <p>
@@ -73,6 +82,7 @@
                                </strong>
                                 @endif
                         </p>
+                    </div>
                     </div>
                 </div>
                 <div class="row">
@@ -117,6 +127,4 @@
         galleryThumbs.controller.control = galleryTop;
 
     </script>
-
-
 @stop

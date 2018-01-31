@@ -26,7 +26,7 @@
                         integrity and reliability whilst continually assessing the changing needs of the market place
                     </p>
                     <p>
-                        HomeAssured Property offers specialised real estate services in the residential, commercial and
+                        We offers specialised in real estate services in the residential, commercial and
                         new development fields,covering sales and lettings as well as property management. An in-house
                         advocate oversees property
                         transactions from Letter of Offer through to final transfer at the Deeds Registry.

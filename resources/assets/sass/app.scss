@@ -30,7 +30,7 @@
   color: $white;
 }
 .navbar-default .navbar-brand {
-  color: $white;
+  color: black;
 }
 .navbar-nav a:hover {
   color:#777;
@@ -57,186 +57,6 @@ navbar ul{
   left: 9%;
   font-family: 'Lato',Helvetica, sans-serif;
 }
-
-// start footer
-.footer-distributed{
-  background-color: #ffc015;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: 16px sans-serif;
-  padding: 55px 50px;
-  margin-top: 80px;
-  height: 100%;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-  display: inline-block;
-  vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-  width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-  font-size: 36px;
-  margin: 0;
-  text-align: left;
-}
-
-.footer-distributed h3 span{
-  color:  #5383d3;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-  margin: 20px 0 12px;
-  padding: 0;
-}
-
-.footer-distributed .footer-links a{
-  display:inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-  color:  #8f9296;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-  width: 35%;
-}
-
-.footer-distributed .footer-center i{
-  background-color:  #33383b;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-  display: inline-block;
-  vertical-align: middle;
-  margin:0;
-}
-
-.footer-distributed .footer-center p span{
-  display:block;
-  font-weight: normal;
-  font-size:14px;
-  line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-  color:  #5383d3;
-  text-decoration: none;;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-  width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-  line-height: 20px;
-  color:  #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-  margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color:  #33383b;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-  .footer-distributed{
-    font: bold 14px sans-serif;
-  }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer-distributed .footer-center i{
-    margin-left: 0;
-  }
-
-}
-
-//end footer
-
-//start my footer
-.footer{
-  background-color: #ffc015;
-}
-.footer h2{
-  text-transform: uppercase;
-  font-size: 2em;
-  text-align: center;
-}
-
-// end my footer
 .home{
   font-size: larger;
   padding: 1.5em;
@@ -457,10 +277,6 @@ h3{
 
 }
 
-/*
- style
- */
-
 @font-face {
   font-family: 'din';
   src: url('/Front/fonts/din.eot');
@@ -469,7 +285,7 @@ h3{
   font-style: normal;
 }
 
-body {	color:#555;	font:normal 13px/22px Arial;	background:url(/images/bgmain.png) #eee;}
+body {color:#555;font:normal 13px/22px Arial;background:url(/images/bgmain.png) #eee;}
 
 h1,h2,h3,h4,h5 { font-weight:normal; font-family: din;margin: 0;padding: 0;color: #000}
 h1{font-size: 60px; margin-bottom: 25px;color: #fff;}
@@ -496,8 +312,8 @@ a.more:hover{background: #64a30a;text-decoration: none;}
 table{background-color: #fff;}
 
 .btn{border-radius: 5px; font-family: din; outline: none;}
-.btn-success{ background: #72b70f;border:1px solid #72b70f;padding:6px 20px; font-size:16px; width: 100%; }
-.btn-primary{ background: #64a30a;border:none;width: 100%;border-radius: 20px;}
+.btn-success{ background:$blue;border:1px solid $blue;padding:6px 20px; font-size:16px; width: 100%; }
+.btn-primary{ background: $blue;border:none;width: 100%;border-radius: 20px;}
 .btn-info{background: #333;border:4px solid #ddd;padding: 3px 20px; font-size:20px; border-radius: 20px;  }
 
 .thumbnail{ background-color:#fff;}
@@ -547,12 +363,12 @@ table{background-color: #fff;}
 .login button,.register button,.contact button{width: 100%;border-radius: 5px;}
 
 /*inside*/
-.inside-banner{background:url(/image/bginside.jpg) #222;color: #fff; padding: 30px 0;}
+.inside-banner{background-color:#0D2338; padding: 30px 0;}
 .inside-banner h2{margin: 0; color: #fff;}
 .inside-banner span{margin-top: 10px;}
 
 .search-form {margin-bottom: 50px;}
-.search-form h4{margin: 17px 0;}
+.search-form h4{margin: 17px 0; color: black}
 
 
 .hot-properties {margin-bottom: 50px;}
@@ -584,10 +400,11 @@ table{background-color: #fff;}
 
 
 /*footer*/
-.footer{background:url(/image/bg.jpg) #222; padding: 20px 0; color: #999;}
-.footer h4{color: #fff;border-bottom: 2px solid #131313;margin-bottom: 10px;padding-bottom: 10px;}
-.footer ul{list-style: none;padding: 0; }
+.footer{background-color:#ffc015; padding: 20px 0; color: black;}
+.footer h4{color: black;border-bottom: 2px solid #131313;margin-bottom: 10px;padding-bottom: 10px;}
+.footer ul{list-style: none;padding: 0;}
 .footer a:hover{color: #fff;}
+.footer a{color:black;}
 .footer p.copyright{margin: 30px 0 0 0;}
 
 
