@@ -35,6 +35,7 @@ class PropertyRequest extends FormRequest
             'commercial' => 'string|nullable',
             'land' => 'string|nullable',
             'residential' => 'string|nullable',
+            'reference_number' => 'string|unique',
         ];
     }
 }

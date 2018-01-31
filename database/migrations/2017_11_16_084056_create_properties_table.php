@@ -29,6 +29,11 @@ class CreatePropertiesTable extends Migration
             $table->string('commercial')->nullable();
             $table->string('price_currency');
             $table->string('service_currency')->nullable();
+            $table->string('bedroom')->nullable();
+            $table->string('bathroom')->nullable();
+            $table->string('garage')->nullable();
+            $table->string('sitting_room')->nullable();
+            $table->string('reference_number')->unique();
             $table->timestamps();
         });
     }

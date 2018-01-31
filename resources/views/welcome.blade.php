@@ -1,99 +1,89 @@
 @extends('layouts.master')
 @section('content')
-    <div class="container-fluid">
-        @include('layouts.banner')
+    @include('layouts.banner')
+      @include('layouts.modal')
+        <div class="#">
+                <div id="slider" class="sl-slider-wrapper">
+                        <div class="sl-slider">
+                            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" ata-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                                <div class="sl-slide-inner">
+                                    <div class="bg-img bg-img-1"></div>
+                                    <h2><a href="#">4 Bed House All Ensuite for Rent</a></h2>
+                                    <blockquote>
+                                        <p class="location">
+                                            <span class="glyphicon glyphicon-map-marker"></span> Old Kitisuru, Nairobi </p><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
+                                        <cite>Ksh. 400,000</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15"
+                                 data-slice1-scale="1.5" data-slice2-scale="1.5">
+                                <div class="sl-slide-inner">
+                                    <div class="bg-img bg-img-2"></div>
+                                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
+                                    <blockquote>
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
+                                            Australia</p>
+                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
+                                            find peace.</p>
+                                        <cite>$ 20,000,000</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3"
+                                 data-slice1-scale="2" data-slice2-scale="1">
+                                <div class="sl-slide-inner">
+                                    <div class="bg-img bg-img-3"></div>
+                                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
+                                    <blockquote>
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
+                                            Australia</p>
+                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
+                                            find peace.</p>
+                                        <cite>$ 20,000,000</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
 
-        <div id="slider" class="sl-slider-wrapper">
+                            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25"
+                                 data-slice1-scale="2" data-slice2-scale="1">
+                                <div class="sl-slide-inner">
+                                    <div class="bg-img bg-img-4"></div>
+                                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
+                                    <blockquote>
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
+                                            Australia</p>
+                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
+                                            find peace.</p>
+                                        <cite>$ 20,000,000</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
 
-            <div class="sl-slider">
+                            <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10"
+                                 data-slice1-scale="2" data-slice2-scale="1">
+                                <div class="sl-slide-inner">
+                                    <div class="bg-img bg-img-5"></div>
+                                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
+                                    <blockquote>
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
+                                            Australia</p>
+                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
+                                            find peace.</p>
+                                        <cite>$ 20,000,000</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div><!-- /sl-slider -->
+                        <nav id="nav-dots" class="nav-dots">
+                            <span class="nav-dot-current"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </nav>
 
-                <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25"
-                     data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                    <div class="sl-slide-inner">
-                        <div class="bg-img bg-img-1"></div>
-                        <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
-                        <blockquote>
-                            <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
-                                Australia</p>
-                            <p>Until he extends the circle of his compassion to all living things, man will not himself
-                                find peace.</p>
-                            <cite>$ 20,000,000</cite>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15"
-                     data-slice1-scale="1.5" data-slice2-scale="1.5">
-                    <div class="sl-slide-inner">
-                        <div class="bg-img bg-img-2"></div>
-                        <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
-                        <blockquote>
-                            <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
-                                Australia</p>
-                            <p>Until he extends the circle of his compassion to all living things, man will not himself
-                                find peace.</p>
-                            <cite>$ 20,000,000</cite>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3"
-                     data-slice1-scale="2" data-slice2-scale="1">
-                    <div class="sl-slide-inner">
-                        <div class="bg-img bg-img-3"></div>
-                        <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
-                        <blockquote>
-                            <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
-                                Australia</p>
-                            <p>Until he extends the circle of his compassion to all living things, man will not himself
-                                find peace.</p>
-                            <cite>$ 20,000,000</cite>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25"
-                     data-slice1-scale="2" data-slice2-scale="1">
-                    <div class="sl-slide-inner">
-                        <div class="bg-img bg-img-4"></div>
-                        <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
-                        <blockquote>
-                            <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
-                                Australia</p>
-                            <p>Until he extends the circle of his compassion to all living things, man will not himself
-                                find peace.</p>
-                            <cite>$ 20,000,000</cite>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10"
-                     data-slice1-scale="2" data-slice2-scale="1">
-                    <div class="sl-slide-inner">
-                        <div class="bg-img bg-img-5"></div>
-                        <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
-                        <blockquote>
-                            <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
-                                Australia</p>
-                            <p>Until he extends the circle of his compassion to all living things, man will not himself
-                                find peace.</p>
-                            <cite>$ 20,000,000</cite>
-                        </blockquote>
-                    </div>
-                </div>
-            </div><!-- /sl-slider -->
-
-
-            <nav id="nav-dots" class="nav-dots">
-                <span class="nav-dot-current"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </nav>
-
-        </div><!-- /slider-wrapper -->
-
+                    </div><!-- /slider-wrapper -->
 
         <div class="banner-search" style="background-color: #0D2338">
             <div class="container">
@@ -129,13 +119,11 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-sm-4">
-                                    <button class="btn btn-success" onclick="window.location.href='buysalerent'">Find
+                                    <button class="btn btn-success" style="background-color: #2ab27b" onclick="window.location.href='buysalerent'">Find
                                         Now
                                     </button>
                                 </div>
                             </div>
-
-
                         </div>
                         <div class="col-lg-5 col-lg-offset-1 col-sm-6 ">
                             <p>Join now and get updated with all the properties deals.</p>
@@ -146,186 +134,29 @@
             </div>
         </div>
         <div class="container">
-            <div class="properties-listing spacer"><a href="buysalerent" class="pull-right viewall">View All Listing</a>
-                <h2>Featured Properties</h2>
-                <div id="owl-example" class="owl-carousel">
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/1.jpg" class="img-responsive"
-                                                       alt="properties"/>
-                            <div class="status sold">Sold</div>
-                        </div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
+            <div class="properties-listing spacer"><a href="/property" class="pull-right viewall">View All Listing</a>
+                <h2> Latest Listing Properties</h2>
+                <hr>
+                <div class="row">
+                    @foreach($properties->slice(0,4) as $property)
+                    <div class="col-sm-6 col-md-3">
+                      <a href="{{url('/property')}}">  <div class="thumbnail">
+                        @foreach($property->propertyPhotos as $set)
+                            @if($loop->first)
+                            <img src="/{{$set->thumbnail_path}}" alt="...">
+                            <div class="caption">
+                                <h5 style="color: #ff770e"><strong>{{$property->title}}</strong></h5>
+                                <h6><strong>{{$property->location}}</strong></h6>
+                                <h5 style="color: #ff770e"><strong>Ksh. {{number_format($property->price)}}</strong></h5>
+                            </div>
+                                @endif
+                            @endforeach
+                          </div>
+                      </a>
                     </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/2.jpg" class="img-responsive"
-                                                       alt="properties"/>
-                            <div class="status new">New</div>
-                        </div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/3.jpg" class="img-responsive"
-                                                       alt="properties"/></div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/4.jpg" class="img-responsive"
-                                                       alt="properties"/></div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/1.jpg" class="img-responsive"
-                                                       alt="properties"/>
-                            <div class="status sold">Sold</div>
-                        </div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/2.jpg" class="img-responsive"
-                                                       alt="properties"/>
-                            <div class="status sold">Sold</div>
-                        </div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/3.jpg" class="img-responsive"
-                                                       alt="properties"/>
-                            <div class="status new">New</div>
-                        </div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/4.jpg" class="img-responsive"
-                                                       alt="properties"/></div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/1.jpg" class="img-responsive"
-                                                       alt="properties"/></div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/2.jpg" class="img-responsive"
-                                                       alt="properties"/></div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-                    <div class="properties">
-                        <div class="image-holder"><img src="image/properties/3.jpg" class="img-responsive"
-                                                       alt="properties"/></div>
-                        <h4><a href="/property-detail">Royal Inn</a></h4>
-                        <p class="price">Price: $234,900</p>
-                        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom"
-                                                          data-original-title="Bed Room">5</span> <span
-                                    data-toggle="tooltip" data-placement="bottom"
-                                    data-original-title="Living Room">2</span>
-                            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>
-                            <span
-                                    data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>
-                        </div>
-                        <a class="btn btn-primary" href="/property-detail">View Details</a>
-                    </div>
-
+                    @endforeach
                 </div>
+
             </div>
             <div class="spacer">
                 <div class="row">
@@ -340,7 +171,7 @@
                             with unquestionable
                             integrity and reliability whilst continually assessing the changing needs of the market
                             place
-                            <br><a href="about.php">Learn More</a></p>
+                            <br><a href="/about">Learn More</a></p>
 
                     </div>
                     <div class="col-lg-5 col-lg-offset-1 col-sm-3 recommended">
@@ -401,6 +232,11 @@
             </div>
         </div>
     </div>
+    @section('scripts.footer')
+        <script type="text/javascript" src="{{asset('Front/slitslider/js/modernizr.custom.79639.js')}}"></script>
+        <script type="text/javascript" src="{{asset('Front/slitslider/js/jquery.ba-cond.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('Front/slitslider/js/jquery.slitslider.js')}}"></script>
+        @stop
 @stop
 
 

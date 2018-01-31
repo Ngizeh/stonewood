@@ -6,6 +6,13 @@ Route::get('/', 'WelcomeController@index');
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/buysalerent', 'BuyRentController@index');
+Route::get('/property-detail', function () {
+    return view('property-detail');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
 Route::get('/team', function () {
     return view('team');
 });
@@ -13,21 +20,15 @@ Auth::routes();
 Route::get('commercials','CommercialController@index');
 Route::get('commercials/sales','CommercialController@sales');
 Route::get('commercials/rentals','CommercialController@rentals');
-Route::get('commercials/property/{title}', 'AllPropertyController@show');
 
 Route::get('lands','LandController@index');
 Route::get('lands/sales','LandController@sales');
 Route::get('lands/rentals','LandController@rentals');
-Route::get('lands/property/{title}', 'AllPropertyController@show');
-
-
 
 
 Route::get('residentials','ResidentialController@index');
 Route::get('residentials/sales','ResidentialController@sales');
 Route::get('residentials/rentals','ResidentialController@rentals');
-Route::get('residentials/property/{title}', 'AllPropertyController@show');
-
 
 
 Route::get('property', 'PropertyController@index');

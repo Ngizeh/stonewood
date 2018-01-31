@@ -1,20 +1,20 @@
 @extends('layouts.master')
 
 @section('content')
+
+    @include('layouts.banner')
+
+    <div class="inside-banner">
+        <div class="container">
+            <span class="pull-right"><a href="/">Home</a> / All Properties</span>
+            <h2>All Properties</h2>
+        </div>
+    </div>
+
     <div class="container login">
         <div class="row">
-            <div class="col-md-6">
-                <h1>All Properties</h1>
-                <hr>
-            </div>
-            <div class="col-md-6">
-                @if(Auth::check())
-                <a href="{{'/property/create'}}"
-                   style="margin-top: 2em" class="btn btn-primary pull-right">Create A Property</a>
-                    @endif
-            </div>
-        </div>
          @include('partials.details')
+        </div>
     </div>
 @stop
 

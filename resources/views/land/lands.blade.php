@@ -2,12 +2,18 @@
 
 @section('content')
 
-  <div class="container login">
-      <h1>Land Properties</h1>
-      @include('land.pills')
-      <hr>
-      @include('partials.details')
+    @include('layouts.banner')
 
-  </div>
+    <div class="inside-banner">
+        <div class="container">
+            <span class="pull-right"><a href="/">Home</a> /Land</span>
+            <h2>Land Properties</h2>
+        </div>
+    </div>
+    <div class="container login">
+        @include('land.pills')
+        <hr>
+        @include('partials.details')
+    </div>
 
 @stop

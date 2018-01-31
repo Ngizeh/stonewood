@@ -18,6 +18,10 @@ class Property extends Model
         'commercial',
         'residential',
         'land',
+        'bedroom',
+        'bathroom',
+        'sittingroom',
+        'garage'
         ];
 
     public static function locatedAt($location, $title)

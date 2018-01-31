@@ -1,8 +1,16 @@
 @extends('layouts.master')
 @section('content')
+    <br>
+    <br>
+<div class="spacer">
+    <div class="inside-banner">
+        <div class="container">
+            <h2>Create A Property</h2>
+        </div>
+    </div>
+</div>
+
     <div class="container login" xmlns="http://www.w3.org/1999/html">
-        <h2>Upload A Property</h2>
-        <hr>
         <form method="post" action="/property" class="form-horizontal">
           @include('layouts.form')
         <div class="row">

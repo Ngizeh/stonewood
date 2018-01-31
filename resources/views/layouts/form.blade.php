@@ -12,6 +12,89 @@
                    value="{{ old('location', $property->location) }}" required>
         </div>
         <div class="form-group">
+            <label for="description">Describe the Property:</label>
+            <textarea type="text" class="form-control" name="description" id="description" rows="4"
+                      required
+                      placeholder="Give a detailed Description of the Property and it's Environs...">{{old('description', $property->description)}}</textarea>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="bedroom">Bed Room</label>
+                    <select name="bedroom" id="bedroom" class="form-control">
+                        <option selected disabled>Choose</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="bedroom">Sitting Room</label>
+                    <select name="bedroom" id="bedroom" class="form-control">
+                        <option selected disabled>Choose</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="bedroom">Bath Room </label>
+                    <select name="bedroom" id="bedroom" class="form-control">
+                        <option selected disabled>Choose</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="bedroom">Garage </label>
+                    <select name="bedroom" id="bedroom" class="form-control">
+                        <option selected disabled>Choose</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="listed">Property Listed For:</label>
+            <select name="listed" class="form-control" id="listing">
+                <option selected disabled>Choose a Listing</option>
+                @foreach($listed as $list)
+                    <option value="{{$list->listed_for}}"
+                            {{old('listed', $property->listed) == $list->listed_for ? 'selected' : ''}}>
+                        {{$list->listed_for}}
+                    </option>
+                @endforeach
+            </select>
+        </div>
+
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
             <label for="price">Price of the Property:</label>
             <div class="row">
                 <div class="col-md-4">
@@ -19,7 +102,7 @@
                         <option selected disabled>Select Currency</option>
                         @foreach($currency as $money)
                             <option value="{{$money->currency}}"
-                            {{old('price_currency', $property->price_currency) == $money->currency ? 'selected' : ''}}>
+                                    {{old('price_currency', $property->price_currency) == $money->currency ? 'selected' : ''}}>
                                 {{$money->currency}}
                             </option>
                         @endforeach
@@ -39,7 +122,7 @@
                         <option selected disabled>Select Currency</option>
                         @foreach($currency as $money)
                             <option value="{{$money->currency}}"
-                            {{old('service_currency', $property->service_currency) == $money->currency ? 'selected' : ''}}>
+                                    {{old('service_currency', $property->service_currency) == $money->currency ? 'selected' : ''}}>
                                 {{$money->currency}}
                             </option>
                         @endforeach
@@ -50,26 +133,6 @@
                            placeholder="400,000" value="{{old('service_charge', $property->service_charge)}}">
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="listed">Property Listed For:</label>
-            <select name="listed" class="form-control" id="listing">
-                <option selected disabled>Choose a Listing</option>
-                @foreach($listed as $list)
-                    <option value="{{$list->listed_for}}"
-                            {{old('listed', $property->listed) == $list->listed_for ? 'selected' : ''}}>
-                        {{$list->listed_for}}
-                    </option>
-                @endforeach
-            </select>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="form-group">
-            <label for="description">Describe the Property:</label>
-            <textarea type="text" class="form-control" name="description" id="description" rows="4"
-                      required
-                      placeholder="Number of bedrooms, Number of bedrooms, Number of Garages,Floor size etc...">{{old('description', $property->description)}}</textarea>
         </div>
         <div class="row">
             <div class="panel panel-default">
