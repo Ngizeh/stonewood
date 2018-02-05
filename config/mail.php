@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'sales@homeassured.property'),
-        'name' => env('MAIL_FROM_NAME', 'HomeAssure Property'),
+        'name' => env('MAIL_FROM_NAME', 'HomeAssured Property'),
     ],
 
     /*
