@@ -8,7 +8,7 @@
         <div class="container-fluid login">
             <h2>{{$property->title}}  located at {{$property->location}}</h2>
             <p>
-                <strong> <u>RefNo. 123456 </u></strong>
+                <strong> <u>RefNo. {{$property->reference_number}} </u></strong>
             </p>
             <hr>
             <!-- Swiper -->
@@ -60,20 +60,28 @@
                             <p>
                             {!! nl2br($property->description)!!}
                         </p>
-                        <p>
-                            <strong>Contact {{$property->user->name }} on +{{$property->user->phone_number}}</strong>
-                        </p>
-                        <p>
-                            <strong>@if($property->listed = 'Sale')
-                                         Selling
-                                        @else
-                                         Letting
-                                        @endif
-                                    Price is
-                                @include('partials.currency')
-                                {{$property->price}}
-                            </strong>
-                        </p>
+                            @if($property->bathroom == true)
+                                <p>{{$property->bathroom}}
+                                    Bathroom
+                                </p>
+                            @endif
+                            @if($property->sitting_room == true)
+                               <p>
+                                {{$property->sitting_room}}
+                                 The Sitting Room
+                                </p>
+                            @endif
+                            @if($property->bathroom == true)
+                                <p>{{$property->bathroom}}
+                                    Bathroom
+                                </p>
+                            @endif
+                            @if($property->garage == true)
+                                <p>{{$property->garage}}
+                                    Garage
+                                </p>
+                            @endif
+
                         <p>
                             @if($property->service_charge == true)
                                <strong> The Service Charge
@@ -82,6 +90,20 @@
                                </strong>
                                 @endif
                         </p>
+                            <p>
+                                <strong>@if($property->listed = 'Sale')
+                                        Selling
+                                    @else
+                                        Letting
+                                    @endif
+                                    Price is
+                                    @include('partials.currency')
+                                    {{$property->price}}
+                                </strong>
+                            </p>
+                            <p>
+                                <strong>Contact {{$property->user->name }} on +{{$property->user->phone_number}}</strong>
+                            </p>
                     </div>
                     </div>
                 </div>

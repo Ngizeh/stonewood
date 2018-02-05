@@ -4,9 +4,9 @@
     <div class="header">
 
         <ul class="pull-right">
-            <li><a href="/buysalerent">Sale</a></li>
-            <li><a href="/buysalerent">Rent</a></li>
-            <li><a href="/buysalerent">Development</a></li>
+            <li><a href="/property">Sale</a></li>
+            <li><a href="/property">Rent</a></li>
+            <li><a href="/property">Development</a></li>
         </ul>
     </div>
     <!-- #Header Starts -->

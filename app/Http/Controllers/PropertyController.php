@@ -24,6 +24,7 @@ class PropertyController extends Controller
 
     public function index(Property $property)
     {
+
         $properties = $property->with('propertyPhotos')->latest()->paginate(3);
 
         return view('property.index', compact('properties'));
@@ -42,7 +43,11 @@ class PropertyController extends Controller
 
     public function store(PropertyRequest $request, Property $property)
     {
-       $property =  Auth::user()->properties()->create($request->all());
+        $property = new Property($request->all());
+
+        $property['reference_number'] = substr(md5(mt_rand()), 0,7);;
+
+        Auth::user()->properties()->save($property);
 
         return redirect($property->path());
     }

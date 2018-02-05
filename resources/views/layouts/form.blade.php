@@ -17,64 +17,70 @@
                       required
                       placeholder="Give a detailed Description of the Property and it's Environs...">{{old('description', $property->description)}}</textarea>
         </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-md-3">
-                    <label for="bedroom">Bed Room</label>
-                    <select name="bedroom" id="bedroom" class="form-control">
-                        <option selected disabled>Choose</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="bedroom">Sitting Room</label>
-                    <select name="bedroom" id="bedroom" class="form-control">
-                        <option selected disabled>Choose</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="bedroom">Bath Room </label>
-                    <select name="bedroom" id="bedroom" class="form-control">
-                        <option selected disabled>Choose</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                        <option value="">11</option>
-                        <option value="">12</option>
-                        <option value="">13</option>
-                        <option value="">14</option>
-                        <option value="">15</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="bedroom">Garage </label>
-                    <select name="bedroom" id="bedroom" class="form-control">
-                        <option selected disabled>Choose</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                    </select>
+
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <label for="head" style="padding-left:8em">Select the Options If the Property is Residential:</label>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <label for=bedroom>Bed Room</label>
+                            <select name="bedroom" id="bedroom" class="form-control">
+                                <option selected disabled>Choose</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="sitting_room">Sitting Room</label>
+                            <select name="sitting_room" id="sitting_room" class="form-control">
+                                <option selected disabled>Choose</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="bathroom">Bath Room </label>
+                            <select name="bathroom" id="bathroom" class="form-control">
+                                <option selected disabled>Choose</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="garage">Garage </label>
+                            <select name="garage" id="garage" class="form-control">
+                                <option selected disabled>Choose</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

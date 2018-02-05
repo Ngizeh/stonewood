@@ -21,7 +21,8 @@ class Property extends Model
         'bedroom',
         'bathroom',
         'sittingroom',
-        'garage'
+        'garage',
+        'reference_number'
         ];
 
     public static function locatedAt($location, $title)
@@ -83,7 +84,6 @@ class Property extends Model
             $this->attributes['service_charge'] = str_replace(',', '', $service_charge);
         }
         else  return null;
-
 
     }
 }

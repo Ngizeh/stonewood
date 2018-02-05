@@ -10,9 +10,10 @@ Route::get('/buysalerent', 'BuyRentController@index');
 Route::get('/property-detail', function () {
     return view('property-detail');
 });
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/contact', 'ContactController@create');
+
+Route::post('/contact', 'ContactController@store');
+
 Route::get('/team', function () {
     return view('team');
 });
@@ -23,7 +24,7 @@ Route::get('commercials/rentals','CommercialController@rentals');
 
 Route::get('lands','LandController@index');
 Route::get('lands/sales','LandController@sales');
-Route::get('lands/rentals','LandController@rentals');
+Route::get('lands/development','LandController@development');
 
 
 Route::get('residentials','ResidentialController@index');

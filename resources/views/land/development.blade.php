@@ -7,8 +7,8 @@
     <div class="inside-banner">
         <div class="container">
             <span class="pull-right">
-                <a href="/">Home</a> / <a href="{{url('lands')}}">Land</a> / Rental</span>
-            <h2>Land Properties For Rental</h2>
+                <a href="/">Home</a> / <a href="{{url('lands')}}">Land</a> / Development</span>
+            <h2>Land Properties For Development</h2>
         </div>
     </div>
 
