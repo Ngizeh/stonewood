@@ -11,7 +11,8 @@
                                     <h2><a href="/property">4 Bed House All Ensuite for Rent</a></h2>
                                     <blockquote>
                                         <p class="location">
-                                            <span class="glyphicon glyphicon-map-marker"></span> Old Kitisuru, Nairobi </p><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
+                                            <span class="glyphicon glyphicon-map-marker">
+                                            </span> Old Kitisuru, Nairobi </p>
                                         <cite>Ksh. 400,000</cite>
                                     </blockquote>
                                 </div>
@@ -22,10 +23,9 @@
                                     <div class="bg-img bg-img-2"></div>
                                     <h2><a href="/property">Beautiful 5 BedRooms House for Rent</a></h2>
                                     <blockquote>
-                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Rosslyn Heights Nyari,
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker">
+                                            </span> Rosslyn Heights Nyari,
                                             Nairobi</p>
-                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
-                                            find peace.</p>
                                         <cite>$ 3,500</cite>
                                     </blockquote>
                                 </div>
@@ -38,8 +38,6 @@
                                     <blockquote>
                                         <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Peponi Road Westlands,
                                             Nairobi</p>
-                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
-                                            find peace.</p>
                                         <cite>Ksh. 400,000</cite>
                                     </blockquote>
                                 </div>
@@ -51,10 +49,9 @@
                                     <div class="bg-img bg-img-4"></div>
                                     <h2><a href="/property">Gitanga Duplex 4 Bedroom Apartments on Sale</a></h2>
                                     <blockquote>
-                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Lavington Gitange Road,
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker">
+                                            </span> Lavington Gitange Road,
                                             Nairobi</p>
-                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
-                                            find peace.</p>
                                         <cite>Ksh. 30,000,000</cite>
                                     </blockquote>
                                 </div>
@@ -67,8 +64,6 @@
                                     <blockquote>
                                         <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Kessel Homes,
                                             Kitisuru</p>
-                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
-                                            find peace.</p>
                                         <cite>Ksh. 25,000,000</cite>
                                     </blockquote>
                                 </div>
