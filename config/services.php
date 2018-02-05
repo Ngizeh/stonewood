@@ -16,6 +16,6 @@ return [
 
     'mailgun' => [
         'domain' =>'sandbox8e688f58826b41a7896ea28e169a5dec.mailgun.org',
-        'secret' =>'pubkey-a4859b4cfc71f419f2d6f6a5f77d969f',
+        'secret' =>'key-4fe21fb44eee0d184de39056404b98bf',
     ],
 ];
