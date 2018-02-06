@@ -28,7 +28,7 @@ class CreatePropertiesTable extends Migration
             $table->string('residential')->nullable();
             $table->string('commercial')->nullable();
             $table->string('price_currency');
-            $table->string('service_currency')->phpnullable();
+            $table->string('service_currency')->nullable();
             $table->integer('bedroom')->nullable();
             $table->integer('bathroom')->nullable();
             $table->integer('garage')->nullable();
