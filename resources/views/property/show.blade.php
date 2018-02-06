@@ -31,10 +31,12 @@
                                 <form method="post" action="/property_photo/{{$photo->id}}">
                                     {{csrf_field()}}
                                     <input type="hidden" name="_method" value="delete">
-
-                                    <a type="submit" class="btn btn-danger">Delete</a>
+                                    <div class="col-md-4">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                    </div>
                                     <br>
                                 </form>
+                                <br>
                                 <img src="/{{$photo->thumbnail_path}}" alt="">
                             </div>
                         @endforeach
