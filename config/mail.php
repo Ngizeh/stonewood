@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' =>'sales@homeassured.property',
+    'username' => env('MAIL_USERNAME'),
 
-    'password' =>'homeassured2017',
+    'password' => env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------

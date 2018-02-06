@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', true),
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -114,7 +114,7 @@ return [
     |
     | Here you may configure the log settings for your application. Out of
     | the box, Laravel uses the Monolog PHP logging library. This gives
-    | you a variety of powerful log handlers / formatters to utilize.
+    | you a variety of powerful log handlers / formatters thttp://localhost:8000/contacso utilize.
     |
     | Available Settings: "single", "daily", "syslog", "errorlog"
     |
