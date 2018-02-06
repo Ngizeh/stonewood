@@ -29,7 +29,7 @@ class PropertyRequest extends FormRequest
             'price' => 'required',
             'service_charge' => 'nullable',
             'price_currency' => 'required',
-            'service_currency' => 'nullable',
+            'service_currency' => 'string|nullable',
             'listed' => 'required',
             'description' => 'required',
             'commercial' => 'string|nullable',
