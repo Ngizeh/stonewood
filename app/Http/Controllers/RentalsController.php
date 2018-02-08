@@ -13,6 +13,6 @@ class RentalsController extends Controller
         $properties = Property::where('listed', '=', 'Rental')
             ->with('propertyPhotos')->latest()->paginate(15);
 
-         return view('rental', compact('properties'));
+         return view('rent', compact('properties'));
     }
 }

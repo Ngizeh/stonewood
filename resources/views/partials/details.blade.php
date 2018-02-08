@@ -19,11 +19,11 @@
                         <div class="col-lg-7">
                             <select class="form-control" name="q">
                                 <option selected disabled>Price</option>
-                                <option>$150,000 - $200,000</option>
-                                <option>$200,000 - $250,000</option>
-                                <option>$250,000 - $300,000</option>
+                                <option>Ksh. 150,000 - Ksh. 200,000</option>
+                                <option>Ksh. 200,000 - Ksh. 250,000</option>
+                                <option>Ksh. 250,000 - Ksh. 300,000</option>
 
-                                <option>$300,000 - above</option>
+                                <option>Ksh. 300,000 - above</option>
                             </select>
                         </div>
                     </div>

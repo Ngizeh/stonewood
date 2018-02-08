@@ -18,6 +18,12 @@ Route::get('/team', function () {
     return view('team');
 });
 Auth::routes();
+
+Route::get('sale','SalesController@index');
+Route::get('rent','RentalsController@index');
+
+
+
 Route::get('commercials','CommercialController@index');
 Route::get('commercials/sales','CommercialController@sales');
 Route::get('commercials/rentals','CommercialController@rentals');

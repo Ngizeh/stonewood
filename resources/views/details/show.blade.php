@@ -8,7 +8,7 @@
         <div class="container-fluid login">
             <h2>{{$property->title}}  located at {{$property->location}}</h2>
             <p>
-                <strong> <u>RefNo. {{$property->reference_number}} </u></strong>
+                <strong> <u>RefNo. HAL{{$property->reference_number}} </u></strong>
             </p>
             <hr>
             <!-- Swiper -->
