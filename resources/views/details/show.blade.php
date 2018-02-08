@@ -62,7 +62,7 @@
                         </p>
                             @if($property->bedroom == true)
                                 <p>{{$property->bedroom}}
-                                    Bathroom
+                                    Bedroom
                                 </p>
                             @endif
                             @if($property->sitting_room == true)
