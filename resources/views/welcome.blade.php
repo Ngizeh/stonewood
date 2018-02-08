@@ -8,7 +8,7 @@
                             <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" ata-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                                 <div class="sl-slide-inner">
                                     <div class="bg-img bg-img-1"></div>
-                                    <h2><a href="/property">4 Bed House All Ensuite for Rent</a></h2>
+                                    <h2><a href="/property">4 Bed House All Ensuite</a></h2>
                                     <blockquote>
                                         <p class="location">
                                             <span class="glyphicon glyphicon-map-marker">
@@ -21,7 +21,7 @@
                                  data-slice1-scale="1.5" data-slice2-scale="1.5">
                                 <div class="sl-slide-inner">
                                     <div class="bg-img bg-img-2"></div>
-                                    <h2><a href="/property">Beautiful 5 BedRooms House for Rent</a></h2>
+                                    <h2><a href="/property">Beautiful 5 BedRooms House </a></h2>
                                     <blockquote>
                                         <p class="location"><span class="glyphicon glyphicon-map-marker">
                                             </span> Rosslyn Heights Nyari,
@@ -34,7 +34,7 @@
                                  data-slice1-scale="2" data-slice2-scale="1">
                                 <div class="sl-slide-inner">
                                     <div class="bg-img bg-img-3"></div>
-                                    <h2><a href="/property">6 BedRooms All Ensuite House for Rent</a></h2>
+                                    <h2><a href="/property">6 BedRooms All Ensuite House </a></h2>
                                     <blockquote>
                                         <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Peponi Road Westlands,
                                             Nairobi</p>
@@ -47,12 +47,12 @@
                                  data-slice1-scale="2" data-slice2-scale="1">
                                 <div class="sl-slide-inner">
                                     <div class="bg-img bg-img-4"></div>
-                                    <h2><a href="/property">Gitanga Duplex 4 Bedroom Apartments on Sale</a></h2>
+                                    <h2><a href="/property">River Pointe Apartments</a></h2>
                                     <blockquote>
                                         <p class="location"><span class="glyphicon glyphicon-map-marker">
-                                            </span> Lavington Gitange Road,
+                                            </span> Lavington King'ara Close,
                                             Nairobi</p>
-                                        <cite>Ksh. 30,000,000</cite>
+                                        <cite>Ksh. 25,000,000</cite>
                                     </blockquote>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                                  data-slice1-scale="2" data-slice2-scale="1">
                                 <div class="sl-slide-inner">
                                     <div class="bg-img bg-img-5"></div>
-                                    <h2><a href="/property">4 BedRooms All Ensuite Home on Sale</a></h2>
+                                    <h2><a href="/property">Kessel Homes, All Ensuite </a></h2>
                                     <blockquote>
                                         <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Kessel Homes,
                                             Kitisuru</p>

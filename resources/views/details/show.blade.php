@@ -60,8 +60,8 @@
                             <p>
                             {!! nl2br($property->description)!!}
                         </p>
-                            @if($property->bathroom == true)
-                                <p>{{$property->bathroom}}
+                            @if($property->bedroom == true)
+                                <p>{{$property->bedroom}}
                                     Bathroom
                                 </p>
                             @endif
