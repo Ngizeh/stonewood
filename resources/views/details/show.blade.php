@@ -34,15 +34,15 @@
                                 @section('facebook_meta')
                                     <!---facebook metadate -->
                                     <meta property="og:image" content="{{url('/'.$set->path)}}">
-                                    <meta property="og:image:width" content="600" />
-                                    <meta property="og:image:height" content="400" />
-                                    <meta property="og:title" content="{{ $property->title()}}">
+                                    <meta property="og:image:width" content="600"/>
+                                    <meta property="og:image:height" content="400"/>
+                                    <meta property="og:title" content="{{ $property->title}}">
                                     <meta property="og:url" content="https://homeassured.property">
 
                                         <!-- Twitter metatags -->
                                     <meta name="twitter:card" content="summary_large_image">
                                     <meta name="twitter:site" content="@homeassured_ltd">
-                                    <meta name="twitter:title" content="{{$property->title()}}">
+                                    <meta name="twitter:title" content="{{$property->title}}">
                                     <meta name="twitter:description" content="{{$property->description}}">
                                     <meta name="twitter:image" content="{{url('/'.$set->path)}}">
                                 @endsection
