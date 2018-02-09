@@ -14,7 +14,7 @@
                 <h2><strong>{{$property->title}}</strong></h2>
                 <h5><strong>
                         @include('partials.currency')
-                        {{$property->price()}}
+                        {{$property->price_format()}}
                     </strong></h5>
                 <hr>
                 <p> {{$property->description}}</p>
