@@ -134,14 +134,14 @@
                 <div class="row">
                     @foreach($properties->slice(0,4) as $property)
                     <div class="col-sm-6 col-md-3">
-                      <a href="{{url('/property/'.$property->title())}}">  <div class="thumbnail">
+                      <a href="{{url('/property/'.$property->title_heading())}}">  <div class="thumbnail">
                         @foreach($property->propertyPhotos as $set)
                             @if($loop->first)
                             <img src="/{{$set->thumbnail_path}}" alt="...">
                             <div class="caption">
                                 <h5 style="color: #ff770e"><strong>{{$property->title}}</strong></h5>
                                 <h6><strong>{{$property->location}}</strong></h6>
-                                <h5 style="color: #ff770e"><strong>Ksh. {{$property->price()}}</strong></h5>
+                                <h5 style="color: #ff770e"><strong>Ksh. {{$property->price_format()}}</strong></h5>
                             </div>
                                 @endif
                             @endforeach

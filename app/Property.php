@@ -38,10 +38,10 @@ class Property extends Model
     {
         $title = str_replace('-', ' ', $title);
 
-        return static::where(compact('title'));
+        return static::where(compact('title'))->firstOrFail();
     }
 
-    public function title()
+    public function title_heading()
     {
       return str_replace(' ', '-', $this->title);
     }
@@ -77,11 +77,11 @@ class Property extends Model
       return $this->hasMany(Land::class);
     }
 
-    public function price()
+    public function price_format()
     {
       return number_format($this->price);
     }
-    public function service_charge()
+    public function service_charging()
     {
         return number_format($this->service_charge);
     }

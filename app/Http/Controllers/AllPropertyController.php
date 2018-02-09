@@ -17,7 +17,7 @@ class AllPropertyController extends Controller
 
     public function show($title)
     {
-        $properties = Property::heading($title)->get();
+        $properties = Property::heading($title)->load('propertyPhotos');
 
         return view('details.show', compact('properties'));
     }

@@ -2,10 +2,16 @@
 
 @section('content')
 
-    <div class="container login">
+    <br><br>
+    <div class="spacer">
+        <div class="inside-banner">
+            <div class="container">
+                <h2>Edit {{$property->title}}</h2>
+            </div>
+        </div>
+    </div>
 
-        <h2>Edit {{$property->title}}</h2>
-        <hr>
+    <div class="container login">
         <form method="post" action="/property/{{$property->id}}" class="form-horizontal">
             {{ method_field('patch') }}
             @include('layouts.form')
