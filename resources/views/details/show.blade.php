@@ -33,10 +33,10 @@
                                 </div>
                                 @section('facebook_meta')
                                     <!---facebook metadate -->
-                                    <meta property="og:image" content="{{url('/'.$set->path)}}">
-                                    <meta property="og:image:width" content="600"/>
-                                    <meta property="og:image:height" content="400"/>
-                                    <meta property="og:title" content="{{ $property->title}}">
+                                        <meta property="og:title" content="{{ $property->title}}">
+                                        <meta property="og:image" content="{{url('/'.$set->path)}}">
+                                        <meta property="og:image:width" content="1200"/>
+                                        <meta property="og:image:height" content="630"/>
                                     <meta property="og:url" content="https://homeassured.property">
 
                                         <!-- Twitter metatags -->
