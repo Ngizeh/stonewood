@@ -134,7 +134,7 @@
                 <div class="row">
                     @foreach($properties->slice(0,4) as $property)
                     <div class="col-sm-6 col-md-3">
-                      <a href="{{url('/property/'.$property->title)}}">  <div class="thumbnail">
+                      <a href="{{url('/property/'.$property->title())}}">  <div class="thumbnail">
                         @foreach($property->propertyPhotos as $set)
                             @if($loop->first)
                             <img src="/{{$set->thumbnail_path}}" alt="...">
