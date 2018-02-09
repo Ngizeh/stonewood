@@ -68,15 +68,15 @@
                                         </div>
                                     @endif
                                 @endforeach
-                                <h4><a href="{{url('/property/'.$property->title)}}" style="color: #ff770e"><strong>{{$property->title}}</strong></a></h4>
-                                <p class="price">@include('partials.currency') {{number_format($property->price)}}</p>
+                                <h4><a href="{{url('/property/'.$property->title())}}" style="color: #ff770e"><strong>{{$property->title}}</strong></a></h4>
+                                <p class="price">@include('partials.currency') {{$property->price()}}</p>
                                 {{--<div class="listing-detail">--}}
                                     {{--<span><i class="fas fa-bed">5</i></span>--}}
                                     {{--<span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span>--}}
                                     {{--<span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>--}}
                                     {{--<span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>--}}
                                 {{--</div>--}}
-                                <a class="btn btn-primary" href="{{url('/property/'.$property->title)}}">View Details</a>
+                                <a class="btn btn-primary" href="{{url('/property/'.$property->title())}}">View Details</a>
                             </div>
                         </div>
                     @endforeach

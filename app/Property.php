@@ -25,7 +25,7 @@ class Property extends Model
         'reference_number'
         ];
 
-    public static function locatedAt($location, $title)
+    public static function locatedAt($location , $title)
     {
         $location = str_replace('-', ' ', $location);
 
@@ -39,6 +39,11 @@ class Property extends Model
         $title = str_replace('-', ' ', $title);
 
         return static::where(compact('title'));
+    }
+
+    public function title()
+    {
+      return str_replace(' ', '-', $this->title);
     }
 
 
@@ -70,6 +75,15 @@ class Property extends Model
     public function lands()
     {
       return $this->hasMany(Land::class);
+    }
+
+    public function price()
+    {
+      return number_format($this->price);
+    }
+    public function service_charge()
+    {
+        return number_format($this->service_charge);
     }
 
     public function setPriceAttribute($price)

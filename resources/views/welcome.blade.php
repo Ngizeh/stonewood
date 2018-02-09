@@ -141,7 +141,7 @@
                             <div class="caption">
                                 <h5 style="color: #ff770e"><strong>{{$property->title}}</strong></h5>
                                 <h6><strong>{{$property->location}}</strong></h6>
-                                <h5 style="color: #ff770e"><strong>Ksh. {{number_format($property->price)}}</strong></h5>
+                                <h5 style="color: #ff770e"><strong>Ksh. {{$property->price()}}</strong></h5>
                             </div>
                                 @endif
                             @endforeach

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Property;
 use App\PropertyPhoto;
+use Illuminate\Http\Request;
+use App\Http\Requests\PropertyRequest;
 
 class AllPropertyController extends Controller
 {
@@ -15,9 +17,9 @@ class AllPropertyController extends Controller
 
     public function show($title)
     {
-       $properties = Property::heading($title)->get();
+        $properties = Property::heading($title)->get();
 
-      return view('details.show', compact('properties'));
+        return view('details.show', compact('properties'));
     }
 
     public function destroy($id)

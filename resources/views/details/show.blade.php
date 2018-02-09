@@ -86,7 +86,7 @@
                             @if($property->service_charge == true)
                                <strong> The Service Charge
                                    @include('partials.currency')
-                                   {{number_format($property->service_charge)}}
+                                   {{$property->service_charge()}}
                                </strong>
                                 @endif
                         </p>
@@ -98,7 +98,7 @@
                                     @endif
                                     Price is
                                     @include('partials.currency')
-                                    {{number_format($property->price)}}
+                                    {{ $property->price()}}
                                 </strong>
                             </p>
                             <p>
