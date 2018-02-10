@@ -38,7 +38,7 @@ class Property extends Model
     {
         $title = str_replace('-', ' ', $title);
 
-        return static::where(compact('title'))->firstOrFail();
+        return static::where(compact('title'));
     }
 
     public function title_heading()

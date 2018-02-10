@@ -8,8 +8,15 @@
         </div>
         <div class="form-group">
             <label for="location">Location of the property:</label>
-            <input type="text" class="form-control" name="location" id="location"
-                   value="{{ old('location', $property->location) }}" required>
+            <select name="location" id="location" class="form-control ">
+                <option selected disabled>Select the Location </option>
+                @foreach(App\Http\Utilities\Location::all() as $location)
+                <option value="{{$location}}"
+                    {{ old('location', $property->location) == $location ? 'selected' : ''}}>
+                    {{$location}}
+                  </option>
+                    @endforeach
+            </select>
         </div>
         <div class="form-group">
             <label for="description">Describe the Property:</label>
