@@ -10,9 +10,9 @@ Route::get('/buysalerent', 'BuyRentController@index');
 Route::get('/property-detail', function () {
     return view('property-detail');
 });
-Route::get('/contact', 'ContactController@create');
+Route::get('contact', 'ContactController@create');
 
-Route::post('/contact', 'ContactController@store');
+Route::post('contact', 'ContactController@store');
 
 Route::get('/team', function () {
     return view('team');
