@@ -22,6 +22,7 @@ class Location
     "Kasarani,Nairobi",
     "Kawangware,Nairobi",
     "Kiambiu, Nairobi",
+    "Kiambu, Nairobi",
     "Kibera,Nairobi",
     "Kichinjio,Nairobi",
     "Kilimani, Nairobi",

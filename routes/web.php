@@ -1,6 +1,7 @@
 <?php
 
 
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'WelcomeController@index');
 Route::get('/about', function () {
@@ -22,6 +23,7 @@ Auth::routes();
 Route::get('sale','SalesController@index');
 Route::get('rent','RentalsController@index');
 
+Route::get('search', 'SearchController@index');
 
 
 Route::get('commercials','CommercialController@index');
@@ -48,10 +50,3 @@ Route::post('{location}/{title}/photos', 'PropertyController@addPhoto');
 Route::patch('property/{property}', 'PropertyController@update');
 Route::delete('property_photo/{id}', 'AllPropertyController@destroy');
 
-
-
-
-
-//Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

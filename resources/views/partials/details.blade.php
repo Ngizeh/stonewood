@@ -6,7 +6,7 @@
 
                 <div class="search-form"><h4><span class="glyphicon glyphicon-search"></span> Search for</h4>
                     
-                  <form method="get">
+                  <form method="get" action="search">
                     <input type="text" name="q" class="form-control" placeholder="Search of Property Location">
                     <div class="row">
                         <div class="col-lg-5">
@@ -22,7 +22,6 @@
                                 <option>Ksh. 150,000 - Ksh. 200,000</option>
                                 <option>Ksh. 200,000 - Ksh. 250,000</option>
                                 <option>Ksh. 250,000 - Ksh. 300,000</option>
-
                                 <option>Ksh. 300,000 - above</option>
                             </select>
                         </div>
