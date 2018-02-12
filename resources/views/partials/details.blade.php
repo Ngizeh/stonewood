@@ -59,7 +59,6 @@
                 </div>
                 <div class="row">
                 @foreach($properties as $property)
-                    <!-- properties -->
                         <div class="col-lg-4 col-sm-6">
                             <div class="properties">
                                 @foreach($property->propertyPhotos as $set)
@@ -70,12 +69,6 @@
                                 @endforeach
                                 <h4><a href="{{url('/property/'.$property->title_heading())}}" style="color: #ff770e"><strong>{{$property->title}}</strong></a></h4>
                                 <p class="price">@include('partials.currency') {{$property->price_format()}}</p>
-                                {{--<div class="listing-detail">--}}
-                                    {{--<span><i class="fas fa-bed">5</i></span>--}}
-                                    {{--<span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span>--}}
-                                    {{--<span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span>--}}
-                                    {{--<span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span>--}}
-                                {{--</div>--}}
                                 <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                             </div>
                         </div>

@@ -41,17 +41,17 @@ Route::get('residentials/rentals','ResidentialController@rentals');
 Route::get('property', 'PropertyController@index');
 Route::get('property/create', 'PropertyController@create');
 Route::get('property/{property}/edit', 'PropertyController@edit');
-Route::patch('property/{property}', 'PropertyController@update');
 Route::get('property/{title}', 'AllPropertyController@show');
 Route::post('property', 'PropertyController@store');
 Route::get('/{location}/{title}', 'PropertyController@show');
 Route::post('{location}/{title}/photos', 'PropertyController@addPhoto');
+Route::patch('property/{property}', 'PropertyController@update');
 Route::delete('property_photo/{id}', 'AllPropertyController@destroy');
 
 
 
 
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
