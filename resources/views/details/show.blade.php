@@ -35,9 +35,11 @@
                                     <!---facebook metadate -->
                                         <meta property="og:title" content="{{ $property->title}}">
                                         <meta property="og:image" content="{{url('/'.$set->path)}}">
-                                        <meta property="og:image:width" content="1200"/>
-                                        <meta property="og:image:height" content="630"/>
-                                        <meta property="og:url" content="https://homeassured.property">
+                                        <meta property="og:description" content="{{$property->description}}">
+                                        <meta property="og:image:width" content="1654"/>
+                                        <meta property="og:image:height" content="1172"/>
+                                        <meta property="og:url"
+                                              content="{{url('https://homeassured.property/property/'.$property->title_heading())}}">
 
                                         <!-- Twitter metatags -->
                                     <meta name="twitter:card" content="summary_large_image">
