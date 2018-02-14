@@ -11,11 +11,10 @@
                 <hr>
                 <div class="row">
                     @foreach($properties as $property)
-                        @foreach($property->propertyPhotos as $set)
-                            @if($loop->first)
-                              <div class="col-md-4 gallary__image">
-                              <div class="properties">
-
+                    <div class="col-md-4 col-sm-6 gallary__image">
+                            <div class="properties">
+                                @foreach($property->propertyPhotos as $set)
+                                    @if($loop->first)
                                         <div class="image-holder">
                                             <img src="/{{$set->thumbnail_path}}" class="img-responsive" alt="properties">
                                         </div>
@@ -28,10 +27,10 @@
                         </div>
                     @endforeach
                 </div>
-            </div>
                 <div class="center">
                     {{ $properties->links() }}
                 </div>
+            </div>
         </div>
     </div>
 </div>
