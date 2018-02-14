@@ -10,11 +10,12 @@
             <div class="col-lg-9 gallary">
                 <hr>
                 <div class="row">
-                @foreach($properties as $property)
-                        <div class="col-md-4 gallary__image">
-                            <div class="properties">
-                                @foreach($property->propertyPhotos as $set)
-                                    @if($loop->first)
+                    @foreach($properties as $property)
+                        @foreach($property->propertyPhotos as $set)
+                            @if($loop->first)
+                              <div class="col-md-4 gallary__image">
+                              <div class="properties">
+
                                         <div class="image-holder">
                                             <img src="/{{$set->thumbnail_path}}" class="img-responsive" alt="properties">
                                         </div>
@@ -27,10 +28,10 @@
                         </div>
                     @endforeach
                 </div>
+            </div>
                 <div class="center">
                     {{ $properties->links() }}
                 </div>
-            </div>
         </div>
     </div>
 </div>
