@@ -1,68 +1,23 @@
 <div class="container">
     <div class="properties-listing">
-
         <div class="row">
             <div class="col-lg-3 col-sm-4 ">
-
-                <div class="search-form"><h4><span class="glyphicon glyphicon-search"></span> Search for</h4>
-                    
-                  <form method="get" action="search">
-                    <input type="text" name="q" class="form-control" placeholder="Search of Property Location">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <select class="form-control" name="q">
-                                <option selected disabled>For</option>
-                                <option>Rental</option>
-                                <option>Sale</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-7">
-                            <select class="form-control" name="q">
-                                <option selected disabled>Price</option>
-                                <option>Ksh. 150,000 - Ksh. 200,000</option>
-                                <option>Ksh. 200,000 - Ksh. 250,000</option>
-                                <option>Ksh. 250,000 - Ksh. 300,000</option>
-                                <option>Ksh. 300,000 - above</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <select class="form-control" name="q">
-                                <option selected disabled>Property Type</option>
-                                <option>Apartment</option>
-                                <option>Building</option>
-                                <option>Office Space</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Find Now</button>
-                    </form>
-                </div>
+                @include('partials.search')
                 @if(Auth::check())
                 <a href="{{'/property/create'}}" class="btn btn-primary">Create A Property</a>
                 @endif
             </div>
 
-            <div class="col-lg-9 col-sm-8">
-                <div class="sortby clearfix">
-                    <div class="pull-left result">Showing: 12 of 100 </div>
-                    <div class="pull-right">
-                        <select class="form-control">
-                            <option>Sort by</option>
-                            <option>Price: Low to High</option>
-                            <option>Price: High to Low</option>
-                        </select></div>
-
-                </div>
+            <div class="col-lg-9 gallary__image">
+                <hr>
                 <div class="row">
                 @foreach($properties as $property)
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-md-4">
                             <div class="properties">
                                 @foreach($property->propertyPhotos as $set)
                                     @if($loop->first)
-                                        <div class="image-holder"><img src="/{{$set->thumbnail_path}}" class="img-responsive" alt="properties">
+                                        <div class="image-holder">
+                                            <img src="/{{$set->thumbnail_path}}" class="img-responsive" alt="properties">
                                         </div>
                                     @endif
                                 @endforeach
@@ -72,8 +27,8 @@
                             </div>
                         </div>
                     @endforeach
-                </div>
 
+                </div>
                 <div class="center">
                     {{ $properties->links() }}
                 </div>

@@ -45,6 +45,16 @@ class Property extends Model
     {
       return str_replace(' ', '-', $this->title);
     }
+    
+    public function scopeSearch($query, $search)
+    {
+
+     return $query->where('location', 'LIKE', "%$search%")
+                   ->orWhere('price', 'LIKE', "%$search%")
+                   ->orWhere('listed', 'LIKE', "%$search%")
+                   ->orWhere('commercial', 'LIKE', "%$search%")
+                   ->orWhere('residential', 'LIKE', "%$search%");
+    }
 
 
     public function user()

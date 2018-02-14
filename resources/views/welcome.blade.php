@@ -86,38 +86,48 @@
                 <div class="searchbar">
                     <div class="row">
                         <div class="col-lg-6 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Search of Properties">
+                            <form method="get" action="search">
+                            <input type="text" class="form-control" placeholder="Search of Properties" name="q" required >
                             <div class="row">
                                 <div class="col-lg-3 col-sm-3 ">
-                                    <select class="form-control">
-                                        <option>Buy</option>
+                                    <select class="form-control" name="f">
+                                        <option selected disabled>For</option>
                                         <option>Rent</option>
                                         <option>Sale</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-sm-4">
-                                    <select class="form-control">
-                                        <option>Price</option>
-                                        <option>$150,000 - $200,000</option>
-                                        <option>$200,000 - $250,000</option>
-                                        <option>$250,000 - $300,000</option>
-                                        <option>$300,000 - above</option>
+                                    <select class="form-control" name="p">
+                                        <option selected disabled>Price in Ksh.</option>
+                                        <option>150,000 </option>
+                                        <option>200,000 </option>
+                                        <option>250,000 </option>
+                                        <option>300,000 </option>
+                                        <option>350,000 </option>
+                                        <option>400,000 </option>
+                                        <option>450,000 </option>
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-sm-4">
-                                    <select class="form-control">
-                                        <option>Property</option>
+                                    <select class="form-control" name="p">
+                                        <option selected disabled>Property Type</option>
                                         <option>Apartment</option>
+                                        <option>Bungalow</option>
+                                        <option>Condo</option>
+                                        <option>Duplexes</option>
                                         <option>Building</option>
-                                        <option>Office Space</option>
+                                        <option>House</option>
+                                        <option>Office</option>
+                                        <option>Villas</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-sm-4">
-                                    <button class="btn btn-success" style="background-color: #2ab27b" onclick="window.location.href='property'">Find
+                                    <button class="btn btn-success" style="background-color: #2ab27b">Find
                                         Now
                                     </button>
                                 </div>
                             </div>
+                            </form>
                         </div>
                         <div class="col-lg-5 col-lg-offset-1 col-sm-6 ">
                             <p>Join now and get updated with all the properties deals.</p>
