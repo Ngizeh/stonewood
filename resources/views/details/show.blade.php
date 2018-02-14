@@ -93,7 +93,7 @@
                                 @endif
                         </p>
                             <p>
-                                <strong>@if($property->listed = 'Sale')
+                                <strong>@if($property->listed == 'Sale')
                                         Selling
                                     @else
                                         Letting
