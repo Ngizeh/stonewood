@@ -7,12 +7,11 @@
                 <a href="{{'/property/create'}}" class="btn btn-primary">Create A Property</a>
                 @endif
             </div>
-
-            <div class="col-lg-9 gallary__image">
+            <div class="col-lg-9 gallary">
                 <hr>
                 <div class="row">
                 @foreach($properties as $property)
-                        <div class="col-md-4">
+                        <div class="col-md-4 gallary__image">
                             <div class="properties">
                                 @foreach($property->propertyPhotos as $set)
                                     @if($loop->first)
@@ -27,7 +26,6 @@
                             </div>
                         </div>
                     @endforeach
-
                 </div>
                 <div class="center">
                     {{ $properties->links() }}
