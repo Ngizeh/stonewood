@@ -8,7 +8,11 @@
         <div class="container-fluid login">
             <h2>{{$property->title}}  located at {{$property->location}}</h2>
             <p>
+<<<<<<< HEAD
                 <strong> <u>RefNo. {{$property->reference_number}} </u></strong>
+=======
+                <strong> <u>RefNo. 123456 </u></strong>
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
             </p>
             <hr>
             <!-- Swiper -->
@@ -104,6 +108,7 @@
                             <p>
                                 <strong>Contact {{$property->user->name }} on +{{$property->user->phone_number}}</strong>
                             </p>
+                    </div>
                     </div>
                     </div>
                 </div>

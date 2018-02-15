@@ -21,8 +21,12 @@ class Property extends Model
         'bedroom',
         'bathroom',
         'sittingroom',
+<<<<<<< HEAD
         'garage',
         'reference_number'
+=======
+        'garage'
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
         ];
 
     public static function locatedAt($location, $title)

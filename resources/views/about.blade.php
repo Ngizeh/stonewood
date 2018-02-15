@@ -14,7 +14,10 @@
         <div class="spacer">
             <div class="row">
                 <div class="col-lg-8  col-lg-offset-2">
-                    {{--<img src="image/about.jpg" class="img-responsive thumbnail" alt="realestate">--}}
+       {{--<img src="image/about.jpg" class="img-responsive thumbnail" alt="realestate">--}}
+
+                    <img src="image/about.jpg" class="img-responsive thumbnail" alt="realestate">
+
                     <h3 style="color: #ff770e">Home Assured Profile</h3>
                     <p>
                         HomeAssured Property primarily core value is sale of quality residential property in Kenya,

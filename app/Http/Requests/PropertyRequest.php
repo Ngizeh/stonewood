@@ -36,10 +36,13 @@ class PropertyRequest extends FormRequest
             'land' => 'string|nullable',
             'residential' => 'string|nullable',
             'reference_number' => 'string|unique',
+<<<<<<< HEAD
             'bathroom' => 'integer|nullable',
             'bedroom' => 'integer|nullable',
             'sitting_room' => 'integer|nullable',
             'garage' => 'integer|nullable',
+=======
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
         ];
     }
 }

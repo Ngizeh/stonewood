@@ -4,7 +4,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="row">
+<<<<<<< HEAD
                 <div class="col-sm-6 col-lg-offset-3 Rogin">
+=======
+                <div class="col-sm-6 Rogin">
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
                     <h4>Login</h4>
                     <form class="" role="form"  method="POST" action="{{ route('login')}}">
                         {{csrf_field()}}
@@ -42,12 +46,21 @@
                         </a>
                     </form>
                 </div>
+<<<<<<< HEAD
                 {{--<div class="col-sm-6">--}}
                     {{--<h4>New User Sign Up</h4>--}}
                     {{--<p>Join today and get updated with all the properties deal happening around.</p>--}}
                     {{--<button type="submit" class="btn btn-info" onclick="window.location.href='/register'">Join Now--}}
                     {{--</button>--}}
                 {{--</div>--}}
+=======
+                <div class="col-sm-6">
+                    <h4>New User Sign Up</h4>
+                    <p>Join today and get updated with all the properties deal happening around.</p>
+                    <button type="submit" class="btn btn-info" onclick="window.location.href='/register'">Join Now
+                    </button>
+                </div>
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
             </div>
         </div>
     </div>

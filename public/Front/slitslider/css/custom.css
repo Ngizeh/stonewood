@@ -177,7 +177,11 @@
 	background-image: url(../../../image/slider/gitanga.jpg);
 }
  .bg-img-5 {
+<<<<<<< HEAD
 	background-image: url(../../../image/slider/Kisel.jpg);
+=======
+	background-image: url(../../../image/slider/enclave.jpg);
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
 }
 
 /* Animations for content elements */

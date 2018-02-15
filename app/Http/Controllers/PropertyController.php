@@ -24,7 +24,10 @@ class PropertyController extends Controller
 
     public function index(Property $property)
     {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
         $properties = $property->with('propertyPhotos')->latest()->paginate(3);
 
         return view('property.index', compact('properties'));

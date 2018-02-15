@@ -8,7 +8,11 @@
                             <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" ata-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                                 <div class="sl-slide-inner">
                                     <div class="bg-img bg-img-1"></div>
+<<<<<<< HEAD
                                     <h2><a href="/property">4 Bed House All Ensuite for Rent</a></h2>
+=======
+                                    <h2><a href="#">4 Bed House All Ensuite for Rent</a></h2>
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
                                     <blockquote>
                                         <p class="location">
                                             <span class="glyphicon glyphicon-map-marker"></span> Old Kitisuru, Nairobi </p><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
@@ -20,6 +24,7 @@
                                  data-slice1-scale="1.5" data-slice2-scale="1.5">
                                 <div class="sl-slide-inner">
                                     <div class="bg-img bg-img-2"></div>
+<<<<<<< HEAD
                                     <h2><a href="/property">Beautiful 5 BedRooms House for Rent</a></h2>
                                     <blockquote>
                                         <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Rosslyn Heights Nyari,
@@ -27,6 +32,15 @@
                                         <p>Until he extends the circle of his compassion to all living things, man will not himself
                                             find peace.</p>
                                         <cite>$ 3,500</cite>
+=======
+                                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
+                                    <blockquote>
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
+                                            Australia</p>
+                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
+                                            find peace.</p>
+                                        <cite>$ 20,000,000</cite>
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
                                     </blockquote>
                                 </div>
                             </div>
@@ -34,6 +48,7 @@
                                  data-slice1-scale="2" data-slice2-scale="1">
                                 <div class="sl-slide-inner">
                                     <div class="bg-img bg-img-3"></div>
+<<<<<<< HEAD
                                     <h2><a href="/property">6 BedRooms All Ensuite House for Rent</a></h2>
                                     <blockquote>
                                         <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Peponi Road Westlands,
@@ -41,10 +56,35 @@
                                         <p>Until he extends the circle of his compassion to all living things, man will not himself
                                             find peace.</p>
                                         <cite>Ksh. 400,000</cite>
+=======
+                                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
+                                    <blockquote>
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
+                                            Australia</p>
+                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
+                                            find peace.</p>
+                                        <cite>$ 20,000,000</cite>
                                     </blockquote>
                                 </div>
                             </div>
 
+                            <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25"
+                                 data-slice1-scale="2" data-slice2-scale="1">
+                                <div class="sl-slide-inner">
+                                    <div class="bg-img bg-img-4"></div>
+                                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
+                                    <blockquote>
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
+                                            Australia</p>
+                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
+                                            find peace.</p>
+                                        <cite>$ 20,000,000</cite>
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
+                                    </blockquote>
+                                </div>
+                            </div>
+
+<<<<<<< HEAD
                             <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25"
                                  data-slice1-scale="2" data-slice2-scale="1">
                                 <div class="sl-slide-inner">
@@ -59,10 +99,13 @@
                                     </blockquote>
                                 </div>
                             </div>
+=======
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
                             <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10"
                                  data-slice1-scale="2" data-slice2-scale="1">
                                 <div class="sl-slide-inner">
                                     <div class="bg-img bg-img-5"></div>
+<<<<<<< HEAD
                                     <h2><a href="/property">4 BedRooms All Ensuite Home on Sale</a></h2>
                                     <blockquote>
                                         <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Kessel Homes,
@@ -70,6 +113,14 @@
                                         <p>Until he extends the circle of his compassion to all living things, man will not himself
                                             find peace.</p>
                                         <cite>Ksh. 25,000,000</cite>
+
+                                    <h2><a href="#">2 Bed Rooms and 1 Dinning Room Apartment on Sale</a></h2>
+                                    <blockquote>
+                                        <p class="location"><span class="glyphicon glyphicon-map-marker"></span> 1890 Syndey,
+                                            Australia</p>
+                                        <p>Until he extends the circle of his compassion to all living things, man will not himself
+                                            find peace.</p>
+                                        <cite>$ 20,000,000</cite>
                                     </blockquote>
                                 </div>
                             </div>
@@ -118,7 +169,11 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-sm-4">
+<<<<<<< HEAD
                                     <button class="btn btn-success" style="background-color: #2ab27b" onclick="window.location.href='property'">Find
+=======
+                                    <button class="btn btn-success" style="background-color: #2ab27b" onclick="window.location.href='buysalerent'">Find
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
                                         Now
                                     </button>
                                 </div>
@@ -147,6 +202,7 @@
                                 <h5 style="color: #ff770e"><strong>{{$property->title}}</strong></h5>
                                 <h6><strong>{{$property->location}}</strong></h6>
                                 <h5 style="color: #ff770e"><strong>Ksh. {{number_format($property->price)}}</strong></h5>
+<<<<<<< HEAD
                             </div>
                                 @endif
                             @endforeach
@@ -173,6 +229,88 @@
                             <br><a href="/about">Learn More</a></p>
 
                     </div>
+=======
+                            </div>
+                                @endif
+                            @endforeach
+                          </div>
+                      </a>
+                    </div>
+                    @endforeach
+                </div>
+
+            </div>
+            <div class="spacer">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 recent-view">
+                        <h3>About Us</h3>
+                        <p> HomeAssured Property primarily core value is sale of quality residential property in Kenya,
+                            Properties
+                            offers its expertise
+                            and client base in Kenya. Our team is committed to maintaining these high levels of
+                            professional
+                            service
+                            with unquestionable
+                            integrity and reliability whilst continually assessing the changing needs of the market
+                            place
+                            <br><a href="/about">Learn More</a></p>
+
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-3 recommended">
+                        <h3>Recommended Properties</h3>
+                        <div id="myCarousel" class="carousel slide">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                            </ol>
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-lg-4"><img src="image/properties/1.jpg" class="img-responsive"
+                                                                   alt="properties"/></div>
+                                        <div class="col-lg-8">
+                                            <h5><a href="/property-detail">Integer sed porta quam</a></h5>
+                                            <p class="price">$300,000</p>
+                                            <a href="/property-detail" class="more">More Detail</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-4"><img src="image/properties/2.jpg" class="img-responsive"
+                                                                   alt="properties"/></div>
+                                        <div class="col-lg-8">
+                                            <h5><a href="/property-detail">Integer sed porta quam</a></h5>
+                                            <p class="price">$300,000</p>
+                                            <a href="/property-detail" class="more">More Detail</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-4"><img src="image/properties/3.jpg" class="img-responsive"
+                                                                   alt="properties"/></div>
+                                        <div class="col-lg-8">
+                                            <h5><a href="/property-detail">Integer sed porta quam</a></h5>
+                                            <p class="price">$300,000</p>
+                                            <a href="/property-detail" class="more">More Detail</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-lg-4"><img src="image/properties/4.jpg" class="img-responsive"
+                                                                   alt="properties"/></div>
+                                        <div class="col-lg-8">
+                                            <h5><a href="/property-detail">Integer sed porta quam</a></h5>
+                                            <p class="price">$300,000</p>
+                                            <a href="/property-detail" class="more">More Detail</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
                 </div>
             </div>
         </div>

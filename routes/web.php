@@ -10,10 +10,16 @@ Route::get('/buysalerent', 'BuyRentController@index');
 Route::get('/property-detail', function () {
     return view('property-detail');
 });
+<<<<<<< HEAD
 Route::get('/contact', 'ContactController@create');
 
 Route::post('/contact', 'ContactController@store');
 
+=======
+Route::get('/contact', function () {
+    return view('contact');
+});
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
 Route::get('/team', function () {
     return view('team');
 });
@@ -24,7 +30,11 @@ Route::get('commercials/rentals','CommercialController@rentals');
 
 Route::get('lands','LandController@index');
 Route::get('lands/sales','LandController@sales');
+<<<<<<< HEAD
 Route::get('lands/development','LandController@development');
+=======
+Route::get('lands/rentals','LandController@rentals');
+>>>>>>> 5273d0759c41edc75fff2be7d4e1b2d0c1a50782
 
 
 Route::get('residentials','ResidentialController@index');
