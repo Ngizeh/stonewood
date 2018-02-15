@@ -67,6 +67,11 @@ class Property extends Model
         return $this->hasMany(PropertyPhoto::class);
     }
 
+    public function propertyFiles()
+    {
+      return $this->hasMany(PropertyFile::class);
+    }
+
     public function addPhoto(PropertyPhoto $propertyPhoto)
     {
         return $this->propertyPhotos()->save($propertyPhoto);

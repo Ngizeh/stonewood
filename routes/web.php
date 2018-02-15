@@ -23,6 +23,8 @@ Auth::routes();
 Route::get('sale','SalesController@index');
 Route::get('rent','RentalsController@index');
 
+Route::post('upload', 'PropertyFileController@upload');
+
 Route::get('search', 'SearchController@index');
 
 
