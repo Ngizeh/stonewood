@@ -8,9 +8,8 @@
             </div>
             <div class="col-md-9">
                 <hr>
-                @foreach($properties->chunk(3) as $item)
-                    <div class="row">
-                    @foreach($item as $property)
+                @foreach($item as $property)
+                <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="properties">
                         @foreach($property->propertyPhotos as $set)
@@ -25,7 +24,6 @@
                             <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                         </div>
                           </div>
-                        @endforeach
                     </div>
                 @endforeach
                 <div class="center">
