@@ -9,8 +9,8 @@ showsohbb<div class="container">
             </div>
             <div class="col-lg-9 gallary">
                 <hr>
-                <div class="row">
                 @foreach($properties as $property)
+                <div class="row">
                     @foreach($property->propertyPhotos as $set)
                     <div class="col-md-4 col-sm-6 gallary__image">
                         @if($loop->first)
@@ -23,8 +23,8 @@ showsohbb<div class="container">
                             <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                         </div>
                         @endif
-                    </div>
                     @endforeach
+                    </div>
                     @endforeach
                 </div>
                 <div class="center">
