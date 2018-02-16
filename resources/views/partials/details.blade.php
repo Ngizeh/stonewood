@@ -9,12 +9,11 @@ showsohbb<div class="container">
             </div>
             <div class="col-lg-9 gallary">
                 <hr>
-                <div class="row">
                 @foreach($properties as $property)
                     <div class="col-md-4 col-sm-6 gallary__image">
-                        @foreach($property->propertyPhotos as $set)
-                        @if($loop->first)
                         <div class="properties">
+                        @foreach($property->propertyPhotos as $set)
+                                @if($loop->first)
                                         <div class="image-holder">
                                             <img src="/{{$set->thumbnail_path}}" class="img-responsive" alt="properties">
                                         </div>
@@ -24,9 +23,8 @@ showsohbb<div class="container">
                             <p class="price">@include('partials.currency') {{$property->price_format()}}</p>
                             <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                         </div>
-                    </div>
-                    @endforeach
                 </div>
+                @endforeach
                 <div class="center">
                     {{ $properties->links() }}
                 </div>
