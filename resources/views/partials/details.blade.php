@@ -8,8 +8,9 @@
             </div>
             <div class="col-md-9 gallary">
                 <hr>
-                <div class="row">
-                @foreach($properties as $property)
+                @foreach($properties->chunk(3) as $item)
+                    <div class="row">
+                    @foreach($item as $property)
                     <div class="col-md-4 col-sm-6 gallary__image">
                         <div class="properties">
                         @foreach($property->propertyPhotos as $set)
@@ -23,9 +24,10 @@
                             <p class="price">@include('partials.currency') {{$property->price_format()}}</p>
                             <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                         </div>
-                </div>
+                          </div>
+                        @endforeach
+                    </div>
                 @endforeach
-                </div>
             </div>
                 <div class="center">
                     {{ $properties->links() }}
