@@ -8,7 +8,7 @@
             </div>
             <div class="col-md-9">
                 <hr>
-                @foreach($item as $property)
+                @foreach($properties as $property)
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="properties">
