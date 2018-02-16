@@ -1,4 +1,4 @@
-showsohbb<div class="container">
+
     <div class="properties-listing">
         <div class="row">
             <div class="col-md-3">
@@ -9,6 +9,7 @@ showsohbb<div class="container">
             </div>
             <div class="col-md-9 gallary">
                 <hr>
+                <div class="row">
                 @foreach($properties as $property)
                     <div class="col-md-4 col-sm-6 gallary__image">
                         <div class="properties">
@@ -25,10 +26,11 @@ showsohbb<div class="container">
                         </div>
                 </div>
                 @endforeach
+                </div>
             </div>
                 <div class="center">
                     {{ $properties->links() }}
                 </div>
         </div>
     </div>
-</div>
+
