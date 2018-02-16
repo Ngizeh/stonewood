@@ -11,7 +11,7 @@ class ResidentialController extends Controller
 {
     public function index()
     {
-        $properties = Property::whereNotNull('residential')->latest()->paginate(15);
+        $properties = Property::whereNotNull('residential')->latest()->paginate(9);
 
       return view('residential.residentials', compact('properties')) ;
     }

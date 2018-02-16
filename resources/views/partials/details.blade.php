@@ -1,5 +1,4 @@
-
-    <div class="properties-listing">
+ <div class="properties-listing">
         <div class="row">
             <div class="col-md-3">
                 @include('partials.search')

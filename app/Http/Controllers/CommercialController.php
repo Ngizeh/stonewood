@@ -13,7 +13,7 @@ class CommercialController extends Controller
 {
   public function index()
   {
-      $properties = Property::whereNotNull('commercial')->latest()->paginate(15);
+      $properties = Property::whereNotNull('commercial')->latest()->paginate(9);
       
       return view('.commercial.commercials', compact('properties'));
   }

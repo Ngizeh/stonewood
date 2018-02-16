@@ -12,7 +12,7 @@ class LandController extends Controller
 
     public function index()
     {
-        $properties = Property::whereNotNull('land')->latest()->paginate(15);
+        $properties = Property::whereNotNull('land')->latest()->paginate(9);
 
         return view('land.lands', compact('properties'));
     }
