@@ -9,8 +9,8 @@ showsohbb<div class="container">
             </div>
             <div class="col-lg-9 gallary">
                 <hr>
-                @foreach($properties as $property)
                 <div class="row">
+                @foreach($properties as $property)
                     <div class="col-md-4 col-sm-6 gallary__image">
                         @foreach($property->propertyPhotos as $set)
                         @if($loop->first)
