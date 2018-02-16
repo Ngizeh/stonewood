@@ -8,8 +8,8 @@
             </div>
             <div class="col-md-9">
                 <hr>
-                @foreach($properties as $property)
                 <div class="row">
+                @foreach($properties as $property)
                     <div class="col-md-4 col-sm-6">
                         <div class="properties">
                         @foreach($property->propertyPhotos as $set)
@@ -24,8 +24,8 @@
                             <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                         </div>
                           </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
                 <div class="center">
                     {{ $properties->links() }}
                 </div>
