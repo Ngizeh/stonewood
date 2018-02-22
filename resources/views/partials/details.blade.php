@@ -11,6 +11,7 @@
                 @foreach($properties as $property)
                 <div class="row">
                         @foreach($property as $item)
+                        @if($loop->first)
                         <div class="col-md-4 col">
                                 <div class="properties">
                                     <div class="image-holder">
@@ -24,6 +25,7 @@
                             </div>
                                 <p>{{$property->title}}</p>
                         </div>
+                        @endif
                         @endforeach
                 </div>
                 @endforeach
