@@ -10,7 +10,7 @@
             <h2>Residential Properties For Rentals</h2>
         </div>
     </div>
-    <div class="container login">
+    <div class="login">
         @include('partials.details')
     </div>
 

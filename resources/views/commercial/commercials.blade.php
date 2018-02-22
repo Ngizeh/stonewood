@@ -12,7 +12,7 @@
             <h2>Commercial Properties</h2>
         </div>
     </div>
-  <div class="container login">
+  <div class="container">
       @include('partials.details')
   </div>
 
