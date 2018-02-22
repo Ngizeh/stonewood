@@ -8,6 +8,7 @@
             </div>
             <div class="col-md-9">
                 <hr>
+                <div class="row">
                 @foreach($properties as $property)
                     <div class="col-md-4 col-sm-6">
                     @foreach($property as $item)
@@ -35,6 +36,7 @@
                     {{ $properties->links() }}
                 </div>
             </div>
+        </div>
         </div>
 
 
