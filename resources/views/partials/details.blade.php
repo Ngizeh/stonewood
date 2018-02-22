@@ -10,8 +10,8 @@
                 <hr>
                 <div class="row">
                     @foreach($properties as $property)
+                        @foreach($property as $item)
                         <div class="col-md-4 col">
-                            @foreach($property as $item)
                             <div class="properties">
                                 @foreach($property->propertyPhotos as $set)
                                         @if($loop->first)
@@ -23,9 +23,9 @@
                                     @endforeach
                                 <p>{{$property->title}}</p>
                             </div>
-                            @endforeach
                         </div>
                         @endforeach
+                    @endforeach
                 </div>
                 <div class="center">
                     {{ $properties->links() }}
