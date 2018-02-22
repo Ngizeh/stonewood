@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <div class="login">
+    <div class="container login">
 
         @include('partials.details')
     </div>

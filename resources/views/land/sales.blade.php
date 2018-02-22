@@ -11,7 +11,7 @@
             <h2>Land Properties For Sales</h2>
         </div>
     </div>
-    <div class="login">
+    <div class="container login">
         @include('partials.details')
     </div>
 
