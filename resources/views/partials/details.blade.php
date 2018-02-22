@@ -14,8 +14,7 @@
                                 <div class="image-holder">
                                     @foreach($property->propertyPhotos as $set)
                                         @if($loop->first)
-                                        <img src="/{{$set->thumbnail_path}}" class="img-responsive"
-                                    alt="properties">
+                                        <img src="/{{$set->thumbnail_path}}" class="img-responsive" alt="properties">
                                             @endif
                                         @endforeach
                                     </div>
@@ -27,10 +26,10 @@
                     </div>
                     @endforeach
                 </div>
+        </div>
                 <div class="center">
                     {{ $properties->links() }}
                 </div>
-            </div>
  </div>
 
 
