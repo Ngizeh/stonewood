@@ -22,8 +22,8 @@
                                             @endif
                                         @endforeach
                                     </div>
-                            </div>
                                 <p>{{$property->title}}</p>
+                            </div>
                             @endif
                         </div>
                         @endforeach
