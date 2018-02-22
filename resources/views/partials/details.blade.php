@@ -8,8 +8,8 @@
             </div>
             <div class="col-md-9">
                 <hr>
+                @foreach($properties as $property)
                 <div class="row">
-                    @foreach($properties as $property)
                         @foreach($property as $item)
                         <div class="col-md-4 col">
                             <div class="properties">
@@ -25,8 +25,8 @@
                             </div>
                         </div>
                         @endforeach
-                    @endforeach
                 </div>
+                @endforeach
                 <div class="center">
                     {{ $properties->links() }}
                 </div>
