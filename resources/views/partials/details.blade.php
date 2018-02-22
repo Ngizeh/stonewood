@@ -10,8 +10,6 @@
                 <hr>
                 @foreach($properties as $property)
                     <div class="col-md-4 col-sm-6">
-                    @foreach($property as $item)
-                            @if($loop->first)
                             <div class="properties">
                                 <div class="image-holder">
                                     @foreach($property->propertyPhotos as $set)
@@ -26,8 +24,6 @@
                                 <p class="price">@include('partials.currency') {{$property->price_format()}}</p>
                                 <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                             </div>
-                            @endif
-                        @endforeach
                     </div>
                     @endforeach
                 </div>
