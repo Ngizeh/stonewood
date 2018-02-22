@@ -11,8 +11,8 @@
                 <div class="row">
                     @foreach($properties as $property)
                         <div class="col-md-4 col">
+                            @foreach($property as $item)
                             <div class="properties">
-                                @foreach($property as $item)
                                 @foreach($property->propertyPhotos as $set)
                                         @if($loop->first)
                                         <div class="image-holder">
@@ -21,9 +21,9 @@
                                      </div>
                                         @endif
                                     @endforeach
-                                @endforeach
                                 <p>{{$property->title}}</p>
                             </div>
+                            @endforeach
                         </div>
                         @endforeach
                 </div>
