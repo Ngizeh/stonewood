@@ -21,7 +21,10 @@
                                             @endif
                                         @endforeach
                                     </div>
-                                <p>{{$property->title}}</p>
+                                <h4><a href="{{url('/property/'.$property->title_heading())}}"
+                                style="color: #ff770e"><strong>{{$property->title}}</strong></a></h4>
+                                <p class="price">@include('partials.currency') {{$property->price_format()}}</p>
+                                <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                             </div>
                             @endif
                         @endforeach
