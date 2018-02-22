@@ -13,14 +13,14 @@
                         @foreach($property as $item)
                         <div class="col-md-4 col">
                             <div class="properties">
-                                @if($loop->first)
                                 @foreach($property->propertyPhotos as $set)
-                                        <div class="image-holder">
+                                    <div class="image-holder">
+                                        @if($loop->first)
                                         <img src="/{{$set->thumbnail_path}}" class="img-responsive"
                                     alt="properties">
-                                     </div>
-                                    @endforeach
-                                @endif
+                                        @endif
+                                    </div>
+                                @endforeach
                                 <p>{{$property->title}}</p>
                             </div>
                         </div>
