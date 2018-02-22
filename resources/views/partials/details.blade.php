@@ -27,10 +27,11 @@
                     </div>
                     @endforeach
                 </div>
-            </div>
-        </div>
+                </div>
                 <div class="center">
                     {{ $properties->links() }}
                 </div>
  </div>
+ </div>
+
 
