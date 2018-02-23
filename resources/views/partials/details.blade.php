@@ -1,4 +1,4 @@
-<div class="properties-listing">
+<div class="properties-listing spacer">
         <div class="row">
             <div class="col-lg-3 col-sm-4">
                 @include('partials.search')
