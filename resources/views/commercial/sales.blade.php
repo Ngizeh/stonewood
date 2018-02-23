@@ -11,7 +11,7 @@
             <h2>Commercial Properties For Sales</h2>
         </div>
     </div>
-    <div class="ogin">
+    <div class="container login">
         @include('partials.details')
     </div>
 

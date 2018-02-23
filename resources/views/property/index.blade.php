@@ -10,6 +10,9 @@
             <h2>All Properties</h2>
         </div>
     </div>
+
+    <div class="container login">
          @include('partials.details')
+    </div>
 @stop
 

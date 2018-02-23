@@ -31,6 +31,7 @@ class Location
     "Kisumu Ndogo,Nairobi",
     "Kitisuru,Nairobi",
     "Mtwapa,Kilifi",
+    "Watamu,Kilifi",
     "Laini Saba,Nairobi",
     "Lang'ata,Nairobi",
     "Lavington, Nairobi",
