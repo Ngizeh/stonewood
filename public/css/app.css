@@ -8729,6 +8729,11 @@ h3 {
 h4 {
   margin: 10px 0;
   font-size: 19px;
+  text-transform: uppercase;
+}
+
+.property h4 {
+  text-transform: capitalize;
 }
 
 h5 {

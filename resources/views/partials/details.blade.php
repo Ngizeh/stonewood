@@ -19,7 +19,7 @@
                                     </div>
                                 @endforeach
                                 <h4><a href="{{url('/property/'.$property->title_heading())}}"
-                                style="color: #ff770e"><strong>{{str_limit($property->title, 18)}}</strong></a></h4>
+                                style="color: #ff770e"><strong>{{str_limit($property->title, 17)}}</strong></a></h4>
                                 <p class="price">@include('partials.currency') {{$property->price_format()}}</p>
                                 <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                             </div>
