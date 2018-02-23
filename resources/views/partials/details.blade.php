@@ -7,7 +7,6 @@
                 @endif
             </div>
             <div class="col-md-9 col-md-8">
-                <hr>
                 <div class="row">
                 @foreach($properties as $property)
                     <div class="col-md-4 col-sm-6">
@@ -24,6 +23,7 @@
                                 <p class="price">@include('partials.currency') {{$property->price_format()}}</p>
                                 <a class="btn btn-primary" href="{{url('/property/'.$property->title_heading())}}">View Details</a>
                             </div>
+                        <hr>
                     </div>
                     @endforeach
                 </div>
