@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h1 class="navbar-brand" href="{{url('/')}}">
+            <h1 class="navbar-brand">
                  <img src="{{asset('images/HOME-ASSURED-LOGO.jpg')}}" alt="logo" height="100" width="100">
             Home Assured </h1>
         </div>
