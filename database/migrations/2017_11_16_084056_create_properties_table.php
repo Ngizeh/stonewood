@@ -32,6 +32,8 @@ class CreatePropertiesTable extends Migration
             $table->integer('bedroom')->nullable();
             $table->integer('bathroom')->nullable();
             $table->integer('garage')->nullable();
+            $table->double('lat',20, 10);
+            $table->double('lng',20, 10);
             $table->integer('sitting_room')->nullable();
             $table->string('reference_number')->unique();
             $table->timestamps();

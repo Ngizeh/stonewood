@@ -31,6 +31,8 @@ class PropertyRequest extends FormRequest
             'price_currency' => 'required',
             'service_currency' => 'string|nullable',
             'listed' => 'required',
+            'lat' => 'required',
+            'lng' => 'required',
             'description' => 'required',
             'commercial' => 'string|nullable',
             'land' => 'string|nullable',

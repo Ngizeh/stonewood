@@ -106,6 +106,11 @@
                             <p>
                                 <strong>Contact {{$property->user->name }} on +{{$property->user->phone_number}}</strong>
                             </p>
+                            <div class="container">
+                                <div class="col-md-8">
+                                    <div id="map" style="height: 500px; width: 100%" class="form-control"></div>
+                                </div>
+                            </div>
                     </div>
                     </div>
                 </div>
@@ -116,7 +121,6 @@
                     <div class="col-md-6">
 
                 @if(Auth::check())
-
                         <a href="/property/{{$property->id}}/edit" class="btn btn-success" style="margin-top: 8px">Edit Property</a>
                         @endif
                     </div>
@@ -127,6 +131,26 @@
     @endforeach
 @stop
 @section('scripts.footer')
+    <script>
+        var lat = {{$property->lat}};
+        var lng = {{$property->lng}};
+
+        var map = new google.maps.Map(document.getElementById('map'),{
+            center:{
+                lat: lat,
+                lng: lng
+            },
+            zoom:15
+        });
+        var marker = new google.maps.Marker({
+            position: {
+                lat: lat,
+                lng: lng
+            },
+            map: map
+        });
+    </script>
+
     <script type="text/javascript" src="{{asset('js/swiper.min.js')}}"></script>
     <script type="text/javascript">
         var galleryTop = new Swiper('.gallery-top', {

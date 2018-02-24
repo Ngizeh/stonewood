@@ -22,7 +22,9 @@ class Property extends Model
         'bathroom',
         'sittingroom',
         'garage',
-        'reference_number'
+        'reference_number',
+        'lat',
+        'lng'
         ];
 
     public static function locatedAt($location , $title)
@@ -59,7 +61,7 @@ class Property extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function propertyPhotos()

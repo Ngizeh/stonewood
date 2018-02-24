@@ -32,7 +32,7 @@
 @yield('content')
 
 @include('layouts.footer')
-{{--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>4--}}
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>4
 <script src="{{asset('Front/owl-carousel/owl.carousel.js')}}"></script>
 <script ></script>
 <script src="{{asset('js/app.js')}}"></script>

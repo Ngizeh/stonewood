@@ -24,9 +24,12 @@ class PropertyController extends Controller
 
     public function index(Property $property)
     {
-       $properties = $property->with('propertyPhotos')->paginate(9);
+            if (Auth::user()) {
+                $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+            } else
+                $properties = $property->with('propertyPhotos')->paginate(9);
 
-        return view('property.index', compact('properties'));
+            return view('property.index', compact('properties'));
 
     }
 

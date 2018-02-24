@@ -185,15 +185,15 @@
     <div class="col-md-6">
         <div class="form-group">
             <label for="map">Location</label>
-            <input type="text" id="searchmap" class="form-control" placeholder="Enter the Location">
+            <input type="text" id="searchmap" class="form-control" name="location" placeholder="Enter the Location">
         </div>
         <div class="form-group">
             <label for="latitude">Latitude</label>
-            <input type="text" class="form-control input-sm" name="lat" id="lat">
+            <input readonly="readonly" type="text" class="form-control input-sm" name="lat" id="lat">
         </div>
         <div class="form-group">
             <label for="longitude">Longitude</label>
-            <input type="text" class="form-control input-sm" name="lng" id="lng">
+            <input readonly="readonly" type="text" class="form-control input-sm" name="lng" id="lng">
         </div>
     </div>
     <div class="col-md-6">
