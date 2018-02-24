@@ -18,7 +18,7 @@
                 <li class="dropdown">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Property<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{url('property')}}">All Properties</a></li>
+                        {{--<li><a href="{{url('property')}}">All Properties</a></li>--}}
                         <li><a href="{{url('commercials')}}">Commercials</a></li>
                         <li><a href="{{url('residentials')}}">Residentials</a></li>
                         <li><a href="{{url('lands')}}">Lands</a></li>
