@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Home Assured Property</title>
+    <link rel="shortcut icon" href="{{{ asset('/home/ngizeh/stonewood/public/images/HOME-ASSURED-LOGO.jpg') }}}">
     @yield('facebook_meta')
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,6 +13,8 @@
     <link rel="stylesheet" href="{{asset('css/swiper.min.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.2.0/dropzone.css">
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk1StK_XufNPpiDk6vkfc5laTTXxyKzEo&libraries=places"></script>
 
     <!-- Owl stylesheet -->
     <link rel="stylesheet" href="{{asset('Front/owl-carousel/owl.carousel.css')}}">
@@ -29,8 +32,9 @@
 @yield('content')
 
 @include('layouts.footer')
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+{{--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>4--}}
 <script src="{{asset('Front/owl-carousel/owl.carousel.js')}}"></script>
+<script ></script>
 <script src="{{asset('js/app.js')}}"></script>
 @yield('scripts.footer')
 </body>

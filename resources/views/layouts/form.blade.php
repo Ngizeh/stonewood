@@ -7,18 +7,6 @@
                    value="{{ old('title', $property->title) }}">
         </div>
         <div class="form-group">
-            <label for="location">Location of the property:</label>
-            <select name="location" id="location" class="form-control ">
-                <option selected disabled>Select the Location </option>
-                @foreach(App\Http\Utilities\Location::all() as $location)
-                <option value="{{$location}}"
-                    {{ old('location', $property->location) == $location ? 'selected' : ''}}>
-                    {{$location}}
-                  </option>
-                    @endforeach
-            </select>
-        </div>
-        <div class="form-group">
             <label for="description">Describe the Property:</label>
             <textarea type="text" class="form-control" name="description" id="description" rows="4"
                       required
@@ -194,18 +182,66 @@
             </div>
         </div>
     </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="map">Location</label>
+            <input type="text" id="searchmap" class="form-control" placeholder="Enter the Location">
+        </div>
+        <div class="form-group">
+            <label for="latitude">Latitude</label>
+            <input type="text" class="form-control input-sm" name="lat" id="lat">
+        </div>
+        <div class="form-group">
+            <label for="longitude">Longitude</label>
+            <input type="text" class="form-control input-sm" name="lng" id="lng">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div id="map" style="height: 400px; width: 100%" class="form-control"></div>
+    </div>
 </div>
 <hr>
 <div>
 </div>
 @include('layouts.errors')
 @section('scripts.footer')
+    <script type="text/javascript">
+            var Nairobi = {lat: -1.2920659, lng: 36.82194619999996};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: Nairobi
+            });
+            var marker = new google.maps.Marker({
+                position: Nairobi,
+                map: map,
+                draggable: true
+            });
+            var searchBox = new google.maps.places.SearchBox(document.getElementById('searchmap'));
+            google.maps.event.addListener(searchBox, 'places_changed', function () {
+                var places = searchBox.getPlaces();
+                var bounds = new google.maps.LatLngBounds();
+                var i, place;
+                for (i=0; place=places[i]; i++) {
+                    bounds.extend(place.geometry.location);
+                    marker.setPosition(place.geometry.location);
+                }
+                map.fitBounds(bounds);
+                map.setZoom(15);
+            });
+            google.maps.event.addListener(marker, 'position_changed', function () {
+                var lat = marker.getPosition().lat();
+                var lng = marker.getPosition().lng();
+                $('#lat').val(lat);
+                $('#lng').val(lng);
+            });
+    </script>
     <script type="text/javascript" src="{{asset('js/masknumber.min.js')}}"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('[id=integer-default]').maskNumber({integer: true});
         });
     </script>
+
 @stop
 
 
