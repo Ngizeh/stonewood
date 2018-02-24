@@ -106,11 +106,11 @@
                             <p>
                                 <strong>Contact {{$property->user->name }} on +{{$property->user->phone_number}}</strong>
                             </p>
-                            <div class="container">
-                                <div class="col-md-8">
-                                    <div id="map" style="height: 500px; width: 100%" class="form-control"></div>
-                                </div>
-                            </div>
+                            {{--<div class="container">--}}
+                                {{--<div class="col-md-8">--}}
+                                    {{--<div id="map" style="height: 500px; width: 100%" class="form-control"></div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
                     </div>
                     </div>
                 </div>
