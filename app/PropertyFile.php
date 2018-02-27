@@ -31,7 +31,6 @@ class PropertyFile extends Model
     public function saveAs($name)
     {
         $this->name = sprintf("%s-%s", time(), $name);
-        $this->path = sprintf("%s/%s", $this->baseDir, $this->name);
 
         return $this;
     }

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Property extends Model
@@ -24,7 +25,11 @@ class Property extends Model
         'garage',
         'reference_number',
         'lat',
-        'lng'
+        'lng',
+        'property_metrics',
+        'floor_size',
+        'property_size'
+
         ];
 
     public static function locatedAt($location , $title)
@@ -79,6 +84,11 @@ class Property extends Model
         return $this->propertyPhotos()->save($propertyPhoto);
     }
 
+    public function addDoc(PropertyFile $propertyFile)
+    {
+        return $this->propertyFiles()->save($$propertyFile);
+    }
+
     public function path()
     {
         return str_replace(' ', '-', $this->location).
@@ -101,6 +111,11 @@ class Property extends Model
     public function service_charging()
     {
         return number_format($this->service_charge);
+    }
+
+    public function getCreatedAtAttribute($date)
+    {
+        return Carbon::createFromFormat('Y-m-d H:i:s', $date)->format('Y-m-d');
     }
 
     public function setPriceAttribute($price)

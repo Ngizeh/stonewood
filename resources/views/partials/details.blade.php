@@ -2,9 +2,9 @@
         <div class="row">
             <div class="col-lg-3 col-sm-4">
                 @include('partials.search')
-                @if(Auth::check())
-                <a href="{{'/property/create'}}" class="btn btn-primary">Create A Property</a>
-                @endif
+                {{--@if(Auth::check())--}}
+                {{--<a href="{{'/property/create'}}" class="btn btn-primary">Create A Property</a>--}}
+                {{--@endif--}}
             </div>
             <div class="col-md-9 col-md-8">
                 <div class="row">

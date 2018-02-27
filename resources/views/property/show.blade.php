@@ -1,13 +1,12 @@
-@extends('layouts.master')
+@extends('layouts.user_auth')
 @section('content')
-    <br><br>
-    <div class="spacer">
-        <div class="inside-banner">
+    <div class="inside-banner">
             <div class="container">
+                <span class="pull-right"><a href="/property/create">Back</a></span>
                 <h2>Upload A Property Photos</h2>
             </div>
         </div>
-    </div>
+
     <div class="container-fluid login">
         <div class="row">
             <div class="col-md-3">

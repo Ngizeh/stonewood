@@ -25,7 +25,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Our Team</a></li>
-                <li><a href="contact">Contacts</a></li>
+                <li><a href="contact">Contacts Us</a></li>
                 @if (Auth::guest())
                 <li><a href="{{ route('login') }}">Login</a></li>
                     @else

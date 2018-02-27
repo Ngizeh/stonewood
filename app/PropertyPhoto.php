@@ -51,6 +51,7 @@ class PropertyPhoto extends Model
     public function delete()
     {
       \File::delete([
+         $this->name,
          $this->path,
          $this->thumbnail_path
       ]);

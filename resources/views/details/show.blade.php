@@ -106,23 +106,17 @@
                             <p>
                                 <strong>Contact {{$property->user->name }} on +{{$property->user->phone_number}}</strong>
                             </p>
-                            {{--<div class="container">--}}
-                                {{--<div class="col-md-8">--}}
-                                    {{--<div id="map" style="height: 500px; width: 100%" class="form-control"></div>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
+                            <div class="container">
+                                <div class="col-md-8">
+                                    <div id="map" style="height: 500px; width: 100%" class="form-control"></div>
+                                </div>
+                            </div>
                     </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-              <a href="{{url('property')}}"><strong style="text-transform: uppercase">  <span class="arrow" style="font-size: 2em; padding-left: 1em;">←&nbsp;</span>Back To All </strong></a>
-                    </div>
-                    <div class="col-md-6">
-
-                @if(Auth::check())
-                        <a href="/property/{{$property->id}}/edit" class="btn btn-success" style="margin-top: 8px">Edit Property</a>
-                        @endif
+                    <div class="col-md-6 col-md-offset-2">
+                    <a href="/residentials" class="btn btn-success" style="margin-top: 8px">Back To All</a>
                     </div>
                 </div>
 

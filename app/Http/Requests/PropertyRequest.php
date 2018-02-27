@@ -26,9 +26,9 @@ class PropertyRequest extends FormRequest
         return [
             'title' => 'required',
             'location' => 'required',
-            'price' => 'required',
+            'price' => 'nullable',
             'service_charge' => 'nullable',
-            'price_currency' => 'required',
+            'price_currency' => 'nullable',
             'service_currency' => 'string|nullable',
             'listed' => 'required',
             'lat' => 'required',
@@ -42,6 +42,9 @@ class PropertyRequest extends FormRequest
             'bedroom' => 'integer|nullable',
             'sitting_room' => 'integer|nullable',
             'garage' => 'integer|nullable',
+            'property_metrics' => 'string|nullable',
+            'floor_size' => 'integer|nullable',
+            'property_size' => 'integer|nullable'
         ];
     }
 }

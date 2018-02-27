@@ -1,6 +1,6 @@
 <?php
 
-
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'WelcomeController@index');
@@ -18,7 +18,7 @@ Route::post('contact', 'ContactController@store');
 Route::get('/team', function () {
     return view('team');
 });
-Auth::routes();
+
 
 Route::get('sale','SalesController@index');
 Route::get('rent','RentalsController@index');
@@ -49,6 +49,13 @@ Route::get('property/{title}', 'AllPropertyController@show');
 Route::post('property', 'PropertyController@store');
 Route::get('/{location}/{title}', 'PropertyController@show');
 Route::post('{location}/{title}/photos', 'PropertyController@addPhoto');
+Route::post('{location}/{title}/files', 'PropertyController@addPhoto');
+Route::post('{location}/{title}/photos', 'PropertyController@addPhoto');
 Route::patch('property/{property}', 'PropertyController@update');
 Route::delete('property_photo/{id}', 'AllPropertyController@destroy');
+
+
+Route::get('user_account', 'UserAccountController@index');
+
+
 

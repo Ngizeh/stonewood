@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/swiper.min.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.2.0/dropzone.css">
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk1StK_XufNPpiDk6vkfc5laTTXxyKzEo&libraries=places"></script>
 
@@ -32,9 +31,8 @@
 @yield('content')
 
 @include('layouts.footer')
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>4
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="{{asset('Front/owl-carousel/owl.carousel.js')}}"></script>
-<script ></script>
 <script src="{{asset('js/app.js')}}"></script>
 @yield('scripts.footer')
 </body>
