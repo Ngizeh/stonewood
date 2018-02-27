@@ -25,7 +25,7 @@
                         <label for="head" style="padding-left:13em">Select One Category Only:</label>
                         <div class="form-group">
                             <label for="commercial">If it's Commercial Category:</label>
-                            <select name="commercial" class="form-control" id="disabled_input">
+                            <select name="commercial" class="form-control">
                                 <option selected disabled>Choose a Commercial Category</option>
                                 @foreach($commercialCategory as $commercial)
                                     <option value="{{$commercial->category}}"
@@ -37,7 +37,7 @@
                         </div>
                         <div class="form-group">
                             <label for="land">If it's Land Listed </label>
-                            <select name="land" class="form-control" id="disabled_input">
+                            <select name="land" class="form-control">
                                 <option selected disabled>Choose a Category</option>
                                 @foreach($landCategory as $land)
                                     <option value="{{$land->category}}"
@@ -49,7 +49,7 @@
                         </div>
                         <div class="form-group">
                             <label for="residential">If it's Residential Listed </label>
-                            <select name="residential" class="form-control" id="disabled_input">
+                            <select name="residential" class="form-control">
                                 <option selected disabled>Choose a Category</option>
                                 @foreach($residentialCategory as $residential)
                                     <option value="{{$residential->category}}"
@@ -234,7 +234,7 @@
 
             draggable: true
         });
-        var searchBox = new google.maps.places.SearchBox(do cument.getElementById('searchmap'));
+        var searchBox = new google.maps.places.SearchBox(document.getElementById('searchmap'));
         google.maps.event.addListener(searchBox, 'places_changed', function () {
             var places = searchBox.getPlaces();
             var bounds = new google.maps.LatLngBounds();
