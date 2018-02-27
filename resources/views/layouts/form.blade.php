@@ -177,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-            </div>disable_input
+            </div>
         </div>
         <div class="form-group">
             <label for="">Floor Size in m<sup>2</sup></label>
