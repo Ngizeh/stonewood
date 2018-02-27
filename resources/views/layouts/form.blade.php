@@ -120,7 +120,7 @@
                     <div class="form-group">
                         <div class="col-md-3">
                             <label for=bedroom>Bed Room</label>
-                            <select name="bedroom"  class="form-control" id="disabled_input">
+                            <select name="bedroom"  class="form-control">
                                 <option selected disabled>Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
