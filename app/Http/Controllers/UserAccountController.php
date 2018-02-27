@@ -10,7 +10,7 @@ class UserAccountController extends Controller
 {
     public function index(Property $property)
     {
-        $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(1);
+        $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(15);
 
         return view('user_account',compact('properties'));
     }
