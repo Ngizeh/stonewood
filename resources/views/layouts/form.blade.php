@@ -222,6 +222,12 @@
 </div>
 @include('layouts.errors')
 @section('scripts.footer')
+    <script type="text/javascript" src="{{asset('js/masknumber.min.js')}}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[id=integer-default]').maskNumber({integer: true});
+        });
+    </script>
     <script type="text/javascript">
         var Nairobi = {lat: -1.2920659, lng: 36.82194619999996};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -251,12 +257,6 @@
             var lng = marker.getPosition().lng();
             $('#lat').val(lat);
             $('#lng').val(lng);
-        });
-    </script>
-    <script type="text/javascript" src="{{asset('js/masknumber.min.js')}}"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('[id=integer-default]').maskNumber({integer: true});
         });
     </script>
 @stop
