@@ -74,7 +74,7 @@
             <label for="price">Price of the Property:</label>
             <div class="row">
                 <div class="col-md-4">
-                    <select name="price_currency" class="form-control" id="disabled_input">
+                    <select name="price_currency" class="form-control">
                         <option selected disabled>Select Currency</option>
                         @foreach($currency as $money)
                             <option value="{{$money->currency}}"
@@ -94,7 +94,7 @@
             <label for="service_charge">Service Charge Property (Optional):</label>
             <div class="row">
                 <div class="col-md-4">
-                    <select name="service_currency" class="form-control" id="disabled_input">
+                    <select name="service_currency" class="form-control">
                         <option selected disabled>Select Currency</option>
                         @foreach($currency as $money)
                             <option value="{{$money->currency}}"
@@ -234,7 +234,7 @@
 
             draggable: true
         });
-        var searchBox = new google.maps.places.SearchBox(document.getElementById('searchmap'));
+        var searchBox = new google.maps.places.SearchBox(do cument.getElementById('searchmap'));
         google.maps.event.addListener(searchBox, 'places_changed', function () {
             var places = searchBox.getPlaces();
             var bounds = new google.maps.LatLngBounds();
@@ -258,23 +258,6 @@
         $(document).ready(function () {
             $('[id=integer-default]').maskNumber({integer: true});
         });
-    </script>
-    <script type='text/javascript'>
-        function updateCheckBox(opts) {
-            var chks = document.getElementById("disabled_input");
-
-            if (opts.value == 'Development') {
-                for (var i = 0; i <= chks.length - 1; i++) {
-                    chks[i].disabled = false;
-                }
-            }
-            else {
-                for (var i = 0; i <= chks.length - 1; i++) {
-                    chks[i].disabled = true;
-                    chks[i].checked = false;
-                }
-            }
-        }
     </script>
 @stop
 
