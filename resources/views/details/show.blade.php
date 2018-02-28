@@ -1,6 +1,6 @@
 @extends('layouts.master')
-
 @section('content')
+    @include('layouts.nav')
 
     @include('layouts.banner')
 
@@ -121,8 +121,9 @@
                 </div>
 
             </div>
-        </div>
+           </div>
     @endforeach
+    @include('layouts.footer')
 @stop
 @section('scripts.footer')
     <script>
