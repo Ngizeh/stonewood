@@ -1,5 +1,4 @@
-@extends('layouts.user_auth')
-
+@extends('layouts.master')
 @section('content')
     <div class="inside-banner">
             <div class="container">

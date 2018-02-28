@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@include('layouts.nav')
 @section('content')
 
     @include('layouts.banner')
@@ -46,4 +46,5 @@
             </form>
         </div>
     </div>
+    @include('layouts.footer')
 @stop

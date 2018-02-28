@@ -1,4 +1,4 @@
-@extends('layouts.user_auth')
+@extends('layouts.master')
 @section('content')
     <div class="inside-banner">
           <div class="container">
@@ -29,8 +29,8 @@
                 <thead>
                 <tr>
                     <th>Ref No.</th>
-                    <th>Location</th>
                     <th>Property Title </th>
+                    <th>Location</th>
                     <th>List for </th>
                     <th>Price</th>
                     <th>Created On </th>
@@ -43,7 +43,7 @@
                 <tr>
                     <td>{{strtoupper($property->reference_number)}}</td>
                     <td>{{$property->title}}</td>
-                    <td>{{$property->location}}</td>
+                    <td>{{str_limit($property->location, 25)}}</td>
                     <td>{{$property->listed}}</td>
                     <td>{{$property->price}}</td>
                     <td>{{$property->created_at}}</td>

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@include('layouts.nav')
 @section('content')
 
     @include('layouts.banner')

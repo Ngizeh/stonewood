@@ -27,10 +27,7 @@
 
 </head>
 <body>
-@include('layouts.nav')
 @yield('content')
-
-@include('layouts.footer')
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="{{asset('Front/owl-carousel/owl.carousel.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>

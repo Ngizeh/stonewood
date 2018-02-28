@@ -1,4 +1,5 @@
-@extends('layouts.user_auth')
+@extends('layouts.master')
+@include('layouts.nav')
 @section('content')
     <div class="inside-banner">
             <div class="container">
@@ -97,8 +98,8 @@
         };
     </script>
 
+    @include('layouts.footer')
 @stop
-
 
 
 
