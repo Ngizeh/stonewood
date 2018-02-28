@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@include('layouts.nav')
 @section('content')
 <div class="container">
     <div class="login row">
@@ -66,4 +66,5 @@
         </div>
     </div>
 </div>
+@include('layouts.footer')
 @endsection

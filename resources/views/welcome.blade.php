@@ -188,6 +188,7 @@
         <script type="text/javascript" src="{{asset('Front/slitslider/js/jquery.ba-cond.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('Front/slitslider/js/jquery.slitslider.js')}}"></script>
         @stop
+@include('layouts.footer')
 @stop
 
 
