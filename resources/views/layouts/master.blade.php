@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Home Assured Property</title>
-    <link rel="shortcut icon" href="{{{ asset('/home/ngizeh/stonewood/public/images/HOME-ASSURED-LOGO.jpg') }}}">
+    <link rel="shortcut icon" href="{{{ asset('images/HOME-ASSURED-LOGO.jpg') }}}">
     @yield('facebook_meta')
     <meta charset="UTF-8">
     <meta name="viewport"
