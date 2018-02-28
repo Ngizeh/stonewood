@@ -1,5 +1,4 @@
 @extends('layouts.master')
-@include('layouts.nav')
 @section('content')
     <div class="inside-banner">
             <div class="container">
@@ -97,8 +96,6 @@
             acceptedFiles: '.pdf'
         };
     </script>
-
-    @include('layouts.footer')
 @stop
 
 
