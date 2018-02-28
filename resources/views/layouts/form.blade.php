@@ -203,18 +203,18 @@
                    name="location" placeholder="Enter the Location">
         </div>
         <div id="map" style="height: 400px; width: 100%" class="form-control"></div>
-        {{--<div class="form-group">--}}
-            {{--<label for="latitude">Latitude</label>--}}
-            {{--<input readonly="readonly" type="text" class="form-control input-sm"--}}
-                   {{--value="{{old('lat', $property->lat)}}"--}}
-                   {{--name="lat" id="lat">--}}
-        {{--</div>--}}
-        {{--<div class="form-group">--}}
-            {{--<label for="longitude">Longitude</label>--}}
-            {{--<input readonly="readonly" type="text" class="form-control input-sm"--}}
-                   {{--value="{{old('lng', $property->lng)}}"--}}
-                   {{--name="lng" id="lng">--}}
-        {{--</div>--}}
+        <div class="form-group">
+            <label for="latitude">Latitude</label>
+            <input readonly="readonly" type="text" class="form-control input-sm"
+                   value="{{old('lat', $property->lat)}}"
+                   name="lat" id="lat">
+        </div>
+        <div class="form-group">
+            <label for="longitude">Longitude</label>
+            <input readonly="readonly" type="text" class="form-control input-sm"
+                   value="{{old('lng', $property->lng)}}"
+                   name="lng" id="lng">
+        </div>
     </div>
 </div>
 <hr>
