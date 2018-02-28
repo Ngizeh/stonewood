@@ -151,7 +151,7 @@
                             <img src="/{{$set->thumbnail_path}}" alt="...">
                             <div class="caption">
                                 <h5 style="color: #ff770e"><strong>{{$property->title}}</strong></h5>
-                                <h6><strong>{{$property->location}}</strong></h6>
+                                <h6><strong>{{str_limit($property->location, 30)}}</strong></h6>
                                 <h5 style="color: #ff770e"><strong>Ksh. {{$property->price_format()}}</strong></h5>
                             </div>
                                 @endif
