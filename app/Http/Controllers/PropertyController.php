@@ -93,7 +93,7 @@ class PropertyController extends Controller
     {
         $property->update($request->all());
 
-        return redirect('property');
+        return redirect($property->path());
     }
 
     
