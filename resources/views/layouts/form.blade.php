@@ -238,7 +238,7 @@
             var places = searchBox.getPlaces();
             var bounds = new google.maps.LatLngBounds();
             var i, place;
-            for (i = 0; place = places[i]; i++) {
+            for (i=0; place=places[i];i++) {
                 bounds.extend(place.geometry.location);
                 marker.setPosition(place.geometry.location);
             }
