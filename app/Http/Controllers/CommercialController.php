@@ -7,27 +7,37 @@ use App\Land;
 use App\Property;
 use Illuminate\Http\Request;
 use App\Http\Requests\CommercialRequest;
+use Illuminate\Support\Facades\Auth;
 
 
 class CommercialController extends Controller
 {
-  public function index()
+  public function index(Property $property)
   {
+      if (Auth::user()) {
+          $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+      } else
       $properties = Property::whereNotNull('commercial')->paginate(9);
       
       return view('.commercial.commercials', compact('properties'));
   }
 
-  public function sales()
+  public function sales(Property $property)
   {
-    $properties = Property::where('listed', '=', 'Sale')
+      if (Auth::user()) {
+          $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+      } else
+      $properties = Property::where('listed', '=', 'Sale')
                 ->whereNotNull('commercial')->paginate(9);
 
     return view('commercial.sales', compact('properties'));
   }
 
-  public function rentals()
+  public function rentals(Property $property)
   {
+      if (Auth::user()) {
+          $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+      } else
       $properties = Property::where('listed', '=', 'Rental')
                   ->whereNotNull('commercial')->paginate(9);
 
