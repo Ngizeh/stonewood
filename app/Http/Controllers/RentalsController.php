@@ -9,10 +9,12 @@ use Illuminate\Support\Facades\Auth;
 
 class RentalsController extends Controller
 {
-    public function index(Property $property)
+    public function index()
     {
         if (Auth::user()) {
-            $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+            $properties = Property::where('listed', '=', 'Rental')
+                ->where('user_id', Auth::id())
+                ->with('propertyPhotos')->paginate(9);
         } else
         $properties = Property::where('listed', '=', 'Rental')
             ->with('propertyPhotos')->paginate(9);

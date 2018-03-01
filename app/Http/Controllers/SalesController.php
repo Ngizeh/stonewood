@@ -9,10 +9,11 @@ use Illuminate\Support\Facades\Auth;
 class SalesController extends Controller
 
 {
-    public function index(Property $property)
+    public function index()
     {
         if (Auth::user()) {
-            $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+            $properties = Property::where('listed', '=', 'Sale')->where('user_id', Auth::id())
+            ->with('propertyPhotos')->paginate(9);
         } else
         $properties = Property::where('listed', '=', 'Sale')
             ->with('propertyPhotos')->paginate(9);

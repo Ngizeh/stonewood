@@ -11,23 +11,25 @@ use Illuminate\Support\Facades\Auth;
 class LandController extends Controller
 {
 
-    public function index(Property $property)
+    public function index()
     {
         if (Auth::user()) {
-            $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+            $properties =Property::whereNotNull('land')->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
         } else
         $properties = Property::whereNotNull('land')->paginate(9);
 
         return view('land.lands', compact('properties'));
     }
 
-    public function sales(Property $property)
+    public function sales()
     {
         if (Auth::user()) {
-            $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+            $properties =Property::where('listed', '=', 'Sale')
+                ->whereNotNull('land')->where('user_id', Auth::id())
+                ->with('propertyPhotos')->paginate(9);
         } else
         $properties = Property::where('listed', '=', 'Sale')
-            ->whereNotNull('land')->paginate(9);
+                   ->whereNotNull('land')->paginate(9);
 
         return view('land.sales', compact('properties'));
     }
@@ -35,7 +37,9 @@ class LandController extends Controller
     public function development(Property $property)
     {
         if (Auth::user()) {
-            $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+            $properties = Property::where('listed', '=', 'Development')
+                ->whereNotNull('land')->where('user_id', Auth::id())
+                ->with('propertyPhotos')->paginate(9);
         } else
         $properties = Property::where('listed', '=', 'Development')
             ->whereNotNull('land')->paginate(9);
