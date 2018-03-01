@@ -180,7 +180,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="">Floor Size in Ft<sup>2</sup></label>
+            <label for="">Floor Size in ft<sup>2</sup></label>
             <input type="text" class="form-control" name="floor_size" value="{{old('floor_size', $property->floor_size)}}"
                    id="integer-default">
         </div>
@@ -198,8 +198,9 @@
         </div>
         <div class="form-group">
             <label for="map">Location</label>
-            <input type="text" id="searchmap" class="form-control" value="{{old('location', $property->location)}}"
-                   name="location" placeholder="Enter the Location">
+            <input type="text"  class="form-control" value="{{old('location', $property->location)}}"
+                   name="location" placeholder="Enter the Location"
+                   id="searchmap">
         </div>
         <div id="map" style="height: 400px; width: 100%" class="form-control"></div>
         <div class="form-group">
@@ -232,7 +233,7 @@
             map: map,
             draggable: true
         });
-        var searchBox = new google.maps.places.Autocomplete(document.getElementById('searchmap'));
+        var searchBox = new google.maps.places.SearchBox(document.getElementById('searchmap'));
         google.maps.event.addListener(searchBox, 'places_changed', function () {
             var places = searchBox.getPlaces();
             var bounds = new google.maps.LatLngBounds();
