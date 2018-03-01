@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.2.0/dropzone.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk1StK_XufNPpiDk6vkfc5laTTXxyKzEo&libraries=places"></script>
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDExvuhdF3x1-I8V4khCebfhkk9JAquZms&libraries=places"></script>
 
     <!-- Owl stylesheet -->
     <link rel="stylesheet" href="{{asset('Front/owl-carousel/owl.carousel.css')}}">
