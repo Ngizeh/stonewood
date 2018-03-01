@@ -88,7 +88,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-sm-6">
                             <form method="get" action="search">
-                            <input type="text" class="form-control" placeholder="Search of Properties" name="q" required >
+                            <input type="text" class="form-control" placeholder="Search of Property Location" name="q" required >
                             <div class="row">
                                 <div class="col-lg-3 col-sm-3 ">
                                     <select class="form-control" name="f">
