@@ -180,7 +180,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="">Floor Size in ft<sup>2</sup></label>
+            <label for="">Floor Size in Ft<sup>2</sup></label>
             <input type="text" class="form-control" name="floor_size" value="{{old('floor_size', $property->floor_size)}}"
                    id="integer-default">
         </div>
