@@ -180,17 +180,16 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="">Floor Size in m<sup>2</sup></label>
+            <label for="">Floor Size in ft<sup>2</sup></label>
             <input type="text" class="form-control" name="floor_size" value="{{old('floor_size', $property->floor_size)}}"
                    id="integer-default">
         </div>
         <div class="form-group">
-            <label for="">Property Size</label>
+            <label for="">Land Size</label>
             <div class="input-group">
                 <input class="form-control" name="property_size" type="text" id="integer-default">
                 <div class="input-group-btn">
                     <select class="form-control" name="property_metrics">
-                        <option value="meters squares">m<sup>2</sup></option>
                         <option value="hectares">ha</option>
                         <option value="acre">acre</option>
                     </select>
