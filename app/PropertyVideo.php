@@ -5,13 +5,13 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
-class PropertyFile extends Model
+class PropertyVideo extends Model
 {
     protected $fillable = [
-      'name', 'path'
+        'path', 'name',
     ];
 
-    protected $baseDir  = 'properties/files';
+    protected $baseDir = 'properties/videos';
 
     public function property()
     {
@@ -26,9 +26,10 @@ class PropertyFile extends Model
     public function saveAs($name)
     {
         $this->name = sprintf("%s-%s", time(), $name);
-        $this->path = sprintf("%s/%s", $this->baseDir, $this->name);
+        $this->path = sprintf("%s/%s", $this->baseDir, $this->name);;
 
         return $this;
+
     }
 
     public function move(UploadedFile $file)
@@ -38,16 +39,14 @@ class PropertyFile extends Model
         return $this;
     }
 
+
     public function delete()
     {
         \File::delete([
+            $this->name,
             $this->path,
-            $this->name
         ]);
 
         parent::delete();
     }
-
-
-
 }

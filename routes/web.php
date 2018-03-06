@@ -49,8 +49,8 @@ Route::get('property/{title}', 'AllPropertyController@show');
 Route::post('property', 'PropertyController@store');
 Route::get('/{location}/{title}', 'PropertyController@show');
 Route::post('{location}/{title}/photos', 'PropertyController@addPhoto');
-Route::post('{location}/{title}/files', 'PropertyController@addPhoto');
-Route::post('{location}/{title}/photos', 'PropertyController@addPhoto');
+Route::post('{location}/{title}/files', 'PropertyFileController@addDoc');
+Route::post('{location}/{title}/video', 'PropertyVideoController@addVideo');
 Route::patch('property/{property}', 'PropertyController@update');
 Route::delete('property_photo/{id}', 'AllPropertyController@destroy');
 

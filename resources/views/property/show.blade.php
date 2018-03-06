@@ -42,9 +42,7 @@
                     </div>
                 @endforeach
                 <h2>Add Photos of the Property</h2>
-
                 <hr>
-
                 <form id="addphoto" action="/{{ $property->location}}/{{$property->title}}/photos"
                       class="dropzone" method="post" enctype="multipart/form-data">
                     {{csrf_field()}}
@@ -53,23 +51,23 @@
                     <hr>
                     <div class="row">
                         <div class="col-md-6">
+                            <h3>Add Document of the Property</h3>
+                            <hr>
+                            <form id="add_doc" action="/{{ $property->location}}/{{$property->title}}/files"
+                                  class="dropzone" method="post" enctype="multipart/form-data">
+                                {{csrf_field()}}
+
+                            </form>
+                        </div>
+                        <div class="col-md-6">
                         <h3>Add Video of the Property</h3>
                             <hr>
-                        <form id="addvideo" action="/{{ $property->location}}/{{$property->title}}/photos"
+                        <form id="addvideo" action="/{{ $property->location}}/{{$property->title}}/video"
                               class="dropzone" method="post" enctype="multipart/form-data">
                             {{csrf_field()}}
 
                         </form>
                         </div>
-                        <div class="col-md-6">
-                        <h3>Add Document of the Property</h3>
-                            <hr>
-                        <form id="add_doc" action="/{{ $property->location}}/{{$property->title}}/photos"
-                              class="dropzone" method="post" enctype="multipart/form-data">
-                            {{csrf_field()}}
-
-                        </form>
-                    </div>
                     </div>
             </div>
         </div>
@@ -85,15 +83,16 @@
             maxFilesize: 10.0,
             acceptedFiles: '.jpg,.jpeg,.png, .bmp'
         };
+
         Dropzone.options.addvideo = {
-            paramName: 'video',
-            maxFilesize: 50.0,
+            paramName: 'file',
+            maxFilesize: 100.0,
             acceptedFiles: '.mp4'
         };
         Dropzone.options.add_doc = {
-            paramName: 'doc',
-            maxFilesize: 10.0,
-            acceptedFiles: '.pdf'
+            paramName: 'file',
+            maxFilesize: 100,
+             acceptedFiles: ".pdf"
         };
     </script>
 @stop

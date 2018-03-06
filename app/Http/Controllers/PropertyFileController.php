@@ -9,16 +9,11 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class PropertyFileController extends Controller
 {
-    public function upload()
-    {
-
-    }
-
     public function addDoc(Request $request, $location, $title)
     {
-        $this->validate($request, ['doc' => 'required|mimes:pdf']);
+        $this->validate($request, ['file' => 'required|mimes:pdf|max:2000']);
 
-        $propertyFile= $this->makeDoc($request->file('doc'));
+        $propertyFile= $this->makeDoc($request->file('file'));
 
         Property::locatedAt($location, $title)->addDoc($propertyFile);
 

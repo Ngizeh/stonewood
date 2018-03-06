@@ -78,6 +78,10 @@ class Property extends Model
     {
       return $this->hasMany(PropertyFile::class);
     }
+    public function propertyVideos()
+    {
+        return $this->hasMany(PropertyVideo::class);
+    }
 
     public function addPhoto(PropertyPhoto $propertyPhoto)
     {
@@ -86,7 +90,11 @@ class Property extends Model
 
     public function addDoc(PropertyFile $propertyFile)
     {
-        return $this->propertyFiles()->save($$propertyFile);
+        return $this->propertyFiles()->save($propertyFile);
+    }
+    public function addVideo(PropertyVideo $propertyVideo)
+    {
+        return $this->propertyVideos()->save($propertyVideo);
     }
 
     public function path()

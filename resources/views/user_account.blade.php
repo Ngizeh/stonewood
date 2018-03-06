@@ -42,11 +42,12 @@
                 @foreach($properties as $property)
                 <tr>
                     <td>{{strtoupper($property->reference_number)}}</td>
-                    <td>{{$property->title}}</td>
+                    <td><a href="{{url('/property/'.$property->title_heading())}}">{{$property->title}}</a></td>
                     <td>{{str_limit($property->location, 25)}}</td>
                     <td>{{$property->listed}}</td>
                     <td>{{$property->price}}</td>
                     <td>{{$property->created_at}}</td>
+
                     <td>    <form method="post" action="">
                             {{csrf_field()}}
                             <input type="hidden" name="_method" value="delete">

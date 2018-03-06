@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePropertyFilesTable extends Migration
+class CreatePropertyVideosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePropertyFilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('property_files', function (Blueprint $table) {
+        Schema::create('property_videos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('property_id')->unsigned()->index();
             $table->foreign('property_id')->references('id')
@@ -31,6 +31,6 @@ class CreatePropertyFilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('property_files');
+        Schema::dropIfExists('property_videos');
     }
 }

@@ -198,11 +198,10 @@
         </div>
         <div class="form-group">
             <label for="map">Location</label>
-            <input type="text"  class="form-control" value="{{old('location', $property->location)}}"
-                   name="location" placeholder="Enter the Location"
-                   id="searchmap">
+            <input type="text" id="searchmap" class="form-control" value="{{old('location', $property->location)}}"
+                   name="location">
+            <div id="map-canvas" style="height: 400px; width: 100%" class="form-control"></div>
         </div>
-        <div id="map" style="height: 400px; width: 100%" class="form-control"></div>
         <div class="form-group">
             <label for="latitude">Latitude</label>
             <input readonly="readonly" type="text" class="form-control input-sm"
@@ -222,9 +221,15 @@
 </div>
 @include('layouts.errors')
 @section('scripts.footer')
-    <script type="text/javascript">
+    <script src="{{asset('js/masknumber.min.js')}}"></script>
+    <script>
+        $(document).ready(function () {
+            $('[id=integer-default]').maskNumber({integer: true});
+        });
+    </script>
+    <script>
         var Nairobi = {lat: -1.2920659, lng: 36.82194619999996};
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new google.maps.Map(document.getElementById('map-canvas'), {
             zoom: 15,
             center: Nairobi
         });
@@ -233,8 +238,8 @@
             map: map,
             draggable: true
         });
-        var searchBox = new google.maps.places.SearchBox(document.getElementById('searchmap'));
-        google.maps.event.addListener(searchBox, 'places_changed', function () {
+        var searchBox = new google.maps.places.Autocomplete(document.getElementById('searchmap'));
+        google.maps.event.addListener(searchBox,'places_changed',function(){
             var places = searchBox.getPlaces();
             var bounds = new google.maps.LatLngBounds();
             var i, place;
@@ -250,12 +255,6 @@
             var lng = marker.getPosition().lng();
             $('#lat').val(lat);
             $('#lng').val(lng);
-        });
-    </script>
-    <script type="text/javascript" src="{{asset('js/masknumber.min.js')}}"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('[id=integer-default]').maskNumber({integer: true});
         });
     </script>
 @stop
