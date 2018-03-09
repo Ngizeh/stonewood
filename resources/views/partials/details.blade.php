@@ -1,15 +1,15 @@
-<div class="properties-listing spacer">
+<div class="properties-listing">
         <div class="row">
-            <div class="col-lg-3 col-sm-4">
+            <div class="col-lg-3 col-sm-12">
                 @include('partials.search')
                 {{--@if(Auth::check())--}}
                 {{--<a href="{{'/property/create'}}" class="btn btn-primary">Create A Property</a>--}}
                 {{--@endif--}}
             </div>
-            <div class="col-md-9 col-md-8">
+            <div class="col-md-9 col-sm-12">
                 <div class="row">
                 @foreach($properties as $property)
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-12">
                             <div class="properties">
                                 @foreach($property->propertyPhotos as $set)
                                 <div class="image-holder">
