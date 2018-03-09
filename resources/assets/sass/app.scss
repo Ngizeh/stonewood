@@ -10,7 +10,7 @@
 
 .navbar{
   background-color: $blue;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .nav-justified >li {
   color:$blue;
@@ -209,7 +209,7 @@ and (min-width: 320px) and (max-width: 568px)
 }
 
 .swiper-container {
-  width: 90%;
+  width: 100%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -239,6 +239,13 @@ and (min-width: 320px) and (max-width: 568px)
 
 .gallery-thumbs .swiper-slide-active {
   opacity: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) and (max-width: 568px) {
+  .picture{
+    width: 100%;
+    margin: 5px;
+  }
 }
 
 .details p{
@@ -275,6 +282,10 @@ h3{
 .index a, h1 > a {
   text-decoration: none !important;
 
+}
+.back-button{
+  margin-top: 8px;
+  padding-bottom: 4em;
 }
 
 @font-face {

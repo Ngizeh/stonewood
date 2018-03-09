@@ -1,10 +1,13 @@
 @extends('layouts.master')
 @include('layouts.nav')
 @section('content')
-    <div class="container login">
-
-    <h1>Our Team</h1>
-
+    @include('layouts.banner')
+    <div class="inside-banner">
+        <div class="container">
+            <span class="pull-right"><a href="/">Home</a> / Our Team</span>
+            <h2>Our Team</h2>
+        </div>
     </div>
+
 
 @stop
