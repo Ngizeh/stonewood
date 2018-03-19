@@ -96,6 +96,14 @@ class PropertyController extends Controller
         return redirect($property->path());
     }
 
+     public function destroy($id)
+    {
+        Property::findOrFail($id)->delete();
+
+        return back();
+
+    }
+
     
 
 }

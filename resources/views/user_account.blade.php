@@ -48,7 +48,7 @@
                     <td>{{$property->price}}</td>
                     <td>{{$property->created_at}}</td>
 
-                    <td>    <form method="post" action="">
+                    <td>    <form method="post" action="/property/{{$property->id}}">
                             {{csrf_field()}}
                             <input type="hidden" name="_method" value="delete">
                                 <button type="submit" class="btn btn-danger btn-xs">Delete</button>
