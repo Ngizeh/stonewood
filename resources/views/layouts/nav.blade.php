@@ -9,7 +9,7 @@
             </button>
             <h1 class="navbar-brand">
                  <img src="{{asset('images/HOME-ASSURED-LOGO.jpg')}}" alt="logo" height="100" width="100">
-            Home Assured </h1>
+            HomeAssured </h1>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">

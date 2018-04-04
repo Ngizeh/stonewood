@@ -15,10 +15,10 @@
             <div class="row">
                 <div class="col-lg-8  col-lg-offset-2">
                     {{--<img src="image/about.jpg" class="img-responsive thumbnail" alt="realestate">--}}
-                    <h3 style="color: #ff770e">Home Assured Profile</h3>
+                    <h3 style="color: #ff770e">HomeAssured Profile</h3>
                     <p>
-                        HomeAssured Property primarily core value is sale of quality residential property in Kenya,
-                        Properties
+                        Our primarily core value is sale of quality residential property in Kenya,
+                        <strong>HomeAssured Property</strong>
                         offers its expertise
                         and client base in Kenya. Our team is committed to maintaining these high levels of professional
                         service
@@ -26,15 +26,15 @@
                         integrity and reliability whilst continually assessing the changing needs of the market place
                     </p>
                     <p>
-                        We offers specialised in real estate services in the residential, commercial and
-                        new development fields,covering sales and lettings as well as property management. An in-house
+                        <strong>HomeAssured Property</strong> offers specialised in real estate services in the <strong>residential</strong>, <strong>commercial</strong> and
+                        <strong>new development</strong> fields,covering sales and lettings as well as property management. An in-house
                         advocate oversees property
                         transactions from Letter of Offer through to final transfer at the Deeds Registry.
 
                     </p>
 
                     <p>
-                        HomeAssured Property offers a broad range of specialist and advisory services with respect to:
+                        <strong>HomeAssured Property</strong> offers a broad range of specialist and advisory services with respect to:
                     </p>
                     <ul>
                         <li> Residential Sales (city homes, apartments, country houses, coastal homes, internal, off
