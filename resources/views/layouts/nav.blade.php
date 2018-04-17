@@ -7,9 +7,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h1 class="navbar-brand">
+            <a class="navbar-brand" href="/">
                  <img src="{{asset('images/HOME-ASSURED-LOGO.jpg')}}" alt="logo" height="100" width="100">
-            HomeAssured </h1>
+            <small>Home Assured Ltd.</small> </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">

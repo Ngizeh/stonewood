@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>HomeAssured Property</title>
+    <title>Home Assured Limited</title>
     <link rel="shortcut icon" href="{{{ asset('images/HOME-ASSURED-LOGO.jpg') }}}">
     @yield('facebook_meta')
     <meta charset="UTF-8">

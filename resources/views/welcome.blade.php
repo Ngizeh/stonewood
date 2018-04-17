@@ -167,7 +167,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 recent-view">
                         <h3>About Us</h3>
-                        <p style="text-align: center"> HomeAssured Property primarily core value is sale of quality residential property in Kenya,
+                        <p style="text-align: center"> Home Assured Limited primarily core value is sale of quality residential property in Kenya,
                             Properties
                             offers its expertise
                             and client base in Kenya. Our team is committed to maintaining these high levels of

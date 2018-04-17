@@ -15,26 +15,15 @@
             <div class="row">
                 <div class="col-lg-8  col-lg-offset-2">
                     {{--<img src="image/about.jpg" class="img-responsive thumbnail" alt="realestate">--}}
-                    <h3 style="color: #ff770e">HomeAssured Profile</h3>
                     <p>
-                        Our primarily core value is sale of quality residential property in Kenya,
-                        <strong>HomeAssured Property</strong>
-                        offers its expertise
-                        and client base in Kenya. Our team is committed to maintaining these high levels of professional
-                        service
-                        with unquestionable
-                        integrity and reliability whilst continually assessing the changing needs of the market place
+                        <strong> Home Assured Limited </strong> is an experienced group of real estate professionals providing a comprehensive 
+                            range of real estate services for residential, 
+                            corporate and industrial clients throughout Kenya and beyond. 
+                            Our clients range from individuals and small businesses to large corporates.  
                     </p>
                     <p>
-                        <strong>HomeAssured Property</strong> offers specialised in real estate services in the <strong>residential</strong>, <strong>commercial</strong> and
-                        <strong>new development</strong> fields,covering sales and lettings as well as property management. An in-house
-                        advocate oversees property
-                        transactions from Letter of Offer through to final transfer at the Deeds Registry.
-
-                    </p>
-
-                    <p>
-                        <strong>HomeAssured Property</strong> offers a broad range of specialist and advisory services with respect to:
+                     
+                     <strong>Home Assured Limited</strong> offers a broad range of specialist and advisory services with respect to:
                     </p>
                     <ul>
                         <li> Residential Sales (city homes, apartments, country houses, coastal homes, internal, off
@@ -50,16 +39,20 @@
                         <li>Sourcing Property for Collective Buyers or Investment Funds</li>
                     </ul>
                     <p>
-                        Our extensive exposure to prospective local and international clients is thanks to our team of
-                        able and
-                        professional property consultants who are driven by excellence and go above the call of duty to
-                        give our
-                        clients peace of mind.
-
-                        We are perfectly placed to help you find a space for you to call home and look forward to being
-                        of
-                        service
-                        to you.
+                            We take pride in our work and we are continuously seeking to improve our business model and 
+                            capabilities to exceed our customers’ expectations. Client Satisfaction is the basis of everything 
+                            that we do. Whether you are looking to buy, rent, or sell, you can be confident 
+                            that <strong> Home Assured Limited</strong> can help you reach your goals.
+                    </p>
+                    <p>
+                            Our team represents the new breed of real estate professionals who constantly embrace change and seek to 
+                            improve the services that <strong> Home Assured Limited </strong> offers to its private and institutional clients.
+                            With decades of combined real estate experience, our diverse team of professional consultants 
+                            strives to consistently deliver results for our clients with absolute integrity and transparency.
+                    </p>
+                    <p>
+                            We are committed to perform at the next level for our clients. Every single day we strive to deliver 
+                            on this promise! We look forward to being of service to you.
                     </p>
                 </div>
 

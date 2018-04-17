@@ -30,7 +30,7 @@
 
             <div class="col-lg-3 col-sm-3">
                 <h4>Contact us</h4>
-                <p><b>HomeAssured Property</b><br>
+                <p><b>Home Assured Limited</b><br>
                     <span class="glyphicon glyphicon-map-marker"></span> Jalaram Rd, Weslands<br>
                     <span class="glyphicon glyphicon-envelope"></span> sales@homeassured.property<br>
                     <span class="glyphicon glyphicon-earphone"></span> +254 20 207 7030</p>
