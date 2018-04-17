@@ -167,15 +167,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 recent-view">
                         <h3>About Us</h3>
-                        <p style="text-align: center"> Home Assured Limited primarily core value is sale of quality residential property in Kenya,
-                            Properties
-                            offers its expertise
-                            and client base in Kenya. Our team is committed to maintaining these high levels of
-                            professional
-                            service
-                            with unquestionable
-                            integrity and reliability whilst continually assessing the changing needs of the market
-                            place
+                        <p style="text-align: center"> Home Assured Limited is an experienced group of real estate professionals providing a comprehensive range of real estate services for residential, corporate and industrial clients throughout Kenya and beyond. Our clients range from individuals and small businesses to large corpora....
                             <br><a href="/about">Learn More</a></p>
 
                     </div>
