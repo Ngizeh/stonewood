@@ -14,10 +14,10 @@ class RentalsController extends Controller
         if (Auth::user()) {
             $properties = Property::where('listed', '=', 'Rental')
                 ->where('user_id', Auth::id())
-                ->with('propertyPhotos')->paginate(9);
+                ->with('propertyPhotos')->orderBy('created_at', 'desc')->paginate(9);
         } else
         $properties = Property::where('listed', '=', 'Rental')
-            ->with('propertyPhotos')->paginate(9);
+            ->with('propertyPhotos')->orderBy('created_at', 'desc')->paginate(9);
 
          return view('rent', compact('properties'));
     }

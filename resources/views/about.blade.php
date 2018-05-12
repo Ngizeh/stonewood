@@ -8,6 +8,7 @@
             <span class="pull-right"><a href="#">Home</a> / About Us</span>
             <h2>About Us</h2>
         </div>
+        
     </div>
 
     <div class="container">

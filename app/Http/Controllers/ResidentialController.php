@@ -14,9 +14,10 @@ class ResidentialController extends Controller
     {
         if (Auth::user()) {
             $properties = Property::whereNotNull('residential')->where('user_id', Auth::id())
-                ->paginate(9);
+                          ->orderBy('created_at', 'desc') ->paginate(9);
         }else
-        $properties = Property::whereNotNull('residential')->paginate(9);
+        $properties = Property::whereNotNull('residential')
+                      ->orderBy('created_at', 'desc')->paginate(9);
 
       return view('residential.residentials', compact('properties')) ;
     }
@@ -24,10 +25,11 @@ class ResidentialController extends Controller
     {
         if(Auth::user()){
             $properties = Property::where('listed', '=', 'Sale')
-                ->whereNotNull('residential')->where('user_id', Auth::id())->paginate(9);
+                ->whereNotNull('residential')->where('user_id', Auth::id())
+                ->orderBy('created_at', 'desc')->paginate(9);
         }else
         $properties = Property::where('listed', '=', 'Sale')
-            ->whereNotNull('residential')->paginate(9);
+            ->whereNotNull('residential')->orderBy('created_at', 'desc')->paginate(9);
 
         return view('residential.sales', compact('properties'));
     }
@@ -36,10 +38,11 @@ class ResidentialController extends Controller
     {
         if(Auth::user()){
             $properties = Property::where('listed', '=', 'Rental')
-                ->whereNotNull('residential')->where('user_id', Auth::id())->paginate(9);
+                ->whereNotNull('residential')->where('user_id', Auth::id())
+                ->orderBy('created_at', 'desc')->paginate(9);
         }else
         $properties = Property::where('listed', '=', 'Rental')
-            ->whereNotNull('residential')->paginate(9);
+            ->whereNotNull('residential')->orderBy('created_at', 'desc')->paginate(9);
 
         return view('residential.rentals', compact('properties'));
     }

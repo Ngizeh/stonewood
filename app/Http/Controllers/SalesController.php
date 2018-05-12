@@ -13,10 +13,10 @@ class SalesController extends Controller
     {
         if (Auth::user()) {
             $properties = Property::where('listed', '=', 'Sale')->where('user_id', Auth::id())
-            ->with('propertyPhotos')->paginate(9);
+            ->with('propertyPhotos')->orderBy('created_at', 'desc')->paginate(9);
         } else
         $properties = Property::where('listed', '=', 'Sale')
-            ->with('propertyPhotos')->paginate(9);
+            ->with('propertyPhotos')->orderBy('created_at', 'desc')->paginate(9);
 
         return view('sale', compact('properties'));
     }

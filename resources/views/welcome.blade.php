@@ -167,8 +167,10 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 recent-view">
                         <h3>About Us</h3>
-                        <p style="text-align: center"> Home Assured Limited is an experienced group of real estate professionals providing a comprehensive range of real estate services for residential, corporate and industrial clients throughout Kenya and beyond. Our clients range from individuals and small businesses to large corpora....
-                            <br><a href="/about">Learn More</a></p>
+                        <p style="text-align: center"> 
+                            Home Assured Limited is an experienced group of real estate professionals providing comprehensive range of real estate services for residential, corporate and industrial clients throughout Kenya and beyond. Our clients range from individuals and small businesses to large corpora....
+                            <br><a href="/about">Learn More</a>
+                        </p>
 
                     </div>
                 </div>

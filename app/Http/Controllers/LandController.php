@@ -14,9 +14,10 @@ class LandController extends Controller
     public function index()
     {
         if (Auth::user()) {
-            $properties =Property::whereNotNull('land')->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+            $properties =Property::whereNotNull('land')->where('user_id', Auth::id())->with('propertyPhotos')
+                         ->orderBy('created_at', 'desc')->paginate(9);
         } else
-        $properties = Property::whereNotNull('land')->paginate(9);
+        $properties = Property::whereNotNull('land')->orderBy('created_at', 'desc')->paginate(9);
 
         return view('land.lands', compact('properties'));
     }
@@ -26,10 +27,10 @@ class LandController extends Controller
         if (Auth::user()) {
             $properties =Property::where('listed', '=', 'Sale')
                 ->whereNotNull('land')->where('user_id', Auth::id())
-                ->with('propertyPhotos')->paginate(9);
+                ->with('propertyPhotos')->orderBy('created_at', 'desc')->paginate(9);
         } else
         $properties = Property::where('listed', '=', 'Sale')
-                   ->whereNotNull('land')->paginate(9);
+                   ->whereNotNull('land')->orderBy('created_at', 'desc')->paginate(9);
 
         return view('land.sales', compact('properties'));
     }
@@ -39,7 +40,7 @@ class LandController extends Controller
         if (Auth::user()) {
             $properties = Property::where('listed', '=', 'Development')
                 ->whereNotNull('land')->where('user_id', Auth::id())
-                ->with('propertyPhotos')->paginate(9);
+                ->with('propertyPhotos')->orderBy('created_at', 'desc')->paginate(9);
         } else
         $properties = Property::where('listed', '=', 'Development')
             ->whereNotNull('land')->paginate(9);

@@ -12,5 +12,13 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+.sass('resources/assets/sass/app.scss', 'public/css')
+.styles([
+    'public/css/swiper.min.css',
+     'public/css/app.css',
+    'public/Front/owl-carousel/owl.carousel.css',
+    'public/Front/owl-carousel/owl.theme.css',
+    'public/Front/slitslider/css/style.css',
+    'public/Front/slitslider/css/custom.css'
+  ], 'public/css/all.min.css');
 

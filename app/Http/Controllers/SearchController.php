@@ -12,7 +12,7 @@ class SearchController extends Controller
 
        $query = $request->input('q', 'f', 'l','p');
 
-       $properties = $query ? Property::search($query)->paginate(9)
+       $properties = $query ? Property::search($query)->orderBy('created_at', 'desc')->paginate(9)
                    : Property::all();
 
        return view('search', compact('properties'));

@@ -15,9 +15,11 @@ class CommercialController extends Controller
   public function index(Property $property)
   {
       if (Auth::user()) {
-          $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+          $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')
+                        ->orderBy('created_at', 'desc')->paginate(9);
       } else
-      $properties = Property::whereNotNull('commercial')->paginate(9);
+      $properties = Property::whereNotNull('commercial')
+                    ->orderBy('created_at', 'desc')->paginate(9);
       
       return view('.commercial.commercials', compact('properties'));
   }
@@ -25,10 +27,12 @@ class CommercialController extends Controller
   public function sales(Property $property)
   {
       if (Auth::user()) {
-          $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+          $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')
+                        ->orderBy('created_at', 'desc')->paginate(9);
       } else
       $properties = Property::where('listed', '=', 'Sale')
-                ->whereNotNull('commercial')->paginate(9);
+                ->whereNotNull('commercial')
+                ->orderBy('created_at', 'desc')->paginate(9);
 
     return view('commercial.sales', compact('properties'));
   }
@@ -36,10 +40,11 @@ class CommercialController extends Controller
   public function rentals(Property $property)
   {
       if (Auth::user()) {
-          $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')->paginate(9);
+          $properties = $property->where('user_id', Auth::id())->with('propertyPhotos')
+                        ->orderBy('created_at', 'desc')->paginate(9);
       } else
       $properties = Property::where('listed', '=', 'Rental')
-                  ->whereNotNull('commercial')->paginate(9);
+                  ->whereNotNull('commercial')->orderBy('created_at', 'desc')->paginate(9);
 
       return view('commercial.rentals', compact('properties'));
   }
